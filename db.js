@@ -3,7 +3,7 @@ const DB = {
   'Quantitative Aptitude': {
     topics: {
       
-      Arithmetic: [
+      'Arithmetic (20 Questions)': [
         {
           id: 'q-art-001',
           question: 'If 5x + 3 = 2x + 18, then x = ?',
@@ -20,7 +20,7 @@ const DB = {
         }
       ],
 
-      'One Liner': [
+      'Simplification part 1 (20 question)': [
         // Simplification
         {
     id: 'simp-001',
@@ -162,15 +162,8 @@ const DB = {
     answer: 2,
     explanation: "66.67%≈240; 137.5%=880; 82.5%=330; 240+880−330=790; 790+210=? ⇒ ?=1000"
   },
-  {
-          id: 'q-simp-010',
-          question: '3/5 of 350 - 45 = ?',
-          options: ['165', '160', '155', '150'],
-          answer: 0,
-          explanation: '3/5 of 350=210 → 210-45=165'
-        },
-      ],
-      'Number Series and Quadratic Eqn': [
+  ],
+      'Number Series Part 1(20 question)': [
         // Wrong / Number Series
         {
           id: 'q-ser-001',
@@ -242,7 +235,8 @@ const DB = {
           answer: 2,
           explanation: 'Perfect squares: 1²,2²,3²,4²,5² → next 6²=36'
         },
-
+        ],
+'Quadratic Equations Part 1(20 question)': [
         // Quadratic Equations
         {
           id: 'q-quad-001',
