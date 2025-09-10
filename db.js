@@ -291,146 +291,145 @@ const DB = {
   ],
 'Quadratic Equations Part 1(20 question)': [
         // Quadratic Equations
-
   {
     id: 'q-ser-021',
     question: '4x^2 - 20x + 21 = 0',
-    options: ['(3/2, 7/2)', '(1, 21/4)', '(3, 7)', '(-3/2, -7/2)', 'None'],
-    answer: 0,
-    explanation: 'Divide by 1: factor 4x^2-20x+21 = (2x-3)(2x-7) → x = 3/2, 7/2.'
+    options: ['(1, 21/4)', '(3/2, 7/2)', '(-3/2, -7/2)', '(3, 7)', 'None'],
+    answer: 1,
+    explanation: 'Factor: 4x^2-20x+21 = (2x-3)(2x-7) → x = 3/2, 7/2.'
   },
   {
     id: 'q-ser-022',
     question: 'x^2 - 13x + 42 = 0',
-    options: ['(6, 7)', '(3, 14)', '(2, 21)', '(7, 6)', 'None'],
+    options: ['(6, 7)', '(7, 6)', '(3, 14)', '(2, 21)', 'None'],
     answer: 0,
     explanation: 'Factor: x^2-13x+42 = (x-6)(x-7) → x = 6, 7.'
   },
   {
     id: 'q-ser-023',
     question: 'x^2 - 7x + 25 = 2x + 5  (i.e., x^2 - 9x + 20 = 0)',
-    options: ['(4, 5)', '(5, 4)', '(2, 10)', '(−4, −5)', 'None'],
+    options: ['(4, 5)', '(5, 4)', '(−4, −5)', '(2, 10)', 'None'],
     answer: 0,
-    explanation: 'Bring RHS over: x^2-7x+25−2x−5 = x^2-9x+20 = (x-4)(x-5) → x = 4, 5.'
+    explanation: 'Simplify: x^2 - 9x + 20 = (x-4)(x-5) → x = 4, 5.'
   },
   {
     id: 'q-ser-024',
     question: 'x^2 - 12x + 32 = 0',
-    options: ['(4, 8)', '(6, 6)', '(2, 16)', '(8, 4)', 'None'],
-    answer: 0,
-    explanation: 'Factor: x^2-12x+32 = (x-4)(x-8) → x = 4, 8.'
+    options: ['(6, 6)', '(4, 8)', '(2, 16)', '(8, 4)', 'None'],
+    answer: 1,
+    explanation: 'Factor: (x-4)(x-8) → x = 4, 8.'
   },
   {
     id: 'q-ser-025',
     question: 'x^2 + 14x - 51 = 0',
-    options: ['(−17, 3)', '(17, −3)', '(−3, 17)', '(3, −17)', 'None'],
+    options: ['(−17, 3)', '(3, −17)', '(−3, 17)', '(17, −3)', 'None'],
     answer: 0,
-    explanation: 'Factor: x^2+14x−51 = (x+17)(x−3) → x = −17, 3.'
+    explanation: 'Factor: (x+17)(x−3) → x = −17, 3.'
   },
   {
     id: 'q-ser-026',
     question: 'x^2 + 14x - 32 = 0',
-    options: ['(−16, 2)', '(16, −2)', '(−2, 16)', '(2, −16)', 'None'],
-    answer: 0,
-    explanation: 'Factor: x^2+14x−32 = (x+16)(x−2) → x = −16, 2.'
+    options: ['(16, −2)', '(−16, 2)', '(2, −16)', '(−2, 16)', 'None'],
+    answer: 1,
+    explanation: 'Factor: (x+16)(x−2) → x = −16, 2.'
   },
   {
     id: 'q-ser-027',
     question: '9x^2 + 14x - 8 = 0',
-    options: ['(−2, 4/9)', '(2, −4/9)', '(−4/9, 2)', '(4/9, −2)', 'None'],
+    options: ['(−2, 4/9)', '(2, −4/9)', '(4/9, −2)', '(−4/9, 2)', 'None'],
     answer: 0,
-    explanation: 'Solve: 9x^2+14x−8 = (9x−4)(x+2) → x = 4/9, −2 (order shown as −2, 4/9).'
+    explanation: 'Factor: (9x−4)(x+2) → x = −2, 4/9.'
   },
   {
     id: 'q-ser-028',
     question: 'x^2 + 16x + 63 = 0',
-    options: ['(−9, −7)', '(9, 7)', '(−7, 9)', '(7, −9)', 'None'],
+    options: ['(−9, −7)', '(7, −9)', '(9, 7)', '(−7, 9)', 'None'],
     answer: 0,
-    explanation: 'Factor: x^2+16x+63 = (x+9)(x+7) → x = −9, −7.'
+    explanation: 'Factor: (x+9)(x+7) → x = −9, −7.'
   },
   {
     id: 'q-ser-029',
     question: 'x^2 - 8x + 15 = 0',
-    options: ['(3, 5)', '(5, 3)', '(−3, −5)', '(15, −1)', 'None'],
-    answer: 0,
-    explanation: 'Factor: x^2−8x+15 = (x−3)(x−5) → x = 3, 5.'
+    options: ['(15, −1)', '(3, 5)', '(−3, −5)', '(5, 3)', 'None'],
+    answer: 1,
+    explanation: 'Factor: (x−3)(x−5) → x = 3, 5.'
   },
   {
     id: 'q-ser-030',
     question: 'x^2 - 7x + 12 = 0',
-    options: ['(3, 4)', '(4, 3)', '(−3, −4)', '(6, 2)', 'None'],
-    answer: 0,
-    explanation: 'Factor: x^2−7x+12 = (x−3)(x−4) → x = 3, 4.'
+    options: ['(−3, −4)', '(6, 2)', '(4, 3)', '(3, 4)', 'None'],
+    answer: 3,
+    explanation: 'Factor: (x−3)(x−4) → x = 3, 4.'
   },
   {
     id: 'q-ser-031',
     question: 'x^2 + 11x - 26 = 0',
-    options: ['(−13, 2)', '(13, −2)', '(2, −13)', '(−2, 13)', 'None'],
+    options: ['(−13, 2)', '(2, −13)', '(13, −2)', '(−2, 13)', 'None'],
     answer: 0,
-    explanation: 'Factor: x^2+11x−26 = (x+13)(x−2) → x = −13, 2.'
+    explanation: 'Factor: (x+13)(x−2) → x = −13, 2.'
   },
   {
     id: 'q-ser-032',
     question: 'x^2 + 8x - 180 = 0',
-    options: ['(−18, 10)', '(18, −10)', '(10, −18)', '(−10, 18)', 'None'],
-    answer: 0,
-    explanation: 'Factor: x^2+8x−180 = (x+18)(x−10) → x = −18, 10.'
+    options: ['(−10, 18)', '(10, −18)', '(18, −10)', '(−18, 10)', 'None'],
+    answer: 3,
+    explanation: 'Factor: (x+18)(x−10) → x = −18, 10.'
   },
   {
     id: 'q-ser-033',
     question: 'x^2 - 11x + 28 = 0',
-    options: ['(4, 7)', '(7, 4)', '(−4, −7)', '(14, −2)', 'None'],
+    options: ['(4, 7)', '(7, 4)', '(14, −2)', '(−4, −7)', 'None'],
     answer: 0,
-    explanation: 'Factor: x^2−11x+28 = (x−4)(x−7) → x = 4, 7.'
+    explanation: 'Factor: (x−4)(x−7) → x = 4, 7.'
   },
   {
     id: 'q-ser-034',
     question: 'x^2 - 5x + 6 = 0',
-    options: ['(2, 3)', '(3, 2)', '(−2, −3)', '(6, −1)', 'None'],
-    answer: 0,
-    explanation: 'Factor: x^2−5x+6 = (x−2)(x−3) → x = 2, 3.'
+    options: ['(−2, −3)', '(3, 2)', '(6, −1)', '(2, 3)', 'None'],
+    answer: 3,
+    explanation: 'Factor: (x−2)(x−3) → x = 2, 3.'
   },
   {
     id: 'q-ser-035',
     question: '5x^2 - 19x + 18 = 0',
-    options: ['(9/5, 2)', '(2, 9/5)', '(−9/5, −2)', '(18, −1)', 'None'],
-    answer: 0,
-    explanation: 'Factor: 5x^2−19x+18 = (5x−9)(x−2) → x = 9/5, 2.'
+    options: ['(2, 9/5)', '(−9/5, −2)', '(9/5, 2)', '(18, −1)', 'None'],
+    answer: 2,
+    explanation: 'Factor: (5x−9)(x−2) → x = 9/5, 2.'
   },
   {
     id: 'q-ser-036',
     question: 'x^2 - 19x + 88 = 0',
-    options: ['(8, 11)', '(11, 8)', '(−8, −11)', '(19, −? )', 'None'],
-    answer: 0,
-    explanation: 'Factor: x^2−19x+88 = (x−8)(x−11) → x = 8, 11.'
+    options: ['(19, −?)', '(−8, −11)', '(11, 8)', '(8, 11)', 'None'],
+    answer: 3,
+    explanation: 'Factor: (x−8)(x−11) → x = 8, 11.'
   },
   {
     id: 'q-ser-037',
     question: 'x^2 - 36x + 128 = 0',
-    options: ['(4, 32)', '(32, 4)', '(−4, −32)', '(8, 16)', 'None'],
-    answer: 0,
-    explanation: 'Factor: x^2−36x+128 = (x−4)(x−32) → x = 4, 32.'
+    options: ['(−4, −32)', '(32, 4)', '(8, 16)', '(4, 32)', 'None'],
+    answer: 3,
+    explanation: 'Factor: (x−4)(x−32) → x = 4, 32.'
   },
   {
     id: 'q-ser-038',
     question: 'x^2 - 21x + 108 = 0',
-    options: ['(9, 12)', '(12, 9)', '(−9, −12)', '(18, 6)', 'None'],
+    options: ['(9, 12)', '(18, 6)', '(12, 9)', '(−9, −12)', 'None'],
     answer: 0,
-    explanation: 'Factor: x^2−21x+108 = (x−9)(x−12) → x = 9, 12.'
+    explanation: 'Factor: (x−9)(x−12) → x = 9, 12.'
   },
   {
     id: 'q-ser-039',
     question: '3x^2 - 10x + 8 = 0',
-    options: ['(4/3, 2)', '(2, 4/3)', '(−4/3, −2)', '(8, −1)', 'None'],
-    answer: 0,
-    explanation: 'Factor: 3x^2−10x+8 = (3x−4)(x−2) → x = 4/3, 2.'
+    options: ['(2, 4/3)', '(4/3, 2)', '(8, −1)', '(−4/3, −2)', 'None'],
+    answer: 1,
+    explanation: 'Factor: (3x−4)(x−2) → x = 4/3, 2.'
   },
   {
     id: 'q-ser-040',
     question: 'x^2 + 14x + 33 = 0',
-    options: ['(−11, −3)', '(−3, −11)', '(11, 3)', '(3, 11)', 'None'],
+    options: ['(−11, −3)', '(3, 11)', '(11, 3)', '(−3, −11)', 'None'],
     answer: 0,
-    explanation: 'Factor: x^2+14x+33 = (x+11)(x+3) → x = −11, −3.'
+    explanation: 'Factor: (x+11)(x+3) → x = −11, −3.'
   },
   ],
 
