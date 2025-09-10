@@ -583,301 +583,301 @@ const DB = {
       
       
   {
-    question: "Wrong Number Series Question 76: 2, 5, 26, 677, 458330, 209263730",
+    question: "Find Wrong Number?: 2, 5, 26, 677, 458330, 209263730",
     options: ["2", "5", "26", "677", "209263730"],
     answer: 4,
     explanation: "2²+1=5 → 5²+1=26 → 26²+1=677 → 677²+1=458330 → 458330²+1=210065689901 (not 209263730)"
   },
   {
-    question: "Wrong Number Series Question 77: 6, 5, 9, 29, 105, 431",
+    question: "Find Wrong Number?: 6, 5, 9, 29, 105, 431",
     options: ["6", "5", "9", "29", "105"],
     answer: 0,
     explanation: "5×1+4=9 → 9×3+2=29 → 29×4-11=105 → 105×5+(-94)=431"
   },
   {
-    question: "Wrong Number Series Question 78: 3, 4, 8, 25, 99, 530",
+    question: "Find Wrong Number?: 3, 4, 8, 25, 99, 530",
     options: ["3", "4", "8", "25", "530"],
     answer: 3,
     explanation: "3×1+1=4 → 4×2=8 → 8×3+1=25 (wrong, should be 24+1=25 works) → next mismatches at 99"
   },
   {
-    question: "Wrong Number Series Question 79: 3, 10, 24, 45, 78, 121",
+    question: "Find Wrong Number?: 3, 10, 24, 45, 78, 121",
     options: ["3", "10", "24", "45", "78"],
     answer: 1,
     explanation: "Pattern is n³+2 → 3=1³+2 → 10=2³+2 → 27=3³ (not 24)"
   },
   {
-    question: "Wrong Number Series Question 80: 156, 78, 39, 19.5, 9.25, 4.125",
+    question: "Find Wrong Number?: 156, 78, 39, 19.5, 9.25, 4.125",
     options: ["78", "39", "19.5", "9.25", "4.125"],
     answer: 3,
     explanation: "156÷2=78 → 78÷2=39 → 39÷2=19.5 → 19.5÷2=9.75 (not 9.25) → 9.75÷2=4.875"
   },
   {
-    question: "Wrong Number Series Question 81: 1, 2, 6, 21, 88, 445",
+    question: "Find Wrong Number?: 1, 2, 6, 21, 88, 445",
     options: ["1", "2", "6", "21", "445"],
     answer: 3,
     explanation: "1×1+1=2 → 2×2+2=6 → 6×3+3=21 → 21×4+4=88 → 88×5+5=445"
   },
   {
-    question: "Wrong Number Series Question 82: 11, 23, 48, 98, 198, 400",
+    question: "Find Wrong Number?: 11, 23, 48, 98, 198, 400",
     options: ["11", "23", "48", "98", "400"],
     answer: 4,
     explanation: "Double each step +n: 11×2+1=23 → 23×2+2=48 → 48×2+2=98 → 98×2+2=198 → 198×2+2=398 (not 400)"
   },
   {
-    question: "Wrong Number Series Question 83: 31, 64, 129, 261, 522, 1046",
+    question: "Find Wrong Number?: 31, 64, 129, 261, 522, 1046",
     options: ["31", "64", "129", "522", "1046"],
     answer: 3,
     explanation: "31×2+2=64 → 64×2+1=129 → 129×2+3=261 → 261×2+1=523 (not 522) → 523×2=1046"
   },
   {
-    question: "Wrong Number Series Question 84: 8, 10, 15, 26, 47, 95",
+    question: "Find Wrong Number?: 8, 10, 15, 26, 47, 95",
     options: ["8", "10", "15", "26", "47"],
     answer: 4,
     explanation: "Add +2, +5, +11, +21, +43 pattern → last should be 90 not 95"
   },
   {
-    question: "Wrong Number Series Question 85: 6, 12, 21, 35, 56, 84",
+    question: "Find Wrong Number?: 6, 12, 21, 35, 56, 84",
     options: ["12", "21", "35", "56", "84"],
     answer: 0,
     explanation: "Series is triangular numbers: 1st=1×2/2=1, 2×3/2=3, ... but here pattern mismatch at 12 instead of 10"
   },
   {
-    question: "Wrong Number Series Question 86: 100, 50, 55, 110, 115, 230",
+    question: "Find Wrong Number?: 100, 50, 55, 110, 115, 230",
     options: ["50", "55", "110", "115", "230"],
     answer: 1,
     explanation: "100÷2=50 → 50+5=55 → 55×2=110 → 110+5=115 → 115×2=230"
   },
   {
-    question: "Wrong Number Series Question 87: 2, 4, 12, 48, 240, 1440",
+    question: "Find Wrong Number?: 2, 4, 12, 48, 240, 1440",
     options: ["4", "12", "48", "240", "1440"],
     answer: 4,
     explanation: "×2, ×3, ×4, ×5, ×6 pattern → last should be 1200 not 1440"
   },
   {
-    question: "Wrong Number Series Question 88: 3, 6, 18, 108, 1944, 87381",
+    question: "Find Wrong Number?: 3, 6, 18, 108, 1944, 87381",
     options: ["18", "108", "1944", "87381", "6"],
     answer: 3,
     explanation: "×2, ×3, ×6, ×18, ×54 pattern → 1944×54=104976 (not 87381)"
   },
   {
-    question: "Wrong Number Series Question 89: 1, 2, 6, 24, 120, 720, 5030",
+    question: "Find Wrong Number?: 1, 2, 6, 24, 120, 720, 5030",
     options: ["2", "6", "120", "720", "5030"],
     answer: 4,
     explanation: "Factorials: 1!=1, 2!=2, 3!=6, 4!=24, 5!=120, 6!=720, 7!=5040 (not 5030)"
   },
   {
-    question: "Wrong Number Series Question 90: 4, 8, 20, 48, 100, 180",
+    question: "Find Wrong Number?: 4, 8, 20, 48, 100, 180",
     options: ["8", "20", "48", "100", "180"],
     answer: 4,
     explanation: "Pattern ×2, ×2.5, ×2.4, ×2.1 etc → last term doesn’t fit correctly"
   },
   {
-    question: "Wrong Number Series Question 91: 2, 5, 13, 40, 121, 364",
+    question: "Find Wrong Number?: 2, 5, 13, 40, 121, 364",
     options: ["5", "13", "40", "121", "364"],
     answer: 4,
     explanation: "Pattern ×2+1, ×3-2, ×4+3, ×5-4, ×6+5 → last mismatched"
   },
   {
-    question: "Wrong Number Series Question 92: 4, 7, 15, 31, 63, 127",
+    question: "Find Wrong Number?: 4, 7, 15, 31, 63, 127",
     options: ["4", "7", "15", "31", "127"],
     answer: 1,
     explanation: "Series is 2ⁿ−1 → 3,7,15,31,63,127. First term should be 3 not 4"
   },
   {
-    question: "Wrong Number Series Question 93: 1, 3, 9, 27, 65, 243",
+    question: "Find Wrong Number?: 1, 3, 9, 27, 65, 243",
     options: ["3", "9", "27", "65", "243"],
     answer: 3,
     explanation: "Powers of 3 → 1,3,9,27,81,243 → 65 is wrong"
   },
   {
-    question: "Wrong Number Series Question 94: 5, 10, 26, 65, 194, 582",
+    question: "Find Wrong Number?: 5, 10, 26, 65, 194, 582",
     options: ["10", "26", "65", "194", "582"],
     answer: 4,
     explanation: "Pattern ×2=10, ×2+6=26, ×2+13=65, ×3=195 (not 194), ×3=585 (not 582)"
   },
   {
-    question: "Wrong Number Series Question 95: 7, 21, 63, 189, 574, 1722",
+    question: "Find Wrong Number?: 7, 21, 63, 189, 574, 1722",
     options: ["21", "63", "189", "574", "1722"],
     answer: 3,
     explanation: "×3 pattern → last terms mismatch at 574"
   },
   {
-    question: "Wrong Number Series Question 96: 3, 9, 30, 120, 600, 3600",
+    question: "Find Wrong Number?: 3, 9, 30, 120, 600, 3600",
     options: ["9", "30", "120", "600", "3600"],
     answer: 4,
     explanation: "Pattern ×3, ×3.3, ×4, ×5, ×6 → last mismatch"
   },
   {
-    question: "Wrong Number Series Question 97: 10, 12, 36, 108, 324, 972",
+    question: "Find Wrong Number?: 10, 12, 36, 108, 324, 972",
     options: ["12", "36", "108", "324", "972"],
     answer: 0,
     explanation: "10×3=30 (not 12) → 30×3=90 etc"
   },
   {
-    question: "Wrong Number Series Question 98: 125, 25, 5, 2, 1, 1",
+    question: "Find Wrong Number?: 125, 25, 5, 2, 1, 1",
     options: ["25", "5", "2", "1", "125"],
     answer: 2,
     explanation: "Pattern ÷5 each → 125÷5=25 → 25÷5=5 → 5÷5=1. Should be 1, not 2"
   },
   {
-    question: "Wrong Number Series Question 99: 1, 8, 27, 65, 125, 216",
+    question: "Find Wrong Number?: 1, 8, 27, 65, 125, 216",
     options: ["8", "27", "65", "125", "216"],
     answer: 3,
     explanation: "Cubes → 1³=1, 2³=8, 3³=27, 4³=64 (not 65), 5³=125, 6³=216"
   },
   {
-    question: "Wrong Number Series Question 100: 2, 4, 12, 36, 144, 720",
+    question: "Find Wrong Number?: 2, 4, 12, 36, 144, 720",
     options: ["4", "12", "36", "144", "720"],
     answer: 4,
     explanation: "Pattern ×2=4 → ×3=12 → ×3=36 → ×4=144 → ×5=720. Correct series should be 2,4,12,36,144,7200"
   },
   {
-    question: "Wrong Number Series Question 51: 14, 42, 47, 141, 154, 438",
+    question: "Find Wrong Number?: 14, 42, 47, 141, 154, 438",
     options: ["438", "141", "154", "42", "None of these"],
     answer: 2,
     explanation: "14 × 3 = 42 → 42 + 5 = 47 → 47 × 3 = 141 → 141 + 5 = 146 → 146 × 3 = 438"
   },
   {
-    question: "Wrong Number Series Question 52: 136, 140, 129, 147, 122, 158",
+    question: "Find Wrong Number?: 136, 140, 129, 147, 122, 158",
     options: ["129", "140", "147", "158", "None of these"],
     answer: 0,
     explanation: "136 + 22 = 140 → 140 - 32 = 131 → 131 + 42 = 147 → 147 - 52 = 122 → 122 + 62 = 158"
   },
   {
-    question: "Wrong Number Series Question 53: 4, 10, 18, 36, 46, 92",
+    question: "Find Wrong Number?: 4, 10, 18, 36, 46, 92",
     options: ["36", "46", "10", "18", "None of these"],
     answer: 2,
     explanation: "4 × 2 = 8 → 8 + 10 = 18 → 18 × 2 = 36 → 36 + 10 = 46 → 46 × 2 = 92"
   },
   {
-    question: "Wrong Number Series Question 54: 60, 120, 40, 180, 32, 192",
+    question: "Find Wrong Number?: 60, 120, 40, 180, 32, 192",
     options: ["180", "32", "40", "192", "None of these"],
     answer: 0,
     explanation: "60 × 2 = 120 → 120 ÷ 3 = 40 → 40 × 4 = 160 → 160 ÷ 5 = 32 → 32 × 6 = 192"
   },
   {
-    question: "Wrong Number Series Question 55: 21, 25, 41, 77, 143, 241",
+    question: "Find Wrong Number?: 21, 25, 41, 77, 143, 241",
     options: ["143", "41", "77", "25", "None of these"],
     answer: 0,
     explanation: "21 + 2² = 25 → 25 + 4² = 41 → 41 + 6² = 77 → 77 + 8² = 141 → 141 + 10² = 241"
   },
   {
-    question: "Wrong Number Series Question 56: 36, 42, 30, 48, 24, 52",
+    question: "Find Wrong Number?: 36, 42, 30, 48, 24, 52",
     options: ["52", "42", "48", "30", "None of these"],
     answer: 0,
     explanation: "36 + 6 = 42 → 42 - 12 = 30 → 30 + 18 = 48 → 48 - 24 = 24 → 24 + 30 = 54"
   },
   {
-    question: "Wrong Number Series Question 57: -20, -16, -7, 9, 31, 70",
+    question: "Find Wrong Number?: -20, -16, -7, 9, 31, 70",
     options: ["70", "-16", "31", "9", "None of these"],
     answer: 2,
     explanation: "-20 + 2² = -16 → -16 + 3² = -7 → -7 + 4² = 9 → 9 + 5² = 34 → 34 + 6² = 70"
   },
   {
-    question: "Wrong Number Series Question 58: 16, 24, 20, 47, 40, 102",
+    question: "Find Wrong Number?: 16, 24, 20, 47, 40, 102",
     options: ["47", "102", "16", "40", "None of these"],
     answer: 3,
     explanation: "16 + 2³ = 24 → 24 - 2² = 20 → 20 + 3³ = 47 → 47 - 3² = 38 → 38 + 4³ = 102"
   },
   {
-    question: "Wrong Number Series Question 59: 4, 12, 7, 21, 15, 48",
+    question: "Find Wrong Number?: 4, 12, 7, 21, 15, 48",
     options: ["15", "48", "21", "12", "None of these"],
     answer: 1,
     explanation: "4 × 3 = 12 → 7 × 3 = 21 → 15 × 3 = 45"
   },
   {
-    question: "Wrong Number Series Question 60: 7, 11, 19, 35, 67, 130",
+    question: "Find Wrong Number?: 7, 11, 19, 35, 67, 130",
     options: ["11", "19", "67", "130", "None of these"],
     answer: 3,
     explanation: "7 + 2² = 11 → 11 + 2³ = 19 → 19 + 2⁴ = 35 → 35 + 2⁵ = 67 → 67 + 2⁶ = 131"
   },
   {
-    question: "Wrong Number Series Question 61: 189, 225, 274, 357, 499, 755",
+    question: "Find Wrong Number?: 189, 225, 274, 357, 499, 755",
     options: ["499", "755", "189", "274", "357"],
     answer: 4,
     explanation: "+62, +72, +92, +122, +162"
   },
   {
-    question: "Wrong Number Series Question 62: 88, 148, 258, 588, 1908, 8508",
+    question: "Find Wrong Number?: 88, 148, 258, 588, 1908, 8508",
     options: ["88", "148", "258", "8508", "None of these"],
     answer: 0,
     explanation: "+55, +110, +330, +1320, +6600"
   },
   {
-    question: "Wrong Number Series Question 63: 982, 3262, 3718, 3832, 3870, 3884",
+    question: "Find Wrong Number?: 982, 3262, 3718, 3832, 3870, 3884",
     options: ["3718", "3832", "3870", "3884", "982"],
     answer: 3,
     explanation: "+2280, +456, +114, +38, +19"
   },
   {
-    question: "Wrong Number Series Question 64: 2945, 2886, 2700, 2259, 1475, 250",
+    question: "Find Wrong Number?: 2945, 2886, 2700, 2259, 1475, 250",
     options: ["1475", "2945", "2886", "2700", "2259"],
     answer: 2,
     explanation: "−72, −142, −212, −282, −352"
   },
   {
-    question: "Wrong Number Series Question 65: 10800, 2160, 360, 90, 30, 15",
+    question: "Find Wrong Number?: 10800, 2160, 360, 90, 30, 15",
     options: ["90", "30", "10800", "2160", "360"],
     answer: 3,
     explanation: "÷6 → ÷5 → ÷4 → ÷3 → ÷2"
   },
   {
-    question: "Wrong Number Series Question 66: 67, 116, 183, 274, 411, 592",
+    question: "Find Wrong Number?: 67, 116, 183, 274, 411, 592",
     options: ["183", "274", "411", "592", "67"],
     answer: 1,
     explanation: "Double difference → +49, +67, +95, +133, +181"
   },
   {
-    question: "Wrong Number Series Question 67: 85, 136, 257, 426, 715, 1076",
+    question: "Find Wrong Number?: 85, 136, 257, 426, 715, 1076",
     options: ["136", "257", "715", "1076", "85"],
     answer: 4,
     explanation: "+72, +112, +132, +172, +192"
   },
   {
-    question: "Wrong Number Series Question 68: 413, 545, 655, 743, 817, 873",
+    question: "Find Wrong Number?: 413, 545, 655, 743, 817, 873",
     options: ["413", "545", "743", "817", "873"],
     answer: 2,
     explanation: "+(11×12), +(10×11), +(9×10), +(8×9), +(7×8)"
   },
   {
-    question: "Wrong Number Series Question 69: 49, 58, 66, 72, 73, 78",
+    question: "Find Wrong Number?: 49, 58, 66, 72, 73, 78",
     options: ["73", "78", "49", "66", "72"],
     answer: 0,
     explanation: "Last digit adds: 49+9 → 58+8 → 66+6 → 72+2 → 74+4"
   },
   {
-    question: "Wrong Number Series Question 70: 148, 268, 412, 580, 762, 988",
+    question: "Find Wrong Number?: 148, 268, 412, 580, 762, 988",
     options: ["148", "268", "580", "762", "988"],
     answer: 3,
     explanation: "Double difference: +120, +144, +168, +192, +216"
   },
   {
-    question: "Wrong Number Series Question 71: 167, 1167, 4542, 12542, 28167, 37167",
+    question: "Find Wrong Number?: 167, 1167, 4542, 12542, 28167, 37167",
     options: ["28167", "1167", "4542", "37167", "167"],
     answer: 3,
     explanation: "167 + 1000 = 1167 → +3375 = 4542 → +8000 = 12542 → +15625 = 28167 → +22500 = 50667"
   },
   {
-    question: "Wrong Number Series Question 72: 42, 21, 28, 31.5, 63, 157.5",
+    question: "Find Wrong Number?: 42, 21, 28, 31.5, 63, 157.5",
     options: ["42", "21", "28", "31.5", "157.5"],
     answer: 2,
     explanation: "42 × 0.5 = 21 → 21 × 1 = 21 → 21 × 1.5 = 31.5 → 31.5 × 2 = 63 → 63 × 2.5 = 157.5"
   },
   {
-    question: "Wrong Number Series Question 73: 24, 124, 624, 8120, 15624, 78124",
+    question: "Find Wrong Number?: 24, 124, 624, 8120, 15624, 78124",
     options: ["124", "624", "24", "15624", "8120"],
     answer: 4,
     explanation: "24 × 5 + 4 = 124 → 124 × 5 + 4 = 624 → 624 × 5 + 4 = 3124 → 3124 × 5 + 4 = 15624 → 15624 × 5 + 4 = 78124"
   },
   {
-    question: "Wrong Number Series Question 74: 30, 60, 66, 78, 98, 128",
+    question: "Find Wrong Number?: 30, 60, 66, 78, 98, 128",
     options: ["30", "60", "66", "78", "128"],
     answer: 0,
     explanation: "58 + 1×2 = 60 → 60 + 2×3 = 66 → 66 + 3×4 = 78 → 78 + 4×5 = 98 → 98 + 5×6 = 128"
   },
   {
-    question: "Wrong Number Series Question 75: 28, 18, 24, 4.8, 19.2, 6.4",
+    question: "Find Wrong Number?: 28, 18, 24, 4.8, 19.2, 6.4",
     options: ["28", "4.8", "18", "24", "6.4"],
     answer: 2,
     explanation: "28 ÷ 7 = 4 → 4 × 6 = 24 → 24 ÷ 5 = 4.8 → 4.8 × 4 = 19.2 → 19.2 ÷ 3 = 6.4"
