@@ -289,6 +289,296 @@ const DB = {
     explanation: 'Pattern: ×2+1 repeatedly. Missing term is 1567.'
   },
   ],
+  'Wrong Number Series Part1(20 Question)' : [
+    
+  
+  {
+    "id": "wns-001",
+    "question": "Find the wrong number in the series: 10, 58, 120, 190, 274, 370",
+    "options": ["58", "10", "190", "370", "None of these"],
+    "answer": 4,
+    "explanation": "Series pattern: +48, +60, +72, +84, +96. Wrong number = 120 (not in options)."
+  },
+  {
+    "id": "wns-002",
+    "question": "Find the wrong number in the series: 16, 20, 13, 27, 2, 38",
+    "options": ["38", "13", "16", "2", "None of these"],
+    "answer": 1,
+    "explanation": "Series: +4, -9, +16, -25, +36. Wrong number = 13."
+  },
+  {
+    "id": "wns-003",
+    "question": "Find the wrong number in the series: 6, 8, 14, 30, 75, 233",
+    "options": ["8", "6", "75", "233", "None of these"],
+    "answer": 2,
+    "explanation": "Pattern: ×1+2, ×1.5+2, ×2+2, ×2.5+2, ×3+2. Wrong number = 75."
+  },
+  {
+    "id": "wns-004",
+    "question": "Find the wrong number in the series: 1, 4, 6, 30, 210, 2310",
+    "options": ["4", "1", "6", "210", "None of these"],
+    "answer": 0,
+    "explanation": "Pattern: ×2, ×3, ×5, ×7, ×11. Wrong number = 4."
+  },
+  {
+    "id": "wns-005",
+    "question": "Find the wrong number in the series: 3120, 624, 156, 50, 26",
+    "options": ["156", "50", "26", "624", "None of these"],
+    "answer": 1,
+    "explanation": "Pattern: ÷5, ÷4, ÷3, ÷2. Wrong number = 50."
+  },
+  {
+    "id": "wns-006",
+    "question": "Find the wrong number in the series: 1511, 302, 75, 24, 12, 5",
+    "options": ["5", "1511", "24", "12", "None of these"],
+    "answer": 3,
+    "explanation": "Pattern: ×1+5, ×2+4, ×3+3, ×4+2, ×5+1 (from right). Wrong number = 12."
+  },
+  {
+    "id": "wns-007",
+    "question": "Find the wrong number in the series: 9, 4.5, 5, 9, 36, 288",
+    "options": ["288", "36", "4.5", "9", "None of these"],
+    "answer": 4,
+    "explanation": "Pattern: ×0.5, ×1, ×2, ×4, ×8. Wrong number = 5 (not in options)."
+  },
+  {
+    "id": "wns-008",
+    "question": "Find the wrong number in the series: 7, 10, 18, 44, 90, 210",
+    "options": ["7", "18", "44", "90", "None of these"],
+    "answer": 2,
+    "explanation": "Pattern: +3, +8, +24, +48, +120. Wrong number = 44."
+  },
+  {
+    "id": "wns-009",
+    "question": "Find the wrong number in the series: 3, 9, 8, 15, 11, 33, 29",
+    "options": ["3", "11", "15", "29", "None of these"],
+    "answer": 4,
+    "explanation": "Pattern: ×3, -4, ×3, -4, ×3, -4. Wrong number = 8 (not in options)."
+  },
+  {
+    "id": "wns-010",
+    "question": "Find the wrong number in the series: 16, 24, 40, 64, 98, 136",
+    "options": ["40", "136", "64", "98", "None of these"],
+    "answer": 3,
+    "explanation": "Pattern: +8, +16, +24, +32, +40. Wrong number = 98."
+  },
+  {
+    "id": "wns-011",
+    "question": "Find the wrong number in the series: 2, 6, 20, 72, 272, 1054",
+    "options": ["1054", "272", "6", "2", "None of these"],
+    "answer": 0,
+    "explanation": "Pattern: +12+1, +22+2, +42+4, +82+8, +162+16, +322+32. Wrong number = 1054."
+  },
+  {
+    "id": "wns-012",
+    "question": "Find the wrong number in the series: 6, 15, 20, 30, 42, 56",
+    "options": ["6", "15", "56", "42", "None of these"],
+    "answer": 1,
+    "explanation": "Pattern: 2×3, 3×4, 4×5, 5×6, 6×7, 7×8. Wrong number = 15."
+  },
+  {
+    "id": "wns-013",
+    "question": "Find the wrong number in the series: 0, 6, 21, 60, 120, 210",
+    "options": ["0", "120", "6", "210", "None of these"],
+    "answer": 4,
+    "explanation": "Pattern: 6×1, 6×3, 6×6, 6×10, 6×15. Wrong number = 21 (not in options)."
+  },
+  {
+    "id": "wns-014",
+    "question": "Find the wrong number in the series: 37, 40, 45, 58, 82, 130",
+    "options": ["40", "45", "58", "82", "None of these"],
+    "answer": 1,
+    "explanation": "Pattern: +3, +6, +12, +24, +48. Wrong number = 45."
+  },
+  {
+    "id": "wns-015",
+    "question": "Find the wrong number in the series: 153, 154, 160 ,185, 201, 326",
+    "options": ["153", "201", "326", "185", "None of these"],
+    "answer": 2,
+    "explanation": "Pattern: +13, +22, +33, +42, +53. Wrong number = 160 (closest mismatch, not in options)."
+  },
+  {
+    "id": "wns-016",
+    "question": "Find the wrong number in the series: 2, 7, 43, 388, 4658, 69856",
+    "options": ["7", "43", "388", "69855", "None of these"],
+    "answer": 4,
+    "explanation": "Pattern: ×3+1, ×6+1, ×9+1, ×12+1, ×15+1. Wrong number = 4658 (not in options)."
+  },
+  {
+    "id": "wns-017",
+    "question": "Find the wrong number in the series: 284, 140, 68, 35, 14, 5",
+    "options": ["68", "140", "14", "5", "None of these"],
+    "answer": 4,
+    "explanation": "Pattern: ÷2-2, ÷2-2, ÷2-2, ÷2-2, ÷2-2. Wrong number = 35 (not in options)."
+  },
+  {
+    "id": "wns-018",
+    "question": "Find the wrong number in the series: 15, 16, 18, 22, 30, 45",
+    "options": ["18", "16", "22", "30", "None of these"],
+    "answer": 4,
+    "explanation": "Pattern: +20, +21, +22, +23, +24. Wrong number = 45 (not in options)."
+  },
+  {
+    "id": "wns-019",
+    "question": "Find the wrong number in the series: 50, 98, 194, 386, 780",
+    "options": ["98", "194", "386", "50", "None of these"],
+    "answer": 4,
+    "explanation": "Pattern: ×2-2, ×2-2, ×2-2, ×2-2. Wrong number = 780 (not in options)."
+  },
+  {
+    "id": "wns-020",
+    "question": "Find the wrong number in the series: 54, 74, 45, 81, 32, 96",
+    "options": ["45", "81", "96", "74", "None of these"],
+    "answer": 3,
+    "explanation": "Pattern: +16, -25, +36, -49, +64. Wrong number = 74."
+  },
+    ],
+    
+  'Wrong Number Series Part2(20 Question)' : [
+    
+    
+  {
+    "id": "wns-021",
+    "question": "Find the wrong number in the series: 240, 260, 324, 333, 341",
+    "options": ["260", "324", "333", "341", "None of these"],
+    "answer": 4,
+    "explanation": "Pattern: +52, +43, +32, +23. Wrong number = 240 (not in options)."
+  },
+  {
+    "id": "wns-022",
+    "question": "Find the wrong number in the series: 13, 91, 545, 2730, 10920, 32760",
+    "options": ["545", "2730", "10920", "13", "None of these"],
+    "answer": 0,
+    "explanation": "Pattern: ×7, ×6, ×5, ×4, ×3. Wrong number = 545."
+  },
+  {
+    "id": "wns-023",
+    "question": "Find the wrong number in the series: 100, 120, 250, 400, 600",
+    "options": ["120", "100", "250", "400", "None of these"],
+    "answer": 0,
+    "explanation": "Pattern: +50, +100, +150, +200. Wrong number = 120."
+  },
+  {
+    "id": "wns-024",
+    "question": "Find the wrong number in the series: 50400, 5600, 700, 160, 53.33",
+    "options": ["53.33", "5600", "160", "50400", "None of these"],
+    "answer": 4,
+    "explanation": "Pattern: ÷9, ÷7, ÷5, ÷3. Wrong number = 700 (not in options)."
+  },
+  {
+    "id": "wns-025",
+    "question": "Find the wrong number in the series: 60, 30, 50, 112.5, 393.75",
+    "options": ["30", "393.75", "112.5", "50", "None of these"],
+    "answer": 3,
+    "explanation": "Pattern: ×0.5, ×1.5, ×2.5, ×3.5. Wrong number = 50."
+  },
+  {
+    "id": "wns-026",
+    "question": "Find the wrong number in the series: 400, 380, 360, 288, 201.6",
+    "options": ["400", "380", "288", "360", "None of these"],
+    "answer": 1,
+    "explanation": "Pattern: 100%, 90%, 80%, 70%. Wrong number = 380."
+  },
+  {
+    "id": "wns-027",
+    "question": "Find the wrong number in the series: 12.5, 26, 82, 338, 1701",
+    "options": ["26", "1701", "82", "12.5", "None of these"],
+    "answer": 1,
+    "explanation": "Pattern: ×2+12, ×3+22, ×4+32, ×5+42. Wrong number = 338."
+  },
+  {
+    "id": "wns-028",
+    "question": "Find the wrong number in the series: 112, 143, 180, 222, 264, 311",
+    "options": ["112", "143", "311", "222", "None of these"],
+    "answer": 3,
+    "explanation": "Pattern: +31, +37, +41, +43. Wrong number = 222."
+  },
+  {
+    "id": "wns-029",
+    "question": "Find the wrong number in the series: 170, 288, 362, 528, 845, 960",
+    "options": ["170", "288", "362", "960", "None of these"],
+    "answer": 4,
+    "explanation": "Pattern: 132+1, 172-1, 192+1, 232-1, 292+1, 312-1. Wrong number = 845 (not in options)."
+  },
+  {
+    "id": "wns-030",
+    "question": "Find the wrong number in the series: 72, 110, 156, 210, 272, 345",
+    "options": ["110", "156", "210", "345", "None of these"],
+    "answer": 3,
+    "explanation": "Pattern: 82+8, 102+10, 122+12, 142+14, 162+16, 182+18. Wrong number = 345."
+  },
+  {
+    "id": "wns-031",
+    "question": "Find the wrong number in the series: 88, 91, 100, 127, 208, 450",
+    "options": ["91", "127", "100", "450", "None of these"],
+    "answer": 3,
+    "explanation": "Pattern: +3, +9, +27, +81, +243. Wrong number = 450."
+  },
+  {
+    "id": "wns-032",
+    "question": "Find the wrong number in the series: 6, 15, 35, 66, 143, 221",
+    "options": ["35", "221", "66", "143", "None of these"],
+    "answer": 2,
+    "explanation": "Pattern: 2×3, 3×5, 5×7, 7×11, 11×13, 13×17. Wrong number = 66."
+  },
+  {
+    "id": "wns-033",
+    "question": "Find the wrong number in the series: 1000, 480, 1500, 375, 1875",
+    "options": ["480", "1000", "1500", "375", "None of these"],
+    "answer": 0,
+    "explanation": "Pattern: ÷2, ×3, ÷4, ×5. Wrong number = 480."
+  },
+  {
+    "id": "wns-034",
+    "question": "Find the wrong number in the series: 48, 100, 182, 294, 448, 648",
+    "options": ["182", "648", "448", "48", "None of these"],
+    "answer": 0,
+    "explanation": "Pattern: 43-42, 53-52, 63-62, 73-72, 83-82, 93-92. Wrong number = 182."
+  },
+  {
+    "id": "wns-035",
+    "question": "Find the wrong number in the series: 16, 33, 35, 70, 73, 147",
+    "options": ["36", "73", "147", "70", "None of these"],
+    "answer": 3,
+    "explanation": "Pattern: ×2+1, ×1+2, ×2+1, ×1+2, ×2+1. Wrong number = 70."
+  },
+  {
+    "id": "wns-036",
+    "question": "Find the wrong number in the series: 1292, 1172, 1027, 858, 662, 437",
+    "options": ["1172", "858", "662", "437", "None of these"],
+    "answer": 0,
+    "explanation": "Pattern: -121, -144, -169, -196, -225. Wrong number = 1172."
+  },
+  {
+    "id": "wns-037",
+    "question": "Find the wrong number in the series: 14, 40, 91, 275, 553, 1661",
+    "options": ["40", "275", "1661", "553", "None of these"],
+    "answer": 0,
+    "explanation": "Pattern: ×3+2, ×2+3, ×3+2, ×2+3, ×3+2. Wrong number = 40."
+  },
+  {
+    "id": "wns-038",
+    "question": "Find the wrong number in the series: 997, 952, 862, 682, 310",
+    "options": ["997", "682", "310", "862", "None of these"],
+    "answer": 2,
+    "explanation": "Pattern: -45, -90, -180, -360. Wrong number = 310."
+  },
+  {
+    "id": "wns-039",
+    "question": "Find the wrong number in the series: 19, 54, 96, 145, 201, 265",
+    "options": ["54", "145", "201", "265", "None of these"],
+    "answer": 3,
+    "explanation": "Pattern: +35, +42, +49, +56, +63. Wrong number = 265."
+  },
+  {
+    "id": "wns-040",
+    "question": "Find the wrong number in the series: 19, 27, 44, 67, 99, 139",
+    "options": ["27", "44", "139", "67", "None of these"],
+    "answer": 1,
+    "explanation": "Pattern: +8×1, +8×2, +8×3, +8×4, +8×5. Wrong number = 44."
+  },
+    ],  
+    
 'Quadratic Equations Part 1(20 question)': [
         // Quadratic Equations
   {
@@ -432,11 +722,298 @@ const DB = {
     explanation: 'Factor: (x+11)(x+3) → x = −11, −3.'
   },
   ],
+   
+  'Quadratic Comparison Part 1(20 question)': [
+
+  {
+    id: 'q-ser-070',
+    question: 'I. x² - 17x + 42 = 0   II. y² + 7y - 30 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Eqn 1 = 14, 3 | Roots of Eqn 2 = -10, 3 | Answer: D'
+  },
+  {
+    id: 'q-ser-071',
+    question: 'I. x² + 6x - 24 = -3x + 12   II. y² - 14y + 48 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 1,
+    explanation: 'Roots of Eqn 1 = -12, 3 | Roots of Eqn 2 = 8, 6 | Answer: B'
+  },
+  {
+    id: 'q-ser-072',
+    question: 'I. x² - 2x - 15 = 0   II. y² - 4y + 52 = 7y + 22',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'Roots of Eqn 1 = 5, -3 | Roots of Eqn 2 = 6, 5 | Answer: E'
+  },
+  {
+    id: 'q-ser-073',
+    question: 'I. x² - 16x + 30 = -2x - 3   II. y² + 11y - 42 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Eqn 1 = 11, 3 | Roots of Eqn 2 = -14, 3 | Answer: D'
+  },
+  {
+    id: 'q-ser-074',
+    question: 'I. x² - 8x + 18 = 10 - 2x   II. y² + 3y - 40 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'Roots of Eqn 1 = 4, 2 | Roots of Eqn 2 = -8, 5 | Answer: C'
+  },
+  {
+    id: 'q-ser-075',
+    question: 'I. x² + 8x - 48 = 0   II. y² - 15y + 44 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'Roots of Eqn 1 = -12, 4 | Roots of Eqn 2 = 11, 4 | Answer: E'
+  },
+  {
+    id: 'q-ser-076',
+    question: 'I. x² - 8x + 19 = 3x - 5   II. y² + 7y - 30 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Eqn 1 = 8, 3 | Roots of Eqn 2 = -10, 3 | Answer: D'
+  },
+  {
+    id: 'q-ser-077',
+    question: 'I. x² - 2x - 8 = 0   II. y² + 7y - 18 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'Roots of Eqn 1 = 4, -2 | Roots of Eqn 2 = -9, 2 | Answer: C'
+  },
+  {
+    id: 'q-ser-078',
+    question: 'I. x² - 17x + 60 = 0   II. y² + 5y - 50 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Eqn 1 = 12, 5 | Roots of Eqn 2 = -10, 5 | Answer: D'
+  },
+  {
+    id: 'q-ser-079',
+    question: 'I. x² - 5x + 26 = 6x - 2   II. y² + 6y - 40 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Eqn 1 = 7, 4 | Roots of Eqn 2 = -10, 4 | Answer: D'
+  },
+  {
+    id: 'q-ser-080',
+    question: 'I. x² - 25x + 66 = 0   II. y² + 25y + 32 = 4y - 22',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'Roots of Eqn 1 = 22, 3 | Roots of Eqn 2 = -18, -3 | Answer: A'
+  },
+  {
+    id: 'q-ser-081',
+    question: 'I. 25x² - 45x + 14 = 0   II. 48y² - 176y - 64 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'Roots of Eqn 1 = 1.4, 0.4 | Roots of Eqn 2 = 4, -0.33 | Answer: C'
+  },
+  {
+    id: 'q-ser-082',
+    question: 'I. x² - 11x + 30 = 0   II. y² - 13y + 42 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'Roots of Eqn 1 = 6, 5 | Roots of Eqn 2 = 7, 6 | Answer: E'
+  },
+  {
+    id: 'q-ser-083',
+    question: 'I. 2x² + 19x + 45 = 0   II. 2y² + 11y + 12 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 1,
+    explanation: 'Roots of Eqn 1 = -5, -4.5 | Roots of Eqn 2 = -4, -1.5 | Answer: B'
+  },
+  {
+    id: 'q-ser-084',
+    question: 'I. 3x² - 13x + 12 = 0   II. 2y² - 15y + 28 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 1,
+    explanation: 'Roots of Eqn 1 = 3, 1.33 | Roots of Eqn 2 = 4, 3.5 | Answer: B'
+  },
+  {
+    id: 'q-ser-085',
+    question: 'I. 6x² + 19x + 15 = 0   II. 3y² + 11y + 10 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Eqn 1 = -1.67, -1.5 | Roots of Eqn 2 = -2, -1.67 | Answer: D'
+  },
+  {
+    id: 'q-ser-086',
+    question: 'I. 2x² - 11x + 15 = 0   II. 2y² - 11y + 14 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'Roots of Eqn 1 = 3, 2.5 | Roots of Eqn 2 = 2, 3.5 | Answer: C'
+  },
+  {
+    id: 'q-ser-087',
+    question: 'I. 2x² - 23x + 56 = 0   II. 3y² + 13y + 4 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'Roots of Eqn 1 = 8, 3.5 | Roots of Eqn 2 = -4, -0.33 | Answer: A'
+  },
+  {
+    id: 'q-ser-088',
+    question: 'I. 2x² - 7x + 5 = 0   II. 2y² + y - 28 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'Roots of Eqn 1 = 1, 2.5 | Roots of Eqn 2 = 3.5, -4 | Answer: C'
+  },
+  {
+    id: 'q-ser-089',
+    question: 'I. x² + 5x + 4 = 0   II. 3y² - 13y + 12 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 1,
+    explanation: 'Roots of Eqn 1 = -4, -1 | Roots of Eqn 2 = 3, 1.33 | Answer: B'
+  },
+    ],
+    
+  'Quadratic Comparison Par2(20 Questions)' : [
+  {
+    id: 'q-ser-061',
+    question: 'I. 25x² - 15x + 2 = 0  ||  II. 10y² + 3y - 1 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Equation 1 = 0.2, 0.4 | Roots of Equation 2 = -0.5, 0.2'
+  },
+  {
+    id: 'q-ser-062',
+    question: 'I. X² + 5x - 19 = x + 2  ||  II. Y² + 15y + 20 = 26y - 4',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'Roots of Equation 1 = -7, 3 | Roots of Equation 2 = 8, 3'
+  },
+  {
+    id: 'q-ser-063',
+    question: 'I. X² - 7x - 18 = 0  ||  II. Y² + 10y + 16 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Equation 1 = 9, -2 | Roots of Equation 2 = -8, -2'
+  },
+  {
+    id: 'q-ser-064',
+    question: 'I. X² - 9x + 18 = 0  ||  II. Y² + 7y - 30 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Equation 1 = 6, 3 | Roots of Equation 2 = -10, 3'
+  },
+  {
+    id: 'q-ser-065',
+    question: 'I. X² - 2x - 8 = 0  ||  II. Y² - 2y - 15 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'Roots of Equation 1 = 4, -2 | Roots of Equation 2 = 5, -3'
+  },
+  {
+    id: 'q-ser-066',
+    question: 'I. X² - 12x + 65 = 5x - 5  ||  II. Y² + 5y - 84 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Equation 1 = 10, 7 | Roots of Equation 2 = -12, 7'
+  },
+  {
+    id: 'q-ser-067',
+    question: 'I. X² + 14x - 32 = 0  ||  II. Y² - 12y + 32 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 1,
+    explanation: 'Roots of Equation 1 = -16, 2 | Roots of Equation 2 = 8, 4'
+  },
+  {
+    id: 'q-ser-068',
+    question: 'I. X² + 9x - 25 = 8x - 5  ||  II. Y² - 8y + 33 = 3y + 3',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 1,
+    explanation: 'Roots of Equation 1 = -5, 4 | Roots of Equation 2 = 6, 5'
+  },
+  {
+    id: 'q-ser-069',
+    question: 'I. X² + 7x - 16 = 2x - 2  ||  II. Y² - 10y + 16 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'Roots of Equation 1 = -7, 2 | Roots of Equation 2 = 8, 2'
+  },
+  {
+    id: 'q-ser-090',
+    question: 'I. 3x² - 14x + 8 = 0  ||  II. 3y² - 20y + 12 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'Roots of Equation 1 = 4, 0.67 | Roots of Equation 2 = 6, 0.67'
+  },
+  {
+    id: 'q-ser-091',
+    question: 'I. 2x² - 7x + 3 = 0  ||  II. 2y² + 11y + 12 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'Roots of Equation 1 = 3, 0.5 | Roots of Equation 2 = -4, -1.5'
+  },
+  {
+    id: 'q-ser-092',
+    question: 'I. 2x² - 23x + 56 = 0  ||  II. 3y² + 13y + 4 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'Roots of Equation 1 = 8, 3.5 | Roots of Equation 2 = -4, -0.33'
+  },
+  {
+    id: 'q-ser-093',
+    question: 'I. 30x² + 89x + 58 = 0  ||  II. 27y² - 51y - 56 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 1,
+    explanation: 'Roots of Equation 1 = -2, -29/30 | Roots of Equation 2 = 8/3, -7/9'
+  },
+  {
+    id: 'q-ser-094',
+    question: 'I. 4x² + 8x + 3 = 0  ||  II. 4y² - 29y + 45 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 1,
+    explanation: 'Roots of Equation 1 = -1.5, -0.5 | Roots of Equation 2 = 5, 2.25'
+  },
+  {
+    id: 'q-ser-095',
+    question: 'I. 2x² - 23x + 21 = 0  ||  II. Y² + 42y + 272 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'Roots of Equation 1 = 10.5, 1 | Roots of Equation 2 = -34, -8'
+  },
+  {
+    id: 'q-ser-096',
+    question: 'I. 5x² - 26x + 21 = 0  ||  II. 2y² - 17y + 21 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'Roots of Equation 1 = 1, 4.2 | Roots of Equation 2 = 7, 1.5'
+  },
+  {
+    id: 'q-ser-097',
+    question: 'I. X² - 21x + 104 = 0  ||  II. Y² - 33y + 260 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'Roots of Equation 1 = 13, 8 | Roots of Equation 2 = 13, 20'
+  },
+  {
+    id: 'q-ser-098',
+    question: 'I. X² - 31x + 240 = 0  ||  II. Y² - 28y + 195 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Equation 1 = 15, 16 | Roots of Equation 2 = 13, 15'
+  },
+  {
+    id: 'q-ser-099',
+    question: 'I. 3x² - 17x + 10 = 0  ||  II. 3y² + 4y - 4 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Equation 1 = 0.67, 5 | Roots of Equation 2 = -2, 0.67'
+  },
+  {
+    id: 'q-ser-100',
+    question: 'I. 3x² - 19x + 28 = 0  ||  II. 4y² - 5y - 6 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'Roots of Equation 1 = 4, 2.33 | Roots of Equation 2 = 2, -0.75'
+  },
+    ],
 
       Algebra: [
         {
           id: 'q-alg-001',
-          question: 'Solve: x^2 - 5x + 6 = 0. x = ?',
+          question: 'THIS SERIES COMMING SOON WAIT FOR NEXT WEEK',
           options: ['1,6', '2,3', '-2,-3', 'No real roots'],
           answer: 1,
           explanation: '(x-2)(x-3)=0 → x=2 or 3'
@@ -446,7 +1023,7 @@ const DB = {
       'Data Interpretation': [
         {
           id: 'q-di-001',
-          question: 'Average of five numbers is 20. If one number 30 is removed, new average is?',
+          question: 'THIS SERIES COMING SOON WAIT FOR NEXT WEEK',
           options: ['17.5', '18', '19', '20'],
           answer: 0,
           explanation: 'Total = 100. After removing 30 → 70; new avg = 70 / 4 = 17.5'
@@ -460,7 +1037,7 @@ const DB = {
       Puzzles: [
         {
           id: 'r-puz-001',
-          question: 'Five people A-E sitting in a row; who is in middle? (sample placeholder)',
+          question: 'THIS SERIES COMING SOON WAIT FOR NEXT WEEK',
           options: ['A', 'B', 'C', 'D'],
           answer: 2,
           explanation: 'Sample; replace with full puzzle details.'
@@ -469,7 +1046,7 @@ const DB = {
       Syllogism: [
         {
           id: 'r-syl-001',
-          question: 'All dogs are animals. Some animals are cats. Are some dogs cats?',
+          question: 'THIS SERIES COMING SOON WAIT FOR NEXT WEEK',
           options: ['Yes', 'No', 'Cannot say', 'All'],
           answer: 2,
           explanation: 'Cannot be concluded from given statements.'
@@ -478,7 +1055,7 @@ const DB = {
       Inequalities: [
         {
           id: 'r-ineq-001',
-          question: 'If x > y and y > z then?',
+          question: 'THIS SERIES COMING SOON WAIT FOR NEXT WEEK',
           options: ['x > z', 'x < z', 'x = z', 'Cannot say'],
           answer: 0,
           explanation: 'Transitive property.'
@@ -492,7 +1069,7 @@ const DB = {
       'Reading Comprehension': [
         {
           id: 'e-rc-001',
-          question: 'Main idea of a passage is used to assess?',
+          question: 'THIS SERIES COMING SOON WAIT FOR NEXT WEEK',
           options: ['Grammar', 'Tone', 'Central theme', 'Vocabulary'],
           answer: 2,
           explanation: 'Central theme is the main idea.'
@@ -501,7 +1078,7 @@ const DB = {
       Grammar: [
         {
           id: 'e-gra-001',
-          question: "Choose the correct sentence: \"He don't know.\"",
+          question: "THIS SERIES COMING SOON WAIT FOR NEXT WEEK",
           options: ["He don't know.", "He doesn't know.", "He not knows.", "He no know."],
           answer: 1,
           explanation: "Third person singular requires \"doesn't\"."
@@ -510,7 +1087,7 @@ const DB = {
       Vocabulary: [
         {
           id: 'e-voc-001',
-          question: 'Antonym of "augment"?',
+          question: 'THIS SERIES COMING SOON WAIT FOR NEXT WEEK',
           options: ['Increase', 'Expand', 'Reduce', 'Grow'],
           answer: 2,
           explanation: 'Reduce is antonym of augment.'
@@ -524,7 +1101,7 @@ const DB = {
       'Banking Terms': [
         {
           id: 'b-term-001',
-          question: 'What does KYC stand for?',
+          question: 'THIS SERIES COMING SOON WAIT FOR NEXT WEEK',
           options: ['Know Your Customer', 'Know Your Company', 'Key Yearly Check', 'Keep Your Cash'],
           answer: 0,
           explanation: 'KYC = Know Your Customer'
@@ -533,7 +1110,7 @@ const DB = {
       'Economy & Policy': [
         {
           id: 'b-eco-001',
-          question: 'Repo rate is set by which institution in India?',
+          question: 'THIS SERIES COMING SOON WAIT FOR NEXT WEEK',
           options: ['SEBI', 'RBI', 'Finance Ministry', 'NITI Aayog'],
           answer: 1,
           explanation: 'RBI sets the repo rate.'
@@ -547,7 +1124,7 @@ const DB = {
       Basics: [
         {
           id: 'c-bas-001',
-          question: 'What does CPU stand for?',
+          question: 'THIS SERIES COMING SOON WAIT FOR NEXT WEEK',
           options: ['Central Processing Unit', 'Computer Personal Unit', 'Central Print Unit', 'Control Processing Unit'],
           answer: 0,
           explanation: 'CPU = Central Processing Unit'
