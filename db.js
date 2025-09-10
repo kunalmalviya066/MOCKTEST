@@ -3,23 +3,6 @@ const DB = {
   'Quantitative Aptitude': {
     topics: {
       
-      'Arithmetic (20 Questions)': [
-        {
-          id: 'q-art-001',
-          question: 'If 5x + 3 = 2x + 18, then x = ?',
-          options: ['3', '5', '7', '10'],
-          answer: 1,
-          explanation: '5x - 2x = 18 - 3 → 3x = 15 → x = 5'
-        },
-        {
-          id: 'q-art-002',
-          question: 'A train 120 m long crosses a platform in 30 s. If speed is 36 km/h, what is platform length?',
-          options: ['60 m', '120 m', '180 m', '240 m'],
-          answer: 2,
-          explanation: '36 km/h = 10 m/s. Distance = 10 × 30 = 300. Platform = 300 - 120 = 180 m.'
-        }
-      ],
-
       'Simplification part 1 (20 question)': [
         // Simplification
         {
@@ -165,150 +148,290 @@ const DB = {
   ],
       'Number Series Part 1(20 question)': [
         // Wrong / Number Series
-        {
-          id: 'q-ser-001',
-          question: 'Find the wrong number: 2, 6, 12, 20, 30, 42',
-          options: ['6', '12', '20', '30'],
-          answer: 3,
-          explanation: 'Pattern: add consecutive even numbers: 2,6(+4),12(+6),20(+8),30(+10),42(+12). All fit → 30 is wrong in given options.'
-        },
-        {
-          id: 'q-ser-002',
-          question: 'What comes next: 5, 11, 23, 47, ?',
-          options: ['93', '95', '97', '99'],
-          answer: 1,
-          explanation: 'Pattern ×2+1: 5→11→23→47→95'
-        },
-        {
-          id: 'q-ser-003',
-          question: 'Find wrong number: 3, 9, 27, 81, 243, 720',
-          options: ['27', '81', '243', '720'],
-          answer: 3,
-          explanation: 'Powers of 3: last should be 729 not 720'
-        },
-        {
-          id: 'q-ser-004',
-          question: 'Next term: 4, 9, 19, 39, 79, ?',
-          options: ['159', '161', '163', '165'],
-          answer: 0,
-          explanation: 'Pattern +5,+10,+20,+40,+80… → next=159'
-        },
-        {
-          id: 'q-ser-005',
-          question: 'Find missing: 2, 5, 10, 17, 26, ?',
-          options: ['35', '36', '37', '38'],
-          answer: 2,
-          explanation: '+3,+5,+7,+9,+11 → next=37'
-        },
-        {
-          id: 'q-ser-006',
-          question: 'Wrong number: 7, 14, 29, 58, 116, 233',
-          options: ['29', '58', '116', '233'],
-          answer: 0,
-          explanation: 'Double series: 7→14→28→56→112→224. 29 breaks the pattern.'
-        },
-        {
-          id: 'q-ser-007',
-          question: 'Next: 3, 12, 36, 108, ?',
-          options: ['216', '324', '432', '648'],
-          answer: 1,
-          explanation: '×3 each time → 108×3=324'
-        },
-        {
-          id: 'q-ser-008',
-          question: 'Find missing: 121, 144, 169, 196, ?',
-          options: ['225', '256', '289', '324'],
-          answer: 0,
-          explanation: 'Perfect squares: 11²,12²,13²,14² → next 15²=225'
-        },
-        {
-          id: 'q-ser-009',
-          question: 'Find wrong number: 2, 4, 16, 64, 256, 1240',
-          options: ['64', '256', '1240', '16'],
-          answer: 2,
-          explanation: 'Powers of 2: should be 1024 not 1240'
-        },
-        {
-          id: 'q-ser-010',
-          question: 'Missing: 1, 4, 9, 16, 25, ?',
-          options: ['30', '35', '36', '49'],
-          answer: 2,
-          explanation: 'Perfect squares: 1²,2²,3²,4²,5² → next 6²=36'
-        },
-        ],
+       {
+    id: 'q-ser-001',
+    question: '4 , 12, 16 , ? , 86 , 602',
+    options: ['40', '51', '48', '80', 'None'],
+    answer: 3,
+    explanation: 'Pattern: ×3, +4, ×5, +6 → 4×3=12, 12+4=16, 16×5=80, 80+6=86. Missing term is 80.'
+  },
+  {
+    id: 'q-ser-002',
+    question: '217 , 96, 240 , ? , 267 , 42',
+    options: ['45', '71', '60', '78', 'None'],
+    answer: 1,
+    explanation: 'Pattern: −121, +144, −169, +196, −225. Missing term is 71.'
+  },
+  {
+    id: 'q-ser-003',
+    question: '62, 33 , ? , 54.5 , 111 , 279.5',
+    options: ['48', '65', '35', '48', 'None'],
+    answer: 2,
+    explanation: 'Pattern: ×0.5+2, ×1+2, ×1.5+2, ×2+2, ×2.5+2. So missing term is 35.'
+  },
+  {
+    id: 'q-ser-004',
+    question: '245 , 221 , ? , 167 , 137 , 105',
+    options: ['195', '214', '325', '218', 'None'],
+    answer: 0,
+    explanation: 'Pattern: −24, −26, −28, −30, −32. Missing term is 195.'
+  },
+  {
+    id: 'q-ser-005',
+    question: '65 , 84, 122 , ? , 255, 350',
+    options: ['189', '214', '154', '179', 'None'],
+    answer: 3,
+    explanation: 'Pattern: +19, +38, +57, +76, +95. Missing term is 179.'
+  },
+  {
+    id: 'q-ser-006',
+    question: '49 , 141 , ? , 262 , 291 , 383',
+    options: ['170', '145', '165', '861', 'None'],
+    answer: 0,
+    explanation: 'Pattern: +92, +29, +92, +29, +92. Missing term is 170.'
+  },
+  {
+    id: 'q-ser-007',
+    question: '4 , 24 , ? , 213.5 , 221 , 1768',
+    options: ['30.5', '41', '35', '32', 'None'],
+    answer: 0,
+    explanation: 'Pattern: ×6+65, ×7+75, ×8... So missing term is 30.5.'
+  },
+  {
+    id: 'q-ser-008',
+    question: '16 , 32 , ? , 384, 1920, 11520',
+    options: ['48', '68', '96', '86', 'None'],
+    answer: 2,
+    explanation: 'Pattern: ×2, ×3, ×4, ×5, ×6. Missing term is 96.'
+  },
+  {
+    id: 'q-ser-009',
+    question: '415 , 370 , 420 , ? , 425 , 360',
+    options: ['315', '214', '365', '454', 'None'],
+    answer: 2,
+    explanation: 'Pattern: −45, +50, −55, +60, −65. Missing term is 365.'
+  },
+  {
+    id: 'q-ser-010',
+    question: '241 , 247 , ? , 279 , 309, 351',
+    options: ['215', '259', '214', '658', 'None'],
+    answer: 1,
+    explanation: 'Pattern: +6, +12, +24, +30, +42. Missing term is 259.'
+  },
+  {
+    id: 'q-ser-011',
+    question: '7924 , 8653, 9653, 10984 , 12712 , ?',
+    options: ['14709', '13509', '14909', '14609', 'None'],
+    answer: 2,
+    explanation: 'Pattern: +9³, +10³, +11³, +12³, +13³. Missing term is 14909.'
+  },
+  {
+    id: 'q-ser-012',
+    question: '842 , 1562 , 1682, 1706, 1712 , ?',
+    options: ['1614', '1914', '1814', '1714', 'None'],
+    answer: 3,
+    explanation: 'Pattern: +720, +120, +24, +6, +2. Missing term is 1714.'
+  },
+  {
+    id: 'q-ser-013',
+    question: '712 , 356 , 534 , 1335 , 4672.5 , ?',
+    options: ['21026.25', '24236.25', '22100.25', '22480.25', 'None'],
+    answer: 1,
+    explanation: 'Pattern: ×0.5, ×1.5, ×2.5, ×3.5, ×4.5. Missing term is 21026.25.'
+  },
+  {
+    id: 'q-ser-014',
+    question: '1411 , 1483 , ? , 1684 , 1833 , 2031',
+    options: ['1071', '1171', '1641', '1571', 'None'],
+    answer: 3,
+    explanation: 'Pattern: +72, +88, +113, +149, +198. Missing term is 1571.'
+  },
+  {
+    id: 'q-ser-015',
+    question: '4242 , 4531 , 4855 , 5216 , ? , 6057',
+    options: ['5616', '5686', '5046', '5662', 'None'],
+    answer: 1,
+    explanation: 'Pattern: +(17)², +(18)², +(19)², +(20)², +(21)². Missing term is 5616.'
+  },
+  {
+    id: 'q-ser-016',
+    question: '523 , 1854 , 2583 , 2926 , 3051 , ?',
+    options: ['3078', '3668', '3228', '3668', 'None'],
+    answer: 0,
+    explanation: 'Pattern involves successive cube additions: +11³, +9³, +17³, +5³, +3³. Missing term is 3078.'
+  },
+  {
+    id: 'q-ser-017',
+    question: '9.4 , 10.6 , ? , 14.2 , 16.6 , 19.4',
+    options: ['12.2', '11.2', '13.2', '15.2', 'None'],
+    answer: 0,
+    explanation: 'Pattern: +1.2, +1.6, +2, +2.4, +2.8. Missing term is 12.2.'
+  },
+  {
+    id: 'q-ser-018',
+    question: '7 , 15 , 31 , 63 , 127 , ?',
+    options: ['220', '275', '315', '255', 'None'],
+    answer: 3,
+    explanation: 'Pattern: ×2+1 repeatedly. Missing term is 255.'
+  },
+  {
+    id: 'q-ser-019',
+    question: '112 , 103 , 121 , 94, 130 , ?',
+    options: ['80', '93', '85', '103', 'None'],
+    answer: 2,
+    explanation: 'Pattern: −9, +18, −27, +36, −45. Missing term is 85.'
+  },
+  {
+    id: 'q-ser-020',
+    question: '48 , 97 , 195, 391 , 783 , ?',
+    options: ['1671', '1581', '1287', '1567', 'None'],
+    answer: 3,
+    explanation: 'Pattern: ×2+1 repeatedly. Missing term is 1567.'
+  },
+  ],
 'Quadratic Equations Part 1(20 question)': [
         // Quadratic Equations
-        {
-          id: 'q-quad-001',
-          question: 'x² - 7x + 12 = 0. Roots?',
-          options: ['2,6', '3,4', '4,5', 'None'],
-          answer: 1,
-          explanation: '(x-3)(x-4)=0 → roots 3,4'
-        },
-        {
-          id: 'q-quad-002',
-          question: 'x² + 5x + 6 = 0. Roots?',
-          options: ['-2,-3', '-1,-6', '2,3', 'No real roots'],
-          answer: 0,
-          explanation: '(x+2)(x+3)=0 → roots -2,-3'
-        },
-        {
-          id: 'q-quad-003',
-          question: '2x² - 8x + 6 = 0. Roots?',
-          options: ['1,3', '2,3', '1,2', '3,4'],
-          answer: 0,
-          explanation: 'Divide 2 → x²-4x+3=0 → roots 1,3'
-        },
-        {
-          id: 'q-quad-004',
-          question: 'x² - 9 = 0. Roots?',
-          options: ['±3', '3 only', '-3 only', 'None'],
-          answer: 0,
-          explanation: 'x²=9 → x=±3'
-        },
-        {
-          id: 'q-quad-005',
-          question: 'x² - 10x + 25 = 0. Root?',
-          options: ['5 double root', '5,10', '0,5', 'No root'],
-          answer: 0,
-          explanation: '(x-5)²=0 → root 5 (repeated)'
-        },
-        {
-          id: 'q-quad-006',
-          question: 'x² + x - 20 = 0. Roots?',
-          options: ['4,-5', '5,-4', '2,-10', '10,-2'],
-          answer: 0,
-          explanation: 'Factors (x+5)(x-4)=0 → roots -5,4'
-        },
-        {
-          id: 'q-quad-007',
-          question: 'x² - 2x - 15 = 0. Roots?',
-          options: ['3,-5', '5,-3', '15,-1', 'None'],
-          answer: 1,
-          explanation: '(x-5)(x+3)=0 → roots 5,-3'
-        },
-        {
-          id: 'q-quad-008',
-          question: 'x² - 16 = 0. Roots?',
-          options: ['±4', '4 only', '-4 only', 'None'],
-          answer: 0,
-          explanation: 'x²=16 → x=±4'
-        },
-        {
-          id: 'q-quad-009',
-          question: 'x² + 4x + 4 = 0. Root?',
-          options: ['-2 double root', '-2,2', '2 double root', 'None'],
-          answer: 0,
-          explanation: '(x+2)²=0 → root -2 (repeated)'
-        },
-        {
-          id: 'q-quad-010',
-          question: 'x² - 5x + 4 = 0. Roots?',
-          options: ['1,4', '2,4', '1,5', '2,3'],
-          answer: 0,
-          explanation: '(x-1)(x-4)=0 → roots 1,4'
-        }
-  
+
+  {
+    id: 'q-ser-021',
+    question: '4x^2 - 20x + 21 = 0',
+    options: ['(3/2, 7/2)', '(1, 21/4)', '(3, 7)', '(-3/2, -7/2)', 'None'],
+    answer: 0,
+    explanation: 'Divide by 1: factor 4x^2-20x+21 = (2x-3)(2x-7) → x = 3/2, 7/2.'
+  },
+  {
+    id: 'q-ser-022',
+    question: 'x^2 - 13x + 42 = 0',
+    options: ['(6, 7)', '(3, 14)', '(2, 21)', '(7, 6)', 'None'],
+    answer: 0,
+    explanation: 'Factor: x^2-13x+42 = (x-6)(x-7) → x = 6, 7.'
+  },
+  {
+    id: 'q-ser-023',
+    question: 'x^2 - 7x + 25 = 2x + 5  (i.e., x^2 - 9x + 20 = 0)',
+    options: ['(4, 5)', '(5, 4)', '(2, 10)', '(−4, −5)', 'None'],
+    answer: 0,
+    explanation: 'Bring RHS over: x^2-7x+25−2x−5 = x^2-9x+20 = (x-4)(x-5) → x = 4, 5.'
+  },
+  {
+    id: 'q-ser-024',
+    question: 'x^2 - 12x + 32 = 0',
+    options: ['(4, 8)', '(6, 6)', '(2, 16)', '(8, 4)', 'None'],
+    answer: 0,
+    explanation: 'Factor: x^2-12x+32 = (x-4)(x-8) → x = 4, 8.'
+  },
+  {
+    id: 'q-ser-025',
+    question: 'x^2 + 14x - 51 = 0',
+    options: ['(−17, 3)', '(17, −3)', '(−3, 17)', '(3, −17)', 'None'],
+    answer: 0,
+    explanation: 'Factor: x^2+14x−51 = (x+17)(x−3) → x = −17, 3.'
+  },
+  {
+    id: 'q-ser-026',
+    question: 'x^2 + 14x - 32 = 0',
+    options: ['(−16, 2)', '(16, −2)', '(−2, 16)', '(2, −16)', 'None'],
+    answer: 0,
+    explanation: 'Factor: x^2+14x−32 = (x+16)(x−2) → x = −16, 2.'
+  },
+  {
+    id: 'q-ser-027',
+    question: '9x^2 + 14x - 8 = 0',
+    options: ['(−2, 4/9)', '(2, −4/9)', '(−4/9, 2)', '(4/9, −2)', 'None'],
+    answer: 0,
+    explanation: 'Solve: 9x^2+14x−8 = (9x−4)(x+2) → x = 4/9, −2 (order shown as −2, 4/9).'
+  },
+  {
+    id: 'q-ser-028',
+    question: 'x^2 + 16x + 63 = 0',
+    options: ['(−9, −7)', '(9, 7)', '(−7, 9)', '(7, −9)', 'None'],
+    answer: 0,
+    explanation: 'Factor: x^2+16x+63 = (x+9)(x+7) → x = −9, −7.'
+  },
+  {
+    id: 'q-ser-029',
+    question: 'x^2 - 8x + 15 = 0',
+    options: ['(3, 5)', '(5, 3)', '(−3, −5)', '(15, −1)', 'None'],
+    answer: 0,
+    explanation: 'Factor: x^2−8x+15 = (x−3)(x−5) → x = 3, 5.'
+  },
+  {
+    id: 'q-ser-030',
+    question: 'x^2 - 7x + 12 = 0',
+    options: ['(3, 4)', '(4, 3)', '(−3, −4)', '(6, 2)', 'None'],
+    answer: 0,
+    explanation: 'Factor: x^2−7x+12 = (x−3)(x−4) → x = 3, 4.'
+  },
+  {
+    id: 'q-ser-031',
+    question: 'x^2 + 11x - 26 = 0',
+    options: ['(−13, 2)', '(13, −2)', '(2, −13)', '(−2, 13)', 'None'],
+    answer: 0,
+    explanation: 'Factor: x^2+11x−26 = (x+13)(x−2) → x = −13, 2.'
+  },
+  {
+    id: 'q-ser-032',
+    question: 'x^2 + 8x - 180 = 0',
+    options: ['(−18, 10)', '(18, −10)', '(10, −18)', '(−10, 18)', 'None'],
+    answer: 0,
+    explanation: 'Factor: x^2+8x−180 = (x+18)(x−10) → x = −18, 10.'
+  },
+  {
+    id: 'q-ser-033',
+    question: 'x^2 - 11x + 28 = 0',
+    options: ['(4, 7)', '(7, 4)', '(−4, −7)', '(14, −2)', 'None'],
+    answer: 0,
+    explanation: 'Factor: x^2−11x+28 = (x−4)(x−7) → x = 4, 7.'
+  },
+  {
+    id: 'q-ser-034',
+    question: 'x^2 - 5x + 6 = 0',
+    options: ['(2, 3)', '(3, 2)', '(−2, −3)', '(6, −1)', 'None'],
+    answer: 0,
+    explanation: 'Factor: x^2−5x+6 = (x−2)(x−3) → x = 2, 3.'
+  },
+  {
+    id: 'q-ser-035',
+    question: '5x^2 - 19x + 18 = 0',
+    options: ['(9/5, 2)', '(2, 9/5)', '(−9/5, −2)', '(18, −1)', 'None'],
+    answer: 0,
+    explanation: 'Factor: 5x^2−19x+18 = (5x−9)(x−2) → x = 9/5, 2.'
+  },
+  {
+    id: 'q-ser-036',
+    question: 'x^2 - 19x + 88 = 0',
+    options: ['(8, 11)', '(11, 8)', '(−8, −11)', '(19, −? )', 'None'],
+    answer: 0,
+    explanation: 'Factor: x^2−19x+88 = (x−8)(x−11) → x = 8, 11.'
+  },
+  {
+    id: 'q-ser-037',
+    question: 'x^2 - 36x + 128 = 0',
+    options: ['(4, 32)', '(32, 4)', '(−4, −32)', '(8, 16)', 'None'],
+    answer: 0,
+    explanation: 'Factor: x^2−36x+128 = (x−4)(x−32) → x = 4, 32.'
+  },
+  {
+    id: 'q-ser-038',
+    question: 'x^2 - 21x + 108 = 0',
+    options: ['(9, 12)', '(12, 9)', '(−9, −12)', '(18, 6)', 'None'],
+    answer: 0,
+    explanation: 'Factor: x^2−21x+108 = (x−9)(x−12) → x = 9, 12.'
+  },
+  {
+    id: 'q-ser-039',
+    question: '3x^2 - 10x + 8 = 0',
+    options: ['(4/3, 2)', '(2, 4/3)', '(−4/3, −2)', '(8, −1)', 'None'],
+    answer: 0,
+    explanation: 'Factor: 3x^2−10x+8 = (3x−4)(x−2) → x = 4/3, 2.'
+  },
+  {
+    id: 'q-ser-040',
+    question: 'x^2 + 14x + 33 = 0',
+    options: ['(−11, −3)', '(−3, −11)', '(11, 3)', '(3, 11)', 'None'],
+    answer: 0,
+    explanation: 'Factor: x^2+14x+33 = (x+11)(x+3) → x = −11, −3.'
+  },
   ],
 
       Algebra: [
