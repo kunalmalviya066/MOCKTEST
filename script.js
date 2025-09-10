@@ -135,47 +135,105 @@
   }
 
   // ---------- submit & results ----------
-  function autoSubmit(){ alert('Time is up — auto submitting the test.'); submitTest(true); }
+  function autoSubmit(){ alert('Time is up — auto submitted the test.'); submitTest(true); }
   function submitTest(auto=false){
-    if(state.timerInterval) clearInterval(state.timerInterval);
-    const endTS = Date.now();
-    const total = state.questions.length;
-    let correct=0; const incorrect=[];
-    for(const q of state.questions){ const ans = state.answers[q.id]; if(ans===q.answer) correct++; else incorrect.push({q,chosen:ans}); }
-    const accuracy = total? Math.round((correct/total)*100):0;
-    const timeTakenSec = Math.floor((endTS-state.startTS)/1000);
-    const result = { id:'res-'+Date.now(), subject:state.subject, topics:state.selectedTopics.slice(), total, correct, accuracy, timeTakenSec, date:new Date().toISOString(), incorrect };
-    saveResult(result); renderResult(result); showView('result');
-  }
+  if(state.timerInterval) clearInterval(state.timerInterval);
+  const endTS = Date.now();
+  const total = state.questions.length;
 
-  function renderResult(res){
-    const sum = $('result-summary'); sum.innerHTML='';
-    const cards = [
-      {t:'Score', v:`${res.correct} / ${res.total}`},
-      {t:'Accuracy', v:`${res.accuracy}%`},
-      {t:'Time taken', v:formatSec(res.timeTakenSec)},
-      {t:'Subject', v:res.subject}
-    ];
-    for(const c of cards){
-      const d = document.createElement('div'); d.className='result-card';
-      d.innerHTML = `<div class='muted'>${c.t}</div><div style='font-weight:700;margin-top:6px'>${c.v}</div>`;
-      sum.appendChild(d);
-    }
+  let correct = 0;
+  let attempted = 0;
+  let wrong = 0;
+  const incorrect=[];
 
-    const incWrap = $('incorrect-list'); incWrap.innerHTML='';
-    if(res.incorrect.length===0){ incWrap.innerHTML='<div class="muted">No incorrect answers — well done!</div>'; return; }
-    for(const it of res.incorrect){
-      const el = document.createElement('div'); el.className='history-item';
-      const chosen = it.chosen!==undefined ? it.q.options[it.chosen] : '<em>Unanswered</em>';
-      el.innerHTML = `<div style='flex:1'>
-        <div style='font-weight:700'>${it.q.question}</div>
-        <div class='muted' style='margin-top:6px'>Your answer: ${chosen}</div>
-        <div style='margin-top:6px'>Correct: <strong>${it.q.options[it.q.answer]}</strong></div>
-        <div class='muted' style='margin-top:6px'>Solution: ${it.q.explanation || '—'}</div>
-      </div>`;
-      incWrap.appendChild(el);
+  for(const q of state.questions){
+    const ans = state.answers[q.id];
+    if(ans !== undefined){ // attempted
+      attempted++;
+      if(ans === q.answer){
+        correct++;
+      } else {
+        wrong++;
+        incorrect.push({q,chosen:ans});
+      }
+    } else {
+      // unattempted
+      incorrect.push({q,chosen:undefined});
     }
   }
+
+  const unattempted = total - attempted;
+  const accuracy = attempted ? Math.round((correct/attempted)*100) : 0;
+  const timeTakenSec = Math.floor((endTS-state.startTS)/1000);
+
+  const result = { 
+    id:'res-'+Date.now(), 
+    subject:state.subject, 
+    topics:state.selectedTopics.slice(), 
+    total, 
+    correct, 
+    attempted, 
+    wrong, 
+    unattempted,
+    accuracy, 
+    timeTakenSec, 
+    date:new Date().toISOString(), 
+    incorrect 
+  };
+
+  saveResult(result);
+  renderResult(result);
+  showView('result');
+}
+
+
+ function renderResult(res){
+  const sum = $('result-summary'); 
+  sum.innerHTML='';
+
+  const cards = [
+    {t:'Score', v:`${res.correct} / ${res.total}`},
+    {t:'Accuracy', v:`${res.accuracy}%`},
+    {t:'Attempted', v:`${res.attempted}`},
+    {t:'Wrong Answers', v:`${res.wrong}`},
+    {t:'Unattempted', v:`${res.unattempted}`},
+    {t:'Time taken', v:formatSec(res.timeTakenSec)},
+    {t:'Subject', v:res.subject}
+  ];
+
+  for(const c of cards){
+   const d = document.createElement('div'); 
+d.className = 'result-card';
+
+// apply colors for Score and Wrong Answers
+if(c.t === 'Score') d.classList.add('score');
+if(c.t === 'Wrong Answers') d.classList.add('wrong');
+
+    d.innerHTML = `<div class='muted'>${c.t}</div>
+                   <div style='font-weight:700;margin-top:6px'>${c.v}</div>`;
+    sum.appendChild(d);
+  }
+
+  const incWrap = $('incorrect-list'); 
+  incWrap.innerHTML='';
+  if(res.incorrect.length===0){ 
+    incWrap.innerHTML='<div class="muted">No incorrect answers — well done!</div>'; 
+    return; 
+  }
+  for(const it of res.incorrect){
+    const el = document.createElement('div'); 
+    el.className='history-item';
+    const chosen = it.chosen!==undefined ? it.q.options[it.chosen] : '<em>Unanswered</em>';
+    el.innerHTML = `<div style='flex:1'>
+      <div style='font-weight:700'>${it.q.question}</div>
+      <div class='muted' style='margin-top:6px'>Your answer: ${chosen}</div>
+      <div style='margin-top:6px'>Correct: <strong>${it.q.options[it.q.answer]}</strong></div>
+      <div class='muted' style='margin-top:6px'>Solution: ${it.q.explanation || '—'}</div>
+    </div>`;
+    incWrap.appendChild(el);
+  }
+}
+
 
   function formatSec(s){ const m=Math.floor(s/60); const sec=s%60; return `${m}m ${sec}s`; }
 
