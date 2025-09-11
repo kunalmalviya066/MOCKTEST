@@ -3,31 +3,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('activationModal');
   const err = document.getElementById('errorMsg');
 
-  // try to parse stored activation
+  // --- Check stored activation ---
   let activated = false;
   try {
     const s = localStorage.getItem('activationStatus');
     if (s) {
       const js = JSON.parse(s);
-      activated = !!js.activated;
+      // must match the current ACTIVATION_KEY
+      if (js.activated && js.key === ACTIVATION_KEY) {
+        activated = true;
+      }
     }
   } catch (e) { activated = false; }
 
   if (activated) {
-    // Already activated — hide modal and optionally show user badge
+    // Already activated
     if (modal) modal.style.display = 'none';
-    document.body.style.overflow = ''; // ensure scroll enabled
+    document.body.style.overflow = ''; 
     showActivatedUser();
     return;
   }
 
-  // Show modal and prevent background scroll
+  // --- Show modal if not activated ---
   if (modal) {
     modal.style.display = 'block';
     document.body.style.overflow = 'hidden';
   }
 
-  // allow Enter key to submit from any field
+  // Allow Enter key to submit
   ['userName','userEmail','activationKey'].forEach(id => {
     const el = document.getElementById(id);
     if (!el) return;
@@ -36,11 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // hide error on input
+  // Hide error on input
   ['userName','userEmail','activationKey'].forEach(id=>{
     const el = document.getElementById(id);
     if (!el) return;
-    el.addEventListener('input', ()=> { const e = document.getElementById('errorMsg'); if (e) e.style.display = 'none'; });
+    el.addEventListener('input', ()=> { 
+      const e = document.getElementById('errorMsg'); 
+      if (e) e.style.display = 'none'; 
+    });
   });
 });
 
@@ -51,13 +57,22 @@ function verifyActivation() {
   const err = document.getElementById('errorMsg');
 
   if (!name.trim() || !email.trim() || !key.trim()) {
-    if (err) { err.textContent = 'Please fill all fields.'; err.style.display = 'block'; }
+    if (err) { 
+      err.textContent = 'Please fill all fields.'; 
+      err.style.display = 'block'; 
+    }
     return;
   }
 
   // Compare with owner key (from config.js)
   if (typeof ACTIVATION_KEY !== 'undefined' && key === ACTIVATION_KEY) {
-    const userInfo = { name: name.trim(), email: email.trim(), activated: true, date: new Date().toISOString() };
+    const userInfo = { 
+      name: name.trim(), 
+      email: email.trim(), 
+      activated: true, 
+      key: ACTIVATION_KEY,   // 🔑 store current key
+      date: new Date().toISOString() 
+    };
     localStorage.setItem('activationStatus', JSON.stringify(userInfo));
     const modal = document.getElementById('activationModal');
     if (modal) modal.style.display = 'none';
@@ -65,11 +80,14 @@ function verifyActivation() {
     showActivatedUser();
     alert('Activation successful — welcome, ' + userInfo.name + '!');
   } else {
-    if (err) { err.textContent = 'Invalid key. Please try again.'; err.style.display = 'block'; }
+    if (err) { 
+      err.textContent = 'Invalid or expired key. Please try again.'; 
+      err.style.display = 'block'; 
+    }
   }
 }
 
-// helper: optionally show activated user in header (you'll add an element for this)
+// helper: show activated user in header
 function showActivatedUser() {
   try {
     const data = JSON.parse(localStorage.getItem('activationStatus') || '{}');
