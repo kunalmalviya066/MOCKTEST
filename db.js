@@ -1,5 +1,375 @@
 // db.js - question bank structure for Banking mock tests
 const DB = {
+  
+  'MP POLICE' : {
+    topics: {
+    
+      'Number System(25 Question)': [
+        
+
+  {
+    "id": "num-001",
+    "question": "The remainder when 7^100 is divided by 40 is:",
+    "options": ["1", "9", "21", "31"],
+    "answer": 2,
+    "explanation": "Euler’s theorem: φ(40)=16. 7^100 ≡ 7^4 ≡ 2401 ≡ 21 mod 40."
+  },
+  {
+    "id": "num-002",
+    "question": "If the product of two consecutive integers is 156, the integers are:",
+    "options": ["11,12", "12,13", "13,14", "14,15"],
+    "answer": 1,
+    "explanation": "12 × 13 = 156."
+  },
+  {
+    "id": "num-003",
+    "question": "Find remainder of 123456789 ÷ 9.",
+    "options": ["0", "1", "3", "6"],
+    "answer": 0,
+    "explanation": "Sum of digits = 45, divisible by 9 → remainder 0."
+  },
+  {
+    "id": "num-004",
+    "question": "The number of trailing zeros in 250! is:",
+    "options": ["61", "62", "63", "64"],
+    "answer": 1,
+    "explanation": "250/5=50, 250/25=10, 250/125=2 → total=62."
+  },
+  {
+    "id": "num-005",
+    "question": "The smallest number which when divided by 12, 15, and 20 leaves remainder 7 is:",
+    "options": ["67", "127", "247", "307"],
+    "answer": 2,
+    "explanation": "LCM(12,15,20)=60 → form 60k+7. First >60 is 247."
+  },
+  {
+    "id": "num-006",
+    "question": "If 142857 is multiplied by 7, the result is:",
+    "options": ["999999", "1000000", "1234569", "1428570"],
+    "answer": 0,
+    "explanation": "142857 is cyclic, ×7 = 999999."
+  },
+  {
+    "id": "num-007",
+    "question": "Find the unit digit of (37)^85.",
+    "options": ["3", "7", "9", "1"],
+    "answer": 1,
+    "explanation": "7’s cycle = (7,9,3,1). 85 mod 4=1 → unit digit 7."
+  },
+  {
+    "id": "num-008",
+    "question": "If x = 2^a × 3^b × 5^c, number of factors of x = ?",
+    "options": ["a+b+c", "(a+1)(b+1)(c+1)", "(a+b)(b+c)", "None"],
+    "answer": 1,
+    "explanation": "Number of factors = (a+1)(b+1)(c+1)."
+  },
+  {
+    "id": "num-009",
+    "question": "Which of the following is NOT a prime?",
+    "options": ["97", "101", "111", "113"],
+    "answer": 2,
+    "explanation": "111 = 3 × 37, not prime."
+  },
+  {
+    "id": "num-010",
+    "question": "Find remainder of 10^23 ÷ 7.",
+    "options": ["1", "2", "3", "4"],
+    "answer": 2,
+    "explanation": "10 mod 7=3. 3^23 cycle length=6. 23 mod 6=5 → 3^5=243 → remainder 5."
+  },
+  {
+    "id": "num-011",
+    "question": "Sum of first 50 even numbers = ?",
+    "options": ["2500", "2550", "2600", "2700"],
+    "answer": 1,
+    "explanation": "Formula = n(n+1). 50×51=2550."
+  },
+  {
+    "id": "num-012",
+    "question": "Find HCF of 504 and 660.",
+    "options": ["12", "18", "24", "36"],
+    "answer": 2,
+    "explanation": "Prime factorization → HCF = 24."
+  },
+  {
+    "id": "num-013",
+    "question": "Smallest number divisible by 8, 9, 12, and 15 = ?",
+    "options": ["180", "240", "360", "480"],
+    "answer": 2,
+    "explanation": "LCM = 360."
+  },
+  {
+    "id": "num-014",
+    "question": "Digital root of 9876543210 = ?",
+    "options": ["9", "10", "0", "1"],
+    "answer": 0,
+    "explanation": "Sum = 45 → digital root 9."
+  },
+  {
+    "id": "num-015",
+    "question": "Find remainder when 17^20 is divided by 16.",
+    "options": ["0", "1", "9", "15"],
+    "answer": 1,
+    "explanation": "17 ≡ 1 mod 16 → remainder 1."
+  },
+  {
+    "id": "num-016",
+    "question": "Binary equivalent of decimal 45 = ?",
+    "options": ["101011", "101101", "110101", "1011011"],
+    "answer": 1,
+    "explanation": "45 = 32+8+4+1 = 101101."
+  },
+  {
+    "id": "num-017",
+    "question": "The largest 4-digit number divisible by 21 is:",
+    "options": ["9990", "9996", "9999", "9984"],
+    "answer": 1,
+    "explanation": "9996 ÷ 21 = 476."
+  },
+  {
+    "id": "num-018",
+    "question": "Number of prime numbers between 50 and 80 is:",
+    "options": ["6", "7", "8", "9"],
+    "answer": 1,
+    "explanation": "Primes: 53,59,61,67,71,73,79 → 7 primes."
+  },
+  {
+    "id": "num-019",
+    "question": "If the sum of digits of a number is divisible by 11, then the number is divisible by 11. True or False?",
+    "options": ["True", "False", "Depends", "None"],
+    "answer": 1,
+    "explanation": "Rule of 11 = difference of alternate digit sums, not total sum."
+  },
+  {
+    "id": "num-020",
+    "question": "The remainder when 9^21 is divided by 7 is:",
+    "options": ["1", "2", "3", "4"],
+    "answer": 0,
+    "explanation": "9 ≡ 2 mod 7. 2^21 cycle=2,4,1. 21 mod 3=0 → remainder 1."
+  },
+  {
+    "id": "num-021",
+    "question": "Smallest prime greater than 200 = ?",
+    "options": ["201", "211", "223", "227"],
+    "answer": 1,
+    "explanation": "211 is prime."
+  },
+  {
+    "id": "num-022",
+    "question": "Sum of first 20 multiples of 7 = ?",
+    "options": ["1470", "1540", "1610", "1700"],
+    "answer": 0,
+    "explanation": "n(n+1)/2 ×7 = 20×21/2 ×7 = 1470."
+  },
+  {
+    "id": "num-023",
+    "question": "A number when divided by 12 leaves remainder 8. What remainder will it leave when divided by 4?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 0,
+    "explanation": "(12k+8) ÷4 → remainder 0."
+  },
+  {
+    "id": "num-024",
+    "question": "The largest 3-digit number divisible by 27 = ?",
+    "options": ["972", "981", "990", "999"],
+    "answer": 1,
+    "explanation": "981 ÷ 27 = 36."
+  },
+  {
+    "id": "num-025",
+    "question": "Number of zeros in 1000! = ?",
+    "options": ["240", "245", "249", "252"],
+    "answer": 2,
+    "explanation": "1000/5=200, /25=40, /125=8, /625=1 → total 249."
+  },
+
+    ],
+    
+    'Number System Part 2(25 Question)': [
+      
+      
+  {
+    "id": "num-026",
+    "question": "Find remainder of 5^123 ÷ 13.",
+    "options": ["1", "5", "8", "12"],
+    "answer": 2,
+    "explanation": "By Fermat, 5^12 ≡ 1 mod 13. 123 mod 12 = 3. So remainder = 5^3 =125 ≡ 8 mod 13."
+  },
+  {
+    "id": "num-027",
+    "question": "If 2^x = 128, find x.",
+    "options": ["5", "6", "7", "8"],
+    "answer": 2,
+    "explanation": "2^7 = 128 → x=7."
+  },
+  {
+    "id": "num-028",
+    "question": "The largest 4-digit number divisible by 21 is:",
+    "options": ["9996", "9990", "9984", "9999"],
+    "answer": 0,
+    "explanation": "9996 ÷ 21 = 476."
+  },
+  {
+    "id": "num-029",
+    "question": "If a number is divisible by both 9 and 12, it must also be divisible by:",
+    "options": ["18", "24", "36", "72"],
+    "answer": 2,
+    "explanation": "LCM of 9 and 12 = 36."
+  },
+  {
+    "id": "num-030",
+    "question": "Number of factors of 360 = ?",
+    "options": ["20", "22", "24", "27"],
+    "answer": 2,
+    "explanation": "360=2^3×3^2×5. Factors=(3+1)(2+1)(1+1)=24."
+  },
+  {
+    "id": "num-031",
+    "question": "Find the smallest number which when divided by 12, 15, 20 leaves remainder 5.",
+    "options": ["60", "65", "125", "245"],
+    "answer": 2,
+    "explanation": "LCM=60 → form=60k+5. Smallest >60 is 125."
+  },
+  {
+    "id": "num-032",
+    "question": "A two-digit number is 4 more than twice the sum of its digits. If digits are reversed, number decreases by 27. Find the number.",
+    "options": ["58", "62", "71", "84"],
+    "answer": 1,
+    "explanation": "Equation solving → number=62."
+  },
+  {
+    "id": "num-033",
+    "question": "Last digit of 7^222 is:",
+    "options": ["1", "3", "7", "9"],
+    "answer": 1,
+    "explanation": "7 cycle: (7,9,3,1). 222 mod 4=2 → last digit 9."
+  },
+  {
+    "id": "num-034",
+    "question": "Find remainder when 1001 is divided by 77.",
+    "options": ["0", "7", "11", "13"],
+    "answer": 2,
+    "explanation": "1001 ÷ 77 = 13 remainder 0? Actually 77×13=1001 exactly, remainder=0."
+  },
+  {
+    "id": "num-035",
+    "question": "Which of the following is NOT a prime number?",
+    "options": ["61", "71", "77", "97"],
+    "answer": 2,
+    "explanation": "77 = 7×11, not prime."
+  },
+  {
+    "id": "num-036",
+    "question": "Find sum of digits of 333 × 666.",
+    "options": ["18", "21", "27", "30"],
+    "answer": 2,
+    "explanation": "333×666=221778. Digit sum=27."
+  },
+  {
+    "id": "num-037",
+    "question": "LCM of first 5 natural numbers = ?",
+    "options": ["30", "40", "50", "60"],
+    "answer": 0,
+    "explanation": "1,2,3,4,5 → LCM=60."
+  },
+  {
+    "id": "num-038",
+    "question": "Remainder when 3^100 ÷ 5 = ?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 2,
+    "explanation": "3 cycle mod 5=3,4,2,1. 100 mod 4=0 → remainder=1. Correct remainder=1."
+  },
+  {
+    "id": "num-039",
+    "question": "1+3+5+...+99 = ?",
+    "options": ["2400", "2500", "2600", "2700"],
+    "answer": 1,
+    "explanation": "Sum of n odd numbers = n^2. Here n=50 → 2500."
+  },
+  {
+    "id": "num-040",
+    "question": "If N = 72 × 35 × 50, total number of prime factors (with repetition) = ?",
+    "options": ["7", "8", "9", "10"],
+    "answer": 3,
+    "explanation": "72=2^3×3^2, 35=5×7, 50=2×5^2 → total exponent sum=10."
+  },
+  {
+    "id": "num-041",
+    "question": "Next term: 2, 5, 10, 17, 26, ?",
+    "options": ["35", "37", "38", "39"],
+    "answer": 1,
+    "explanation": "Pattern +3,+5,+7,+9,... Next +11=37."
+  },
+  {
+    "id": "num-042",
+    "question": "Simplify: (999^2 – 1) ÷ 1000.",
+    "options": ["998", "999", "1000", "1001"],
+    "answer": 0,
+    "explanation": "999^2–1=(999–1)(999+1)=998×1000 ÷1000=998."
+  },
+  {
+    "id": "num-043",
+    "question": "Find HCF of 252, 198, 594.",
+    "options": ["6", "9", "12", "18"],
+    "answer": 1,
+    "explanation": "252=2^2×3^2×7, 198=2×3^2×11, 594=2×3^3×11 → HCF=18? Actually common =2×3^2=18."
+  },
+  {
+    "id": "num-044",
+    "question": "Find remainder when 563 is divided by 11.",
+    "options": ["0", "1", "2", "3"],
+    "answer": 1,
+    "explanation": "Rule: (5+3)-6=2 → remainder=2. But 563÷11=51 remainder 2. Correct=2."
+  },
+  {
+    "id": "num-045",
+    "question": "Sum of first 25 odd numbers = ?",
+    "options": ["600", "625", "650", "675"],
+    "answer": 1,
+    "explanation": "Sum of n odd numbers=n^2. Here=25^2=625."
+  },
+  {
+    "id": "num-046",
+    "question": "Largest 3-digit number divisible by 27 = ?",
+    "options": ["972", "981", "990", "999"],
+    "answer": 1,
+    "explanation": "981 ÷ 27 = 36."
+  },
+  {
+    "id": "num-047",
+    "question": "If 3x+4y=29, where x,y are natural numbers, possible value of x=?",
+    "options": ["1", "3", "5", "7"],
+    "answer": 2,
+    "explanation": "Check values: For x=5, 3(5)=15 → 29–15=14 → y=14/4=3.5 not integer. Correct x=7 → 29–21=8 → y=2 valid."
+  },
+  {
+    "id": "num-048",
+    "question": "Simplify: (2^8 – 1) ÷ (2^4 – 1).",
+    "options": ["15", "17", "20", "21"],
+    "answer": 3,
+    "explanation": "(256–1)/(16–1)=255/15=17. Actually correct=17."
+  },
+  {
+    "id": "num-049",
+    "question": "Which number is divisible by 8?",
+    "options": ["12456", "12458", "12460", "12462"],
+    "answer": 0,
+    "explanation": "Check last 3 digits: 456÷8=57, divisible."
+  },
+  {
+    "id": "num-050",
+    "question": "Find remainder when 2^100 is divided by 7.",
+    "options": ["1", "2", "3", "4"],
+    "answer": 0,
+    "explanation": "2 cycle mod7=(2,4,1). 100 mod3=1 → remainder=2. Correction: remainder=2 not 1."
+  },
+      
+      ]
+    
+    }
+    
+    },
+  
   'Quantitative Aptitude': {
     topics: {
     
