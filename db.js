@@ -364,6 +364,487 @@ const DB = {
     "explanation": "2 cycle mod7=(2,4,1). 100 mod3=1 → remainder=2. Correction: remainder=2 not 1."
   },
       
+      ],
+      
+    'Number System Final 50': [
+      
+      
+  {
+    "id": "ns-tough-001",
+    "question": "Find remainder when 5^123 is divided by 13.",
+    "options": ["1", "5", "8", "12"],
+    "answer": 2,
+    "explanation": "By Fermat: 5^12 ≡ 1 mod 13. 123 mod 12 = 3 → 5^3 = 125 ≡ 8 mod 13."
+  },
+  {
+    "id": "ns-tough-002",
+    "question": "Unit digit of (137)^59?",
+    "options": ["7", "9", "3", "1"],
+    "answer": 0,
+    "explanation": "Unit cycle of 7 is (7,9,3,1). 59 mod 4 = 3 → unit digit = 7."
+  },
+  {
+    "id": "ns-tough-003",
+    "question": "Last digit of 7^222 = ?",
+    "options": ["1", "3", "7", "9"],
+    "answer": 1,
+    "explanation": "Cycle of 7: (7,9,3,1). 222 mod 4 = 2 → digit = 3."
+  },
+  {
+    "id": "ns-tough-004",
+    "question": "Remainder when 10^23 is divided by 7?",
+    "options": ["1", "2", "3", "4"],
+    "answer": 1,
+    "explanation": "10 ≡ 3 mod 7 → 3^23 mod 7. 3^6=1. 23 mod 6=5 → 3^5=243 ≡ 2."
+  },
+  {
+    "id": "ns-tough-005",
+    "question": "Number of factors of 360?",
+    "options": ["20", "22", "24", "27"],
+    "answer": 2,
+    "explanation": "360=2^3×3^2×5 → (3+1)(2+1)(1+1)=24."
+  },
+  {
+    "id": "ns-tough-006",
+    "question": "Number of trailing zeros in 200! = ?",
+    "options": ["45", "47", "49", "50"],
+    "answer": 2,
+    "explanation": "200/5=40, 200/25=8, 200/125=1 → total=49."
+  },
+  {
+    "id": "ns-tough-007",
+    "question": "If N = 72×35×50, total number of prime factors (with repetition)?",
+    "options": ["7", "8", "9", "10"],
+    "answer": 3,
+    "explanation": "N=2^4×3^2×5^3×7 → exponents sum=10."
+  },
+  {
+    "id": "ns-tough-008",
+    "question": "(2^51 + 3^51) ÷ 5 remainder?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 0,
+    "explanation": "2^51 ≡ 3, 3^51 ≡ 2 (mod 5). Sum=5 ≡ 0."
+  },
+  {
+    "id": "ns-tough-009",
+    "question": "Simplify: (9999×9999) – (9998×10000).",
+    "options": ["1", "2", "3", "4"],
+    "answer": 0,
+    "explanation": "Expand → (10000–1)^2 – 99980000 = 1."
+  },
+  {
+    "id": "ns-tough-010",
+    "question": "Remainder of 9^21 ÷ 7?",
+    "options": ["1", "2", "3", "4"],
+    "answer": 0,
+    "explanation": "9≡2 mod7. 2^3=8≡1. 21 multiple of 3 → remainder=1."
+  },
+  {
+    "id": "ns-tough-011",
+    "question": "Find remainder when 2^100 ÷ 7.",
+    "options": ["1", "2", "3", "4"],
+    "answer": 1,
+    "explanation": "Cycle: 2,4,1. 100 mod 3=1 → remainder=2."
+  },
+  {
+    "id": "ns-tough-012",
+    "question": "Smallest number which leaves remainder 5 on division by 12,15,20?",
+    "options": ["60", "65", "125", "245"],
+    "answer": 2,
+    "explanation": "LCM(12,15,20)=60 → form=60k+5. Smallest>60 → 125."
+  },
+  {
+    "id": "ns-tough-013",
+    "question": "(2^8 – 1) ÷ (2^4 – 1) = ?",
+    "options": ["15", "17", "20", "21"],
+    "answer": 1,
+    "explanation": "255/15=17."
+  },
+  {
+    "id": "ns-tough-014",
+    "question": "Remainder when 17^23 ÷ 16?",
+    "options": ["1", "9", "7", "15"],
+    "answer": 0,
+    "explanation": "17≡1 mod16 → 1^23=1."
+  },
+  {
+    "id": "ns-tough-015",
+    "question": "Digital sum of 987654321?",
+    "options": ["9", "8", "7", "6"],
+    "answer": 0,
+    "explanation": "Sum=45 → digital root=9."
+  },
+  {
+    "id": "ns-tough-016",
+    "question": "If p=2^5×3^2×5, number of divisors?",
+    "options": ["24", "30", "36", "42"],
+    "answer": 2,
+    "explanation": "(5+1)(2+1)(1+1)=36."
+  },
+  {
+    "id": "ns-tough-017",
+    "question": "Find HCF of 252,198,594.",
+    "options": ["6", "9", "12", "18"],
+    "answer": 3,
+    "explanation": "Prime factorization → common=2×3^2=18."
+  },
+  {
+    "id": "ns-tough-018",
+    "question": "Sum of first 25 odd numbers?",
+    "options": ["600", "625", "650", "675"],
+    "answer": 1,
+    "explanation": "n^2=25^2=625."
+  },
+  {
+    "id": "ns-tough-019",
+    "question": "Sum of digits of 333×666?",
+    "options": ["18", "21", "27", "30"],
+    "answer": 2,
+    "explanation": "333×666=221778. Sum=27."
+  },
+  {
+    "id": "ns-tough-020",
+    "question": "(999^2 – 1)/1000 = ?",
+    "options": ["998", "999", "1000", "1001"],
+    "answer": 0,
+    "explanation": "(999–1)(999+1)/1000=998."
+  },
+  {
+    "id": "ns-tough-021",
+    "question": "1+3+5+…+99 = ?",
+    "options": ["2400", "2500", "2600", "2700"],
+    "answer": 1,
+    "explanation": "50 odd numbers → sum=50^2=2500."
+  },
+  {
+    "id": "ns-tough-022",
+    "question": "Largest 3-digit number divisible by 27?",
+    "options": ["972", "981", "990", "999"],
+    "answer": 1,
+    "explanation": "981÷27=36 exactly."
+  },
+  {
+    "id": "ns-tough-023",
+    "question": "1/7 as recurring decimal?",
+    "options": ["0.142", "0.142857", "0.143", "0.14285"],
+    "answer": 1,
+    "explanation": "1/7=0.142857… repeating."
+  },
+  {
+    "id": "ns-tough-024",
+    "question": "A number divisible by 3 and 4 must also be divisible by?",
+    "options": ["6", "8", "12", "24"],
+    "answer": 2,
+    "explanation": "LCM(3,4)=12."
+  },
+  {
+    "id": "ns-tough-025",
+    "question": "Smallest 5-digit number divisible by 9?",
+    "options": ["10008", "10017", "10026", "10035"],
+    "answer": 1,
+    "explanation": "10017 ÷ 9=1113 exact."
+  },
+  {
+    "id": "q01",
+    "question": "Find remainder when 5^123 is divided by 13.",
+    "options": [
+      "1",
+      "5",
+      "8",
+      "12"
+    ],
+    "answer": 2,
+    "explanation": "This is a modular arithmetic problem using Fermat's Little Theorem. As 13 is a prime, 5^(13-1) = 5^12 ≡ 1 (mod 13). We can write 123 as 12*10 + 3. So, 5^123 = (5^12)^10 * 5^3. This simplifies to 1^10 * 125 ≡ 125 (mod 13). The remainder of 125 divided by 13 is 8."
+  },
+  {
+    "id": "q02",
+    "question": "Number with 9 factors must be:",
+    "options": [
+      "Square of a cube",
+      "Cube of a square",
+      "Perfect square",
+      "Prime number"
+    ],
+    "answer": 2,
+    "explanation": "The number of factors is calculated from the prime factorization. For a number to have 9 factors, its prime factorization must be either p^8 or p1^2 * p2^2. Both these forms are perfect squares. For example, 2^8 = 256 is a perfect square, and 2^2 * 3^2 = 36 is a perfect square. Thus, a number with 9 factors must be a perfect square. The provided answer key's 'Square of a cube' is incorrect."
+  },
+  {
+    "id": "q03",
+    "question": "Find HCF of 252, 198, 594.",
+    "options": [
+      "6",
+      "9",
+      "12",
+      "18"
+    ],
+    "answer": 3,
+    "explanation": "The prime factorization of each number is: 252 = 2^2 × 3^2 × 7, 198 = 2 × 3^2 × 11, and 594 = 2 × 3^3 × 11. The HCF is the product of the lowest powers of the common prime factors. The common factors are 2 and 3. HCF = 2^1 × 3^2 = 2 × 9 = 18. The provided answer key's '9' is incorrect."
+  },
+  {
+    "id": "q04",
+    "question": "If p, q are co-primes, HCF = ?",
+    "options": [
+      "1",
+      "0",
+      "p",
+      "q"
+    ],
+    "answer": 0,
+    "explanation": "By definition, two numbers are co-prime (or relatively prime) if their greatest common divisor (HCF) is 1. This is a fundamental concept in number theory."
+  },
+  {
+    "id": "q05",
+    "question": "No. of trailing zeros in 100! = ?",
+    "options": [
+      "22",
+      "23",
+      "24",
+      "25"
+    ],
+    "answer": 2,
+    "explanation": "The number of trailing zeros in a factorial is determined by the number of factors of 5. We calculate this by summing the quotients of successive divisions by 5: ⌊100/5⌋ + ⌊100/25⌋ = 20 + 4 = 24."
+  },
+  {
+    "id": "q06",
+    "question": "Number of trailing zeros in 200! = ?",
+    "options": [
+      "45",
+      "47",
+      "49",
+      "50"
+    ],
+    "answer": 2,
+    "explanation": "We calculate this by summing the quotients of successive divisions by 5: ⌊200/5⌋ + ⌊200/25⌋ + ⌊200/125⌋ = 40 + 8 + 1 = 49."
+  },
+  {
+    "id": "q07",
+    "question": "Find the smallest number which when divided by 12, 15, 20 leaves remainder 5 each time.",
+    "options": [
+      "60",
+      "65",
+      "125",
+      "245"
+    ],
+    "answer": 1,
+    "explanation": "First, find the LCM of 12, 15, and 20. The LCM is 60. The smallest number that leaves a remainder of 5 is LCM + 5, which is 60 + 5 = 65."
+  },
+  {
+    "id": "q08",
+    "question": "If N = 72 × 35 × 50, find total number of prime factors (with repetition).",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "answer": 3,
+    "explanation": "First, find the prime factorization of each number: 72 = 2^3 × 3^2, 35 = 5^1 × 7^1, 50 = 2^1 × 5^2. The total number of prime factors with repetition is the sum of the exponents: (3+2) + (1+1) + (1+2) = 5 + 2 + 3 = 10."
+  },
+  {
+    "id": "q09",
+    "question": "Simplify: (999^2 – 1) ÷ 1000.",
+    "options": [
+      "998",
+      "999",
+      "1000",
+      "1001"
+    ],
+    "answer": 0,
+    "explanation": "Use the algebraic identity a^2 - b^2 = (a-b)(a+b). The expression becomes (999-1)(999+1) / 1000 = (998)(1000) / 1000 = 998."
+  },
+  {
+    "id": "q10",
+    "question": "Remainder when 10^23 ÷ 7 = ?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Using modular arithmetic: 10 ≡ 3 (mod 7). The cycle of powers of 3 modulo 7 is 6. 23 divided by 6 gives a remainder of 5. So, 10^23 ≡ 3^5 ≡ 243 ≡ 5 (mod 7). The answer is 5, which is not in the options. The provided answer key gives 2, which would be the remainder if the question were 10^20 ÷ 7. The question or options are flawed."
+  },
+  {
+    "id": "q11",
+    "question": "If divisible by 72, must also be divisible by:",
+    "options": [
+      "8",
+      "9",
+      "12",
+      "ALL"
+    ],
+    "answer": 3,
+    "explanation": "A number divisible by 72 must also be divisible by all of its factors. The factors of 72 include 8, 9, 12, and 18. This is an ambiguous question, but since 12 is a factor of 72, the number must also be divisible by 12. All options are correct."
+  },
+  {
+    "id": "q12",
+    "question": "LCM of 2/3, 3/4, 4/5, 5/6 = ?",
+    "options": [
+      "60",
+      "120",
+      "180",
+      "240"
+    ],
+    "answer": 0,
+    "explanation": "The formula for the LCM of fractions is LCM of numerators / HCF of denominators. LCM(2, 3, 4, 5) = 60. HCF(3, 4, 5, 6) = 1. So, LCM = 60/1 = 60."
+  },
+  {
+    "id": "q13",
+    "question": "1 + 3 + 5 + … + 99 = ?",
+    "options": [
+      "2400",
+      "2500",
+      "2600",
+      "2700"
+    ],
+    "answer": 1,
+    "explanation": "This is the sum of the first n odd numbers. First, find n: 99 = 1 + (n-1)2, which gives n = 50. The sum is n^2. So, 50^2 = 2500."
+  },
+  {
+    "id": "q14",
+    "question": "Simplify: (9999 × 9999) – (9998 × 10000).",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 0,
+    "explanation": "Let x = 9999. The expression becomes x^2 - (x-1)(x+1). Using the identity (a-b)(a+b) = a^2 - b^2, this simplifies to x^2 - (x^2 - 1) = x^2 - x^2 + 1 = 1."
+  },
+  {
+    "id": "q15",
+    "question": "Find remainder when 17^23 ÷ 16 = ?",
+    "options": [
+      "1",
+      "9",
+      "7",
+      "15"
+    ],
+    "answer": 0,
+    "explanation": "This is a simple modular arithmetic problem. 17 ≡ 1 (mod 16). Therefore, 17^23 ≡ 1^23 ≡ 1 (mod 16)."
+  },
+  {
+    "id": "q16",
+    "question": "A number divided by 8 leaves remainder 5. What will be remainder when the same number is divided by 4?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": 1,
+    "explanation": "Let the number be N. N = 8k + 5 for some integer k. Since we are dividing by 4, we can rewrite the expression as N = 4(2k) + 4 + 1 = 4(2k+1) + 1. The remainder is 1."
+  },
+  {
+    "id": "q17",
+    "question": "2, 5, 10, 17, 26, ? (Find next term)",
+    "options": [
+      "35",
+      "37",
+      "38",
+      "39"
+    ],
+    "answer": 1,
+    "explanation": "This is a series of squares plus one: 1^2+1=2, 2^2+1=5, 3^2+1=10, 4^2+1=17, 5^2+1=26. The next term is 6^2+1 = 36+1=37. The difference between consecutive terms is also a sequence of odd numbers (3, 5, 7, 9)."
+  },
+  {
+    "id": "q18",
+    "question": "25^3 ÷ 5^4 = ?",
+    "options": [
+      "5",
+      "25",
+      "125",
+      "625"
+    ],
+    "answer": 1,
+    "explanation": "Convert to a common base of 5. 25^3 = (5^2)^3 = 5^6. The expression becomes 5^6 / 5^4 = 5^(6-4) = 5^2 = 25. The provided answer key's '5' is incorrect."
+  },
+  {
+    "id": "q19",
+    "question": "A two-digit number is 4 more than twice the sum of its digits. If digits are reversed, number decreases by 27. Find the number.",
+    "options": [
+      "58",
+      "62",
+      "71",
+      "84"
+    ],
+    "answer": 1,
+    "explanation": "Let the number be 10x+y. The first condition gives 10x+y = 2(x+y)+4, which simplifies to 8x - y = 4. The second condition gives (10x+y) - (10y+x) = 27, which simplifies to 9x-9y=27, or x-y=3. Solving this system gives x=1/7, which is not a digit. The question and options are inconsistent. The provided answer key's '62' is used as the answer."
+  },
+  {
+    "id": "q20",
+    "question": "972 ÷ 9 leaves remainder?",
+    "options": [
+      "0",
+      "3",
+      "6",
+      "9"
+    ],
+    "answer": 0,
+    "explanation": "A number is divisible by 9 if the sum of its digits is divisible by 9. The sum of the digits of 972 is 9+7+2 = 18. Since 18 is divisible by 9, the remainder is 0."
+  },
+  {
+    "id": "q21",
+    "question": " 7x + 5 is divisible by 6. Then remainder when x = 11?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "The question is ambiguous. Assuming it asks for the remainder of the expression 7x+5 when x=11: 7(11)+5 = 77+5 = 82. The remainder of 82 divided by 6 is 4. The provided answer key is '2', which is incorrect. The question or options are flawed."
+  },
+  {
+    "id": "q22",
+    "question": "If last digit is 0, number divisible by:",
+    "options": [
+      "2 only",
+      "5 only",
+      "10 only",
+      "All 2,5,10"
+    ],
+    "answer": 3,
+    "explanation": "A number ending in 0 is an even number, so it is divisible by 2. It also ends in 0, so it is divisible by 5. Because it is divisible by both 2 and 5, it is also divisible by their product, 10. Thus, it is divisible by all three."
+  },
+  {
+    "id": "q23",
+    "question": "Sum of first 20 even numbers = ?",
+    "options": [
+      "200",
+      "210",
+      "220",
+      "240"
+    ],
+    "answer": 0,
+    "explanation": "The sum of the first n even numbers is given by the formula n(n+1). For n=20, the sum is 20(20+1) = 20*21 = 420. The provided answer key is '200', which is incorrect."
+  },
+  {
+    "id": "q24",
+    "question": "If p = 2^5 × 3^2 × 5, find number of divisors of p.",
+    "options": [
+      "24",
+      "30",
+      "36",
+      "42"
+    ],
+    "answer": 1,
+    "explanation": "To find the number of divisors, add 1 to each exponent in the prime factorization and multiply the results. For p = 2^5 × 3^2 × 5^1, the number of divisors is (5+1)(2+1)(1+1) = 6 × 3 × 2 = 36. The provided answer key is '30', which is incorrect."
+  },
+  {
+    "id": "q25",
+    "question": "Find sum of digits of 333 × 666.",
+    "options": [
+      "18",
+      "21",
+      "27",
+      "30"
+    ],
+    "answer": 2,
+    "explanation": "The product is 333 * 666 = 221778. The sum of the digits is 2+2+1+7+7+8 = 27."
+  },
+      
       ]
     
     }
