@@ -446,17 +446,17 @@ const DB = {
     "explanation": "Using modular arithmetic, we first simplify the base. Since 9 is 1 more than 8, we can say that 9 is congruent to 1 modulo 8 (9 ≡ 1 mod 8). Therefore, any power of 9 will be congruent to that same power of 1. So, 9^142445 ≡ 1^142445 (mod 8). Since 1 raised to any power is 1, the remainder is 1."
   },
  {
-    "id": "rem-002",
-    "question": "What is the remainder when 123456789101112... up to 50 digits is divided by 11?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "answer": 3,
-    "explanation": "To find the remainder when a number is divided by 11, we use the alternating sum of digits rule. The alternating sum is (sum of digits at odd places) - (sum of digits at even places). The number is formed by concatenating natural numbers. The first 9 digits are from single-digit numbers (1 to 9). The next 41 digits are from two-digit numbers (10, 11, 12... up to the first part of 30). This number is too large to apply the rule directly, so let's simplify. A number like 1234567891011... can't be calculated easily. However, a simpler version of the question is needed, but the original question itself is tough. The alternating sum of digits for 123...4950 would be very large.  For a simpler number like 12345, the alternating sum is 5-4+3-2+1=3.  For this question, let's use a standard, more solvable approach. The question is a bit ill-defined, so a simpler version is better. Let's provide a clear, standard question. The question as stated is too complex for this format. A well-defined question would be: 'What is the remainder when the number 121212... (100 times) is divided by 11?' Answer: 0. However, I will create a new unique question as requested."
-  },
+  "id": "lcmhcf-003",
+  "question": "Three bells ring at intervals of 18 minutes, 24 minutes, and 32 minutes. If they start ringing together at 8:00 AM, at what time will they next ring together?",
+  "options": [
+    "12:48 PM",
+    "1:36 PM",
+    "2:24 PM",
+    "3:12 PM"
+  ],
+  "answer": "1:36 PM",
+  "explanation": "The time when the bells ring together again is the LCM of their intervals (18, 24, and 32). Prime factorization: 18 = 2 × 3², 24 = 2³ × 3, 32 = 2⁵. So LCM = 2⁵ × 3² = 288 minutes. 288 minutes = 4 hours 48 minutes. Adding 4 hours 48 minutes to 8:00 AM gives 12:48 PM."
+},
   {
     "id": "hcf-lcm-004",
     "question": "The LCM of two co-prime numbers is 72. If one of the numbers is 8, find the other number.",
