@@ -73,14 +73,48 @@
   }
 
   // ---------- start test ----------
-  function startTest(full=false){
-    const minutes = parseInt($('timer-minutes').value) || 20;
-    state.durationSec = minutes*60;
-    state.questions = buildQuestions(full);
-    state.currentQ = 0; state.answers = {}; state.startTS = Date.now();
-    if(state.questions.length===0){ alert('No questions available for selected topics.'); return; }
-    renderTest(); showView('test'); startTimer();
+  //function startTest(full=false){
+  //  const minutes = parseInt($('timer-minutes').value) || 20;
+  //  state.durationSec = minutes*60;
+  //  state.questions = buildQuestions(full);
+  //  state.currentQ = 0; state.answers = {}; state.startTS = Date.now();
+   // if(state.questions.length===0){ alert('No questions available for selected topics.'); return; }
+  //  renderTest(); showView('test'); startTimer();
+ // }
+  
+  // ---------- start test ----------
+function startTest(full=false){
+  const minutes = parseInt($('timer-minutes').value) || 20;
+  
+  // build questions first
+  const questionsList = buildQuestions(full);
+  if(questionsList.length === 0){ 
+    alert('No questions available for selected topics.'); 
+    return; 
   }
+
+  // --- Timer check logic ---
+  // Calculate recommended timer (e.g., 1 min per question)
+  const recommendedMinutes = questionsList.length; // 1 min per question
+  const confirmMsg = `Total questions: ${questionsList.length}\n` +
+                     `Recommended timer: ${recommendedMinutes} minutes\n` +
+                     `Current timer: ${minutes} minutes\n\n` +
+                     `Please confirm before starting, or change it to Cancel`;
+
+  if(!confirm(confirmMsg)) return; // user canceled
+
+  // --- Continue existing logic ---
+  state.durationSec = minutes * 60;
+  state.questions = questionsList;
+  state.currentQ = 0;
+  state.answers = {};
+  state.startTS = Date.now();
+
+  renderTest(); 
+  showView('test'); 
+  startTimer();
+}
+
 
   // ---------- timer ----------
   function startTimer(){
