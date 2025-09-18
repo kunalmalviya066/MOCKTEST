@@ -179,3 +179,97 @@ footer{display:flex;justify-content:space-between;align-items:center;margin-top:
 
 /* Accessibility helpers */
 button:focus, .option:focus{outline:3px solid rgba(15,98,254,0.12);outline-offset:2px}
+
+/* Dark theme variables */
+/* Dark theme variables */
+[data-theme="dark"] {
+  --bg: #0f172a;          /* page background */
+  --card: #1e293b;        /* card / modal background */
+  --accent: #38bdf8;      /* primary accent */
+  --accent-2: #818cf8;    /* secondary accent */
+  --muted: #94a3b8;       /* muted text */
+  --success: #22c55e;
+  --danger: #f87171;
+  --glass: rgba(30,41,59,0.65);
+  --radius: 12px;
+  --shadow-1: 0 6px 18px rgba(0,0,0,0.4);
+  --shadow-2: 0 10px 30px rgba(0,0,0,0.6);
+
+  /* overrides for backgrounds that were hardcoded */
+  --light-surface: #1e293b;
+  --lighter-surface: #273549;
+  --highlight: #334155;
+}
+
+[data-theme="dark"] body {
+  color: #f8fafc;
+}
+
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  background: var(--card);
+  color: var(--accent);
+  box-shadow: var(--shadow-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.theme-toggle:hover {
+  transform: rotate(15deg) scale(1.1);
+}
+[data-theme="dark"] .subject {
+  background: linear-gradient(180deg, var(--card), var(--bg));
+  border-color: rgba(255,255,255,0.06);
+}
+
+[data-theme="dark"] .subject:hover {
+  background: var(--highlight);
+}
+
+[data-theme="dark"] .topic {
+  background: var(--lighter-surface);
+  border-color: rgba(255,255,255,0.06);
+}
+
+[data-theme="dark"] .topic.selected {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #fff;
+}
+
+[data-theme="dark"] .option {
+  background: var(--lighter-surface);
+  border-color: rgba(255,255,255,0.08);
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .option.selected {
+  background: var(--accent);
+  border-color: var(--accent-2);
+  color: #fff;
+}
+
+[data-theme="dark"] .question {
+  background: var(--card);
+}
+
+[data-theme="dark"] .result-card,
+[data-theme="dark"] .history-item {
+  background: var(--card);
+  border-color: rgba(255,255,255,0.06);
+}
+/* Fix topic selection text color in dark mode */
+[data-theme="dark"] .topic {
+  color: #f1f5f9; /* normal topic text */
+}
+
+[data-theme="dark"] .topic.selected {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #ffffff !important; /* force white text on accent */
+}
+
