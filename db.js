@@ -1191,9 +1191,9 @@ const DB = {
   {
     "id": "q-005",
     "question": "A man spends 60% of his income. If his income increases by 20% and his expenditure increases by 10%, by what percent do his savings increase?",
-    "options": ["25%", "33.33%", "50%", "20%", "40%"],
+    "options": ["25%", "35%", "50%", "20%", "40%"],
     "answer": 1,
-    "explanation": "Income=100, Expenditure=60, Savings=40. New Income=120, New Expenditure=66 ⇒ Savings=54. Increase = 14/40*100 = 35% ≈ 33.33%."
+    "explanation": "Income=100, Expenditure=60, Savings=40. New Income=120, New Expenditure=66 ⇒ Savings=54. Increase = 14/40*100 = 35% "
   },
   {
     "id": "q-006",
@@ -1216,13 +1216,13 @@ const DB = {
     "answer": 1,
     "explanation": "Let CP=x. SP at 20% loss=0.8x. 0.8x+180=1.1x ⇒ 0.3x=180 ⇒ x=600."
   },
-  {
-    "id": "q-009",
-    "question": "In an exam, a student scored 35% of marks and failed by 50 marks. Another student scored 50% marks and got 30 marks more than pass marks. Find total marks.",
-    "options": ["400", "500", "600", "700", "800"],
-    "answer": 2,
-    "explanation": "Let total marks=M, pass=P. 0.35M=P-50, 0.5M=P+30 ⇒ 0.15M=80 ⇒ M≈533. Adjusted to nearest feasible total marks=600."
-  },
+ {
+  "id": "q-009",
+  "question": "In an exam, a student scored 35% of marks and failed by 45 marks. Another student scored 50% marks and got 30 marks more than pass marks. Find total marks.",
+  "options": ["400", "450", "500", "550", "600"],
+  "answer": 2,
+  "explanation": "Let total marks = M, pass = P. 0.35M = P-45 ⇒ P = 0.35M + 45. 0.50M = P + 30 ⇒ 0.50M = 0.35M + 45 + 30 ⇒ 0.15M = 75 ⇒ M = 500."
+},
   {
     "id": "q-010",
     "question": "Salary is increased by 20% and then decreased by 20%. What is net change?",
@@ -1429,7 +1429,7 @@ const DB = {
     "id": "q-038",
     "question": "The cost of 12 pens is equal to the cost of 8 pencils. If a pencil costs Rs. 3, find the cost of a pen.",
     "options": ["2 Rs", "2.5 Rs", "3 Rs", "3.5 Rs", "4 Rs"],
-    "answer": 1,
+    "answer": 0,
     "explanation": "12 pens=8 pencils ⇒ 8*3=24 Rs for 12 pens ⇒ cost per pen=24/12=2 Rs → Option index 0."
   },
   {
