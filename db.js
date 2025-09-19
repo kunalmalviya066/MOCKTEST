@@ -88,8 +88,8 @@ const DB = {
     "id": "num-012",
     "question": "Find HCF of 504 and 660.",
     "options": ["12", "18", "24", "36"],
-    "answer": 2,
-    "explanation": "Prime factorization → HCF = 24."
+    "answer": 0,
+    "explanation": "Prime factorization → HCF = 12."
   },
   {
     "id": "num-013",
@@ -241,7 +241,7 @@ const DB = {
     "id": "num-033",
     "question": "Last digit of 7^222 is:",
     "options": ["1", "3", "7", "9"],
-    "answer": 1,
+    "answer": 3,
     "explanation": "7 cycle: (7,9,3,1). 222 mod 4=2 → last digit 9."
   },
   {
@@ -269,7 +269,7 @@ const DB = {
     "id": "num-037",
     "question": "LCM of first 5 natural numbers = ?",
     "options": ["30", "40", "50", "60"],
-    "answer": 0,
+    "answer": 3,
     "explanation": "1,2,3,4,5 → LCM=60."
   },
   {
@@ -454,7 +454,7 @@ const DB = {
     "2:24 PM",
     "3:12 PM"
   ],
-  "answer": "1:36 PM",
+  "answer": 0,
   "explanation": "The time when the bells ring together again is the LCM of their intervals (18, 24, and 32). Prime factorization: 18 = 2 × 3², 24 = 2³ × 3, 32 = 2⁵. So LCM = 2⁵ × 3² = 288 minutes. 288 minutes = 4 hours 48 minutes. Adding 4 hours 48 minutes to 8:00 AM gives 12:48 PM."
 },
   {
@@ -468,7 +468,7 @@ const DB = {
     "id": "ns-tough-007",
     "question": "Find the sum of all prime numbers between 1 and 20.",
     "options": ["77", "78", "80", "81"],
-    "answer": 1,
+    "answer": 0,
     "explanation": "The prime numbers between 1 and 20 are 2, 3, 5, 7, 11, 13, 17, and 19. Their sum is 2 + 3 + 5 + 7 + 11 + 13 + 17 + 19 = 77."
   },
   {
@@ -478,18 +478,13 @@ const DB = {
     "answer": 0,
     "explanation": "2^51 ≡ 3, 3^51 ≡ 2 (mod 5). Sum=5 ≡ 0."
   },
-  {
-    "id": "rem-004",
-    "question": "What is the remainder when $10^{10} + 10^{100} + 10^{1000}$ is divided by 7?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "6"
-    ],
-    "answer": 3,
-    "explanation": "We use modular arithmetic. We know that $10^3 ≡ (-1) (mod 7)$. $10^{10} = 10^{3*3+1} = (10^3)^3 * 10^1 ≡ (-1)^3 * 10 ≡ -1 * 3 = -3 (mod 7)$, which is 4. $10^{100} = 10^{3*33+1} = (10^3)^{33} * 10^1 ≡ (-1)^{33} * 10 ≡ -1 * 3 = -3 (mod 7)$, which is 4. $10^{1000} = 10^{3*333+1} = (10^3)^{333} * 10^1 ≡ (-1)^{333} * 10 ≡ -1 * 3 = -3 (mod 7)$, which is 4. The sum is 4+4+4 = 12. The remainder when 12 is divided by 7 is 5. There seems to be an error in the provided options. Let's create a new question with a proper solution."
-  },
+ {
+  id: "rem-004",
+  question: "What is the remainder when 10^10 + 10^100 + 10^1000 is divided by 7?",
+  options: ["1", "3", "5", "6"],
+  answer: 2,
+  explanation: "Use modular arithmetic. 10 ≡ 3 (mod 7) and 10^3 ≡ 27 ≡ -1 (mod 7). \n\n10^10 = 10^(3×3 + 1) = (10^3)^3 × 10 ≡ (-1)^3 × 3 = -3 ≡ 4 (mod 7).\n10^100 = 10^(3×33 + 1) ≡ (-1)^33 × 3 = -3 ≡ 4 (mod 7).\n10^1000 = 10^(3×333 + 1) ≡ (-1)^333 × 3 = -3 ≡ 4 (mod 7).\n\nSum = 4 + 4 + 4 = 12. 12 divided by 7 leaves remainder 5. Therefore the correct option is '5' (index 2)."
+},
   {
     "id": "ns-tough-010",
     "question": "Remainder of 9^21 ÷ 7?",
@@ -538,12 +533,12 @@ const DB = {
     "explanation": "Sum=45 → digital root=9."
   },
   {
-    "id": "ns-tough-016",
-    "question": "If p=2^5×3^2×5, number of divisors?",
-    "options": ["24", "30", "36", "42"],
-    "answer": 2,
-    "explanation": "(5+1)(2+1)(1+1)=36."
-  },
+  "id": "ns-tough-016",
+  "question": "Find the sum of the digits of the smallest 4-digit number divisible by 37.",
+  "options": ["10", "19", "22", "28"],
+  "answer": 1,
+  "explanation": "The smallest 4-digit number is 1000. Divide 1000 ÷ 37 = 27.02. The next multiple is 37 × 28 = 1036. The sum of digits of 1036 is 1 + 0 + 3 + 6 = 10. Correct option is 10."
+},
   {
     "id": "ns-tough-017",
     "question": "If the number 876x4 is divisible by 9, find the value of x.",
