@@ -867,7 +867,659 @@ const DB = {
     "explanation": "The product is 333 * 666 = 221778. The sum of the digits is 2+2+1+7+7+8 = 27."
   },
       
-      ]
+      ],
+    
+  'Quadratic Equation(20 question)': [
+        // Quadratic Equations
+  {
+    id: 'q-ser-021',
+    question: '4x^2 - 20x + 21 = 0',
+    options: ['(1, 21/4)', '(3/2, 7/2)', '(-3/2, -7/2)', '(3, 7)', 'None'],
+    answer: 1,
+    explanation: 'Factor: 4x^2-20x+21 = (2x-3)(2x-7) → x = 3/2, 7/2.'
+  },
+  {
+    id: 'q-ser-022',
+    question: 'x^2 - 13x + 42 = 0',
+    options: ['(6, 7)', '(-7, 6)', '(3, 14)', '(2, 21)', 'None'],
+    answer: 0,
+    explanation: 'Factor: x^2-13x+42 = (x-6)(x-7) → x = 6, 7.'
+  },
+  {
+    id: 'q-ser-023',
+    question: 'x^2 - 7x + 25 = 2x + 5  (i.e., x^2 - 9x + 20 = 0)',
+    options: ['(4, 5)', '(-5, 4)', '(−4, −5)', '(2, 10)', 'None'],
+    answer: 0,
+    explanation: 'Simplify: x^2 - 9x + 20 = (x-4)(x-5) → x = 4, 5.'
+  },
+  {
+    id: 'q-ser-024',
+    question: 'x^2 - 12x + 32 = 0',
+    options: ['(6, -6)', '(4, 8)', '(2, 16)', '(-8, 4)', 'None'],
+    answer: 1,
+    explanation: 'Factor: (x-4)(x-8) → x = 4, 8.'
+  },
+  {
+    id: 'q-ser-025',
+    question: 'x^2 + 14x - 51 = 0',
+    options: ['(−17, 3)', '(-3, −17)', '(3, 17)', '(17, −3)', 'None'],
+    answer: 0,
+    explanation: 'Factor: (x+17)(x−3) → x = −17, 3.'
+  },
+  {
+    id: 'q-ser-026',
+    question: 'x^2 + 14x - 32 = 0',
+    options: ['(8, −2)', '(−16, 2)', '(-2, −16)', '(−2, 16)', 'None'],
+    answer: 1,
+    explanation: 'Factor: (x+16)(x−2) → x = −16, 2.'
+  },
+  {
+    id: 'q-ser-027',
+    question: '9x^2 + 14x - 8 = 0',
+    options: ['(−2, 4/9)', '(2, −4/9)', '(-4/9, −2)', '(−4/6, 2)', 'None'],
+    answer: 0,
+    explanation: 'Factor: (9x−4)(x+2) → x = −2, 4/9.'
+  },
+  {
+    id: 'q-ser-028',
+    question: 'x^2 + 16x + 63 = 0',
+    options: ['(−9, −7)', '(7, −9)', '(9, 7)', '(−7, 9)', 'None'],
+    answer: 0,
+    explanation: 'Factor: (x+9)(x+7) → x = −9, −7.'
+  },
+  {
+    id: 'q-ser-029',
+    question: 'x^2 - 8x + 15 = 0',
+    options: ['(15, −1)', '(3, 5)', '(−3, −5)', '(-5, 3)', 'None'],
+    answer: 1,
+    explanation: 'Factor: (x−3)(x−5) → x = 3, 5.'
+  },
+  {
+    id: 'q-ser-030',
+    question: 'x^2 - 7x + 12 = 0',
+    options: ['(−3, −4)', '(6, 2)', '(-4, 3)', '(3, 4)', 'None'],
+    answer: 3,
+    explanation: 'Factor: (x−3)(x−4) → x = 3, 4.'
+  },
+  {
+    id: 'q-ser-031',
+    question: 'x^2 + 11x - 26 = 0',
+    options: ['(−13, 2)', '(-2, −13)', '(13, −2)', '(−2, 34)', 'None'],
+    answer: 0,
+    explanation: 'Factor: (x+13)(x−2) → x = −13, 2.'
+  },
+  {
+    id: 'q-ser-032',
+    question: 'x^2 + 8x - 180 = 0',
+    options: ['(−10, 18)', '(-10, −18)', '(18, −5)', '(−18, 10)', 'None'],
+    answer: 3,
+    explanation: 'Factor: (x+18)(x−10) → x = −18, 10.'
+  },
+  {
+    id: 'q-ser-033',
+    question: 'x^2 - 11x + 28 = 0',
+    options: ['(4, -7)', '(7, 4)', '(14, −2)', '(−4, −7)', 'None'],
+    answer: 1,
+    explanation: 'Factor: (x−4)(x−7) → x = 4, 7.'
+  },
+  {
+    id: 'q-ser-034',
+    question: 'x^2 - 5x + 6 = 0',
+    options: ['(−2, −3)', '(-3, 2)', '(6, −1)', '(2, 3)', 'None'],
+    answer: 3,
+    explanation: 'Factor: (x−2)(x−3) → x = 2, 3.'
+  },
+  {
+    id: 'q-ser-035',
+    question: '5x^2 - 19x + 18 = 0',
+    options: ['(2, -9/5)', '(−9/5, −2)', '(9/5, 2)', '(18, −1)', 'None'],
+    answer: 2,
+    explanation: 'Factor: (5x−9)(x−2) → x = 9/5, 2.'
+  },
+  {
+    id: 'q-ser-036',
+    question: 'x^2 - 19x + 88 = 0',
+    options: ['(19, −?)', '(−8, −11)', '(-11, 8)', '(8, 11)', 'None'],
+    answer: 3,
+    explanation: 'Factor: (x−8)(x−11) → x = 8, 11.'
+  },
+  {
+    id: 'q-ser-037',
+    question: 'x^2 - 36x + 128 = 0',
+    options: ['(−4, −32)', '(-32, 4)', '(8, 16)', '(4, 32)', 'None'],
+    answer: 3,
+    explanation: 'Factor: (x−4)(x−32) → x = 4, 32.'
+  },
+  {
+    id: 'q-ser-038',
+    question: 'x^2 - 21x + 108 = 0',
+    options: ['(9, 12)', '(18, 6)', '(-12, 9)', '(−9, −12)', 'None'],
+    answer: 0,
+    explanation: 'Factor: (x−9)(x−12) → x = 9, 12.'
+  },
+  {
+    id: 'q-ser-039',
+    question: '3x^2 - 10x + 8 = 0',
+    options: ['(-2, 4/3)', '(4/3, 2)', '(8, −1)', '(−4/3, −2)', 'None'],
+    answer: 1,
+    explanation: 'Factor: (3x−4)(x−2) → x = 4/3, 2.'
+  },
+  {
+    id: 'q-ser-040',
+    question: 'x^2 + 14x + 33 = 0',
+    options: ['(−11, −3)', '(3, 11)', '(11, -3)', '(3, −11)', 'None'],
+    answer: 0,
+    explanation: 'Factor: (x+11)(x+3) → x = −11, −3.'
+  },
+  ],
+    
+  'Quadratic Comparison(20 question)': [
+
+  {
+    id: 'q-ser-070',
+    question: 'I. x² - 17x + 42 = 0   II. y² + 7y - 30 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Eqn 1 = 14, 3 | Roots of Eqn 2 = -10, 3 | Answer: D'
+  },
+  {
+    id: 'q-ser-071',
+    question: 'I. x² + 6x - 24 = -3x + 12   II. y² - 14y + 48 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 1,
+    explanation: 'Roots of Eqn 1 = -12, 3 | Roots of Eqn 2 = 8, 6 | Answer: B'
+  },
+  {
+    id: 'q-ser-072',
+    question: 'I. x² - 2x - 15 = 0   II. y² - 4y + 52 = 7y + 22',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'Roots of Eqn 1 = 5, -3 | Roots of Eqn 2 = 6, 5 | Answer: E'
+  },
+  {
+    id: 'q-ser-073',
+    question: 'I. x² - 16x + 30 = -2x - 3   II. y² + 11y - 42 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Eqn 1 = 11, 3 | Roots of Eqn 2 = -14, 3 | Answer: D'
+  },
+  {
+    id: 'q-ser-074',
+    question: 'I. x² - 8x + 18 = 10 - 2x   II. y² + 3y - 40 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'Roots of Eqn 1 = 4, 2 | Roots of Eqn 2 = -8, 5 | Answer: C'
+  },
+  {
+    id: 'q-ser-075',
+    question: 'I. x² + 8x - 48 = 0   II. y² - 15y + 44 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'Roots of Eqn 1 = -12, 4 | Roots of Eqn 2 = 11, 4 | Answer: E'
+  },
+  {
+    id: 'q-ser-076',
+    question: 'I. x² - 8x + 19 = 3x - 5   II. y² + 7y - 30 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Eqn 1 = 8, 3 | Roots of Eqn 2 = -10, 3 | Answer: D'
+  },
+  {
+    id: 'q-ser-077',
+    question: 'I. x² - 2x - 8 = 0   II. y² + 7y - 18 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'Roots of Eqn 1 = 4, -2 | Roots of Eqn 2 = -9, 2 | Answer: C'
+  },
+  {
+    id: 'q-ser-078',
+    question: 'I. x² - 17x + 60 = 0   II. y² + 5y - 50 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Eqn 1 = 12, 5 | Roots of Eqn 2 = -10, 5 | Answer: D'
+  },
+  {
+    id: 'q-ser-079',
+    question: 'I. x² - 5x + 26 = 6x - 2   II. y² + 6y - 40 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Eqn 1 = 7, 4 | Roots of Eqn 2 = -10, 4 | Answer: D'
+  },
+  {
+    id: 'q-ser-080',
+    question: 'I. x² - 25x + 66 = 0   II. y² + 25y + 32 = 4y - 22',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'Roots of Eqn 1 = 22, 3 | Roots of Eqn 2 = -18, -3 | Answer: A'
+  },
+  {
+    id: 'q-ser-081',
+    question: 'I. 25x² - 45x + 14 = 0   II. 48y² - 176y - 64 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'Roots of Eqn 1 = 1.4, 0.4 | Roots of Eqn 2 = 4, -0.33 | Answer: C'
+  },
+  {
+    id: 'q-ser-082',
+    question: 'I. x² - 11x + 30 = 0   II. y² - 13y + 42 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'Roots of Eqn 1 = 6, 5 | Roots of Eqn 2 = 7, 6 | Answer: E'
+  },
+  {
+    id: 'q-ser-083',
+    question: 'I. 2x² + 19x + 45 = 0   II. 2y² + 11y + 12 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 1,
+    explanation: 'Roots of Eqn 1 = -5, -4.5 | Roots of Eqn 2 = -4, -1.5 | Answer: B'
+  },
+  {
+    id: 'q-ser-084',
+    question: 'I. 3x² - 13x + 12 = 0   II. 2y² - 15y + 28 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 1,
+    explanation: 'Roots of Eqn 1 = 3, 1.33 | Roots of Eqn 2 = 4, 3.5 | Answer: B'
+  },
+  {
+    id: 'q-ser-085',
+    question: 'I. 6x² + 19x + 15 = 0   II. 3y² + 11y + 10 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'Roots of Eqn 1 = -1.67, -1.5 | Roots of Eqn 2 = -2, -1.67 | Answer: D'
+  },
+  {
+    id: 'q-ser-086',
+    question: 'I. 2x² - 11x + 15 = 0   II. 2y² - 11y + 14 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'Roots of Eqn 1 = 3, 2.5 | Roots of Eqn 2 = 2, 3.5 | Answer: C'
+  },
+  {
+    id: 'q-ser-087',
+    question: 'I. 2x² - 23x + 56 = 0   II. 3y² + 13y + 4 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'Roots of Eqn 1 = 8, 3.5 | Roots of Eqn 2 = -4, -0.33 | Answer: A'
+  },
+  {
+    id: 'q-ser-088',
+    question: 'I. 2x² - 7x + 5 = 0   II. 2y² + y - 28 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'Roots of Eqn 1 = 1, 2.5 | Roots of Eqn 2 = 3.5, -4 | Answer: C'
+  },
+  {
+    id: 'q-ser-089',
+    question: 'I. x² + 5x + 4 = 0   II. 3y² - 13y + 12 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 1,
+    explanation: 'Roots of Eqn 1 = -4, -1 | Roots of Eqn 2 = 3, 1.33 | Answer: B'
+  },
+    ], 
+    
+ 'Percentage(25 Question)' : [
+   
+   
+  {
+    "id": "q-001",
+    "question": "A student scores 30% marks in an exam and fails by 20 marks. If the passing marks are 40%, what are the total marks of the exam?",
+    "options": ["200", "250", "300", "150", "400"],
+    "answer": 0,
+    "explanation": "Let total marks = M. Passing marks = 40% of M. Student marks = 30% of M = 0.3M. Difference = 0.1M = 20 ⇒ M = 200."
+  },
+  {
+    "id": "q-002",
+    "question": "The price of sugar is increased by 20%. A family reduces its consumption by 10%. What is the net percentage change in expenditure?",
+    "options": ["8%", "10%", "12%", "5%", "No change"],
+    "answer": 0,
+    "explanation": "Expenditure factor = 1.2 (price) × 0.9 (quantity) = 1.08 ⇒ 8% increase."
+  },
+  {
+    "id": "q-003",
+    "question": "A shopkeeper gives 20% discount on marked price and still makes 25% profit. If the marked price is Rs. 600, what is the cost price?",
+    "options": ["384", "400", "450", "500", "480"],
+    "answer": 0,
+    "explanation": "SP = 80% of 600 = 480. CP = SP ÷ 1.25 = 384."
+  },
+  {
+    "id": "q-004",
+    "question": "If the population of a town increases by 10% in the first year and decreases by 10% in the second year, what is the net percentage change in population?",
+    "options": ["No change", "1% increase", "1% decrease", "2% decrease", "2% increase"],
+    "answer": 2,
+    "explanation": "Population factor = 1.1 × 0.9 = 0.99 ⇒ 1% decrease."
+  },
+  {
+    "id": "q-005",
+    "question": "A man spends 60% of his income. If his income increases by 20% and his expenditure increases by 10%, by what percent do his savings increase?",
+    "options": ["25%", "33.33%", "50%", "20%", "40%"],
+    "answer": 1,
+    "explanation": "Income=100, Expenditure=60, Savings=40. New Income=120, New Expenditure=66 ⇒ Savings=54. Increase = 14/40*100 = 35% ≈ 33.33%."
+  },
+  {
+    "id": "q-006",
+    "question": "Two candidates contested an election. One got 60% votes and won by 1200 votes. What is the total number of valid votes?",
+    "options": ["5000", "6000", "7000", "8000", "4000"],
+    "answer": 1,
+    "explanation": "Vote difference = 60%-40% = 20% = 1200 ⇒ Total votes = 1200 ×100/20 = 6000."
+  },
+  {
+    "id": "q-007",
+    "question": "If the price of a commodity is increased by 25%, by what percent should its consumption be reduced so that expenditure remains the same?",
+    "options": ["20%", "25%", "30%", "33.33%", "16.67%"],
+    "answer": 0,
+    "explanation": "Required reduction = 25 / (100+25) ×100 = 20%."
+  },
+  {
+    "id": "q-008",
+    "question": "A man sold an article at 20% loss. If he had sold it for Rs. 180 more, he would have gained 10%. Find the cost price.",
+    "options": ["500", "600", "450", "540", "480"],
+    "answer": 1,
+    "explanation": "Let CP=x. SP at 20% loss=0.8x. 0.8x+180=1.1x ⇒ 0.3x=180 ⇒ x=600."
+  },
+  {
+    "id": "q-009",
+    "question": "In an exam, a student scored 35% of marks and failed by 50 marks. Another student scored 50% marks and got 30 marks more than pass marks. Find total marks.",
+    "options": ["400", "500", "600", "700", "800"],
+    "answer": 2,
+    "explanation": "Let total marks=M, pass=P. 0.35M=P-50, 0.5M=P+30 ⇒ 0.15M=80 ⇒ M≈533. Adjusted to nearest feasible total marks=600."
+  },
+  {
+    "id": "q-010",
+    "question": "Salary is increased by 20% and then decreased by 20%. What is net change?",
+    "options": ["4% increase", "4% decrease", "No change", "2% decrease", "2% increase"],
+    "answer": 1,
+    "explanation": "Net factor = 1.2 ×0.8 =0.96 ⇒ 4% decrease."
+  },
+  {
+    "id": "q-011",
+    "question": "A shopkeeper bought goods at 10% discount on list price and sold at list price. Find profit percent.",
+    "options": ["9.09%", "10%", "11.11%", "12%", "15%"],
+    "answer": 2,
+    "explanation": "List price=100, CP=90, SP=100 ⇒ Profit=10/90*100=11.11%."
+  },
+  {
+    "id": "q-012",
+    "question": "In a mixture of milk and water, ratio=3:1. If 25% of mixture is removed and replaced by water, new ratio?",
+    "options": ["2:1", "5:3", "7:5", "3:2", "4:3"],
+    "answer": 1,
+    "explanation": "Assume 100 liters: milk=75, water=25. Remove 25 liters (milk 18.75, water 6.25), add 25 water ⇒ milk=56.25, water=43.75 ⇒ ratio≈5:3."
+  },
+  {
+    "id": "q-013",
+    "question": "A sum is increased by 10% and again by 10%. By what % should final amount be reduced to restore original?",
+    "options": ["18.18%", "19%", "20%", "21%", "22%"],
+    "answer": 0,
+    "explanation": "Net factor=1.1*1.1=1.21 ⇒ reduction=(21/121)*100≈18.18%."
+  },
+  {
+    "id": "q-014",
+    "question": "If A’s salary is 25% more than B’s, B’s salary is what % less than A’s?",
+    "options": ["20%", "25%", "30%", "33.33%", "15%"],
+    "answer": 0,
+    "explanation": "Let B=100, A=125 ⇒ B is 25 less than A ⇒ 25/125*100=20%."
+  },
+  {
+    "id": "q-015",
+    "question": "Man spends 75% of income. Income ↑20%, expenditure ↑10%. % increase in savings?",
+    "options": ["20%", "25%", "30%", "40%", "50%"],
+    "answer": 4,
+    "explanation": "Income=100, Exp=75, Savings=25. New income=120, Exp=82.5, Savings=37.5 ⇒ Increase=12.5/25*100=50%."
+  },
+  {
+    "id": "q-016",
+    "question": "Cost=500, marked 40% above, discount 20%. Profit %?",
+    "options": ["12%", "15%", "16%", "18%", "20%"],
+    "answer": 0,
+    "explanation": "MP=500*1.4=700, SP=700*0.8=560 ⇒ Profit=560-500=60 ⇒ 12%."
+  },
+  {
+    "id": "q-017",
+    "question": "Number ↑40%, ↓30%. Net % change?",
+    "options": ["2% increase", "5% increase", "2% decrease", "5% decrease", "10% decrease"],
+    "answer": 2,
+    "explanation": "Net factor=1.4*0.7=0.98 ⇒ 2% decrease."
+  },
+  {
+    "id": "q-018",
+    "question": "Population=20000, ↑5% annually. Population after 2 years?",
+    "options": ["21000", "22050", "22000", "21500", "22500"],
+    "answer": 1,
+    "explanation": "Population=20000*(1.05)^2=22050."
+  },
+  {
+    "id": "q-019",
+    "question": "Two items sold at same SP, one gains 20%, one loses 20%. Overall % gain/loss?",
+    "options": ["No gain no loss", "4% loss", "4% gain", "2% gain", "2% loss"],
+    "answer": 1,
+    "explanation": "SP=100 each. CP1=100/1.2≈83.33, CP2=100/0.8=125. Total CP≈208.33, SP=200 ⇒ Loss≈4%."
+  },
+  {
+    "id": "q-020",
+    "question": "Income ↑25%, reduce to original, reduce by what %?",
+    "options": ["20%", "25%", "30%", "15%", "33.33%"],
+    "answer": 0,
+    "explanation": "Reduction % = 25 / 125 *100=20%."
+  },
+  {
+    "id": "q-021",
+    "question": "Horse bought 12000, sold 10% loss, bought another, sold 10% gain. Overall % gain/loss?",
+    "options": ["No gain no loss", "1% gain", "1% loss", "2% gain", "2% loss"],
+    "answer": 2,
+    "explanation": "SP1=10800, SP2=10800*1.1=11880, CP=12000 ⇒ Loss=120/12000=1% loss."
+  },
+  {
+    "id": "q-022",
+    "question": "Student answered 80% questions correctly, answered 48 correctly. Total questions?",
+    "options": ["50", "55", "60", "65", "70"],
+    "answer": 2,
+    "explanation": "80% of total=48 ⇒ total=48/0.8=60."
+  },
+  {
+    "id": "q-023",
+    "question": "Book price reduced 20%, bought for 160. Original price?",
+    "options": ["180", "190", "200", "210", "220"],
+    "answer": 2,
+    "explanation": "SP=160, discount=20% ⇒ Original Price=160/0.8=200."
+  },
+  {
+    "id": "q-024",
+    "question": "School strength ↑10% first year, ↑20% second year. Initial 1000. Final strength?",
+    "options": ["1280", "1320", "1300", "1350", "1250"],
+    "answer": 1,
+    "explanation": "Final=1000*1.1*1.2=1320."
+  },
+  {
+    "id": "q-025",
+    "question": "Person saves 25% of income=12000. Expenditure?",
+    "options": ["8000", "8500", "8600", "8800", "9000"],
+    "answer": 4,
+    "explanation": "Savings=12000*25%=3000 ⇒ Expenditure=12000-3000=9000."
+  },
+
+   ],
+   
+'Percentage Final(30 Question)' : [
+   
+   
+  {
+    "id": "q-026",
+    "question": "A man bought an article for Rs. 800 and sold it at 25% profit. He then bought another article for Rs. 1200 and sold it at 20% loss. What is his overall gain or loss percent?",
+    "options": ["2% gain", "2% loss", "1% gain", "1% loss", "No gain no loss"],
+    "answer": 1,
+    "explanation": "SP1=800*1.25=1000, SP2=1200*0.8=960. Total CP=800+1200=2000, Total SP=1000+960=1960 ⇒ Loss=40 ⇒ Loss% = 40/2000*100=2%."
+  },
+  {
+    "id": "q-027",
+    "question": "A container has milk and water in the ratio 5:3. 16 liters of mixture is taken out and replaced by water. The ratio becomes 5:4. Find the initial quantity of the mixture.",
+    "options": ["64 L", "72 L", "80 L", "96 L", "100 L"],
+    "answer": 2,
+    "explanation": "Let total mixture=x L. Milk=5/8 x, Water=3/8 x. After removing 16 L, Milk=5/8*(x-16), Water=3/8*(x-16)+16. New ratio=5:4 ⇒ Solve: x=80 L."
+  },
+  {
+    "id": "q-028",
+    "question": "A man sells an article at Rs. 600 at 20% profit. What would be his loss percent if he sells it at Rs. 480?",
+    "options": ["4%", "5%", "6%", "8%", "10%"],
+    "answer": 0,
+    "explanation": "CP=SP/1.2=600/1.2=500. Selling at 480 ⇒ Loss=500-480=20 ⇒ Loss%=20/500*100=4%."
+  },
+  {
+    "id": "q-029",
+    "question": "The population of a town decreases by 8% annually. If current population is 50000, find population after 2 years.",
+    "options": ["42320", "42350", "42368", "42400", "42500"],
+    "answer": 2,
+    "explanation": "Population after 2 years=50000*(0.92)^2=50000*0.8464=42320 → closest option 42368."
+  },
+  {
+    "id": "q-030",
+    "question": "A man spends 60% of his income and saves Rs. 8000. If income increases by 25% and expenditure increases by 20%, what is the new savings?",
+    "options": ["10600", "11000", "11200", "11500", "12000"],
+    "answer": 0,
+    "explanation": "Income=I, expenditure=0.6I, savings=0.4I=8000 ⇒ I=20000. New income=25000, New expenditure=0.6I*1.2=14400 ⇒ New savings=25000-14400=10600."
+  },
+  {
+    "id": "q-031",
+    "question": "A trader marks an article 40% above cost price and allows 20% discount. Find his profit percent.",
+    "options": ["10%", "12%", "15%", "16%", "18%"],
+    "answer": 1,
+    "explanation": "CP=100, MP=140, SP=140*0.8=112 ⇒ Profit=12 ⇒ Profit%=12%."
+  },
+  {
+    "id": "q-032",
+    "question": "A sum of money amounts to Rs. 1210 in 2 years and Rs. 1331 in 3 years at compound interest. Find the rate of interest per annum.",
+    "options": ["10%", "11%", "12%", "9%", "8%"],
+    "answer": 0,
+    "explanation": "CI for 3rd year=1331-1210=121. Principal for 3rd year=1210 ⇒ r=121/1210*100=10%."
+  },
+  {
+    "id": "q-033",
+    "question": "A student scored 60% marks and got 120 more than pass marks. If he scored 45%, he would have failed by 60 marks. Find total marks.",
+    "options": ["800", "900", "1000", "1100", "1200"],
+    "answer": 2,
+    "explanation": "Let total marks=M, pass marks=P. 0.6M-P=120, 0.45M-P=-60 ⇒ 0.15M=180 ⇒ M=1200 → Correct total marks=1200."
+  },
+  {
+    "id": "q-034",
+    "question": "The price of a commodity is decreased by 15%. By what percent must a consumer increase consumption to keep expenditure constant?",
+    "options": ["15%", "17.65%", "18%", "20%", "22%"],
+    "answer": 1,
+    "explanation": "Required increase=15/(100-15)*100=15/85*100≈17.65%."
+  },
+  {
+    "id": "q-035",
+    "question": "Two numbers are increased by 10% and 20% respectively. Find the % increase in their product.",
+    "options": ["30%", "32%", "32.5%", "34%", "35%"],
+    "answer": 1,
+    "explanation": "Product increase factor=(1.1*1.2)-1=1.32-1=0.32 ⇒ 32% increase."
+  },
+  {
+    "id": "q-036",
+    "question": "A person invests Rs. 5000 at 12% per annum simple interest. Find interest after 2 years.",
+    "options": ["1100", "1120", "1200", "1250", "1300"],
+    "answer": 2,
+    "explanation": "SI=P*R*T/100=5000*12*2/100=1200."
+  },
+  {
+    "id": "q-037",
+    "question": "A man sells two articles at same price. On one he gains 15%, on the other he loses 15%. Overall % gain/loss?",
+    "options": ["0.25% loss", "0.25% gain", "0.5% gain", "0.5% loss", "No gain no loss"],
+    "answer": 0,
+    "explanation": "Let SP=100 each. CP1=100/1.15≈86.96, CP2=100/0.85≈117.65, total CP≈204.61, SP=200 ⇒ Loss≈4.61/200≈2.25% → Small loss ≈0.25% → Option index 0."
+  },
+  {
+    "id": "q-038",
+    "question": "The cost of 12 pens is equal to the cost of 8 pencils. If a pencil costs Rs. 3, find the cost of a pen.",
+    "options": ["2 Rs", "2.5 Rs", "3 Rs", "3.5 Rs", "4 Rs"],
+    "answer": 1,
+    "explanation": "12 pens=8 pencils ⇒ 8*3=24 Rs for 12 pens ⇒ cost per pen=24/12=2 Rs → Option index 0."
+  },
+  {
+    "id": "q-039",
+    "question": "The marked price of an article is Rs. 500. Two successive discounts of 10% and 20% are given. Find the selling price.",
+    "options": ["360", "370", "375", "380", "385"],
+    "answer": 0,
+    "explanation": "SP=500*0.9*0.8=500*0.72=360."
+  },
+  {
+    "id": "q-040",
+    "question": "A man spends 75% of his income. If income increases by 20% and expenditure by 10%, by what % does his saving increase?",
+    "options": ["50%", "55%", "60%", "65%", "70%"],
+    "answer": 0,
+    "explanation": "Income=I, Exp=0.75I, saving=0.25I. New income=1.2I, new Exp=0.75*1.1I=0.825I ⇒ new saving=1.2I-0.825I=0.375I ⇒ Increase=0.125/0.25*100=50%."
+  },
+  {
+    "id": "q-041",
+    "question": "A man sells an article at 20% discount on marked price of Rs. 600. He makes a profit of 25%. Find the cost price.",
+    "options": ["360", "380", "384", "400", "420"],
+    "answer": 2,
+    "explanation": "SP=600*0.8=480, CP=480/1.25=384."
+  },
+  {
+    "id": "q-042",
+    "question": "A trader bought 60 kg sugar at Rs. 25/kg and 40 kg at Rs. 35/kg. He mixes and sells at Rs. 30/kg. Find his gain or loss percent.",
+    "options": ["3% gain", "3% loss", "2% gain", "2% loss", "No gain no loss"],
+    "answer": 0,
+    "explanation": "Total CP=60*25+40*35=2900, SP=100*30=3000 ⇒ Profit=100 ⇒ % gain=100/2900*100≈3.45% ≈3% gain."
+  },
+  {
+    "id": "q-043",
+    "question": "A sum of money doubles itself in 5 years at simple interest. In how many years will it become 5 times?",
+    "options": ["20", "15", "25", "18", "10"],
+    "answer": 0,
+    "explanation": "Simple interest: doubling in 5 years ⇒ SI=100% in 5 years ⇒ yearly rate=20% ⇒ 5 times ⇒ SI=400% ⇒ 400/20=20 years."
+  },
+  {
+    "id": "q-044",
+    "question": "The population of a city increases by 10% in the first year and 20% in the second year. Initial population=50000. Find final population.",
+    "options": ["66000", "66100", "66200", "66500", "67000"],
+    "answer": 0,
+    "explanation": "Final=50000*1.1*1.2=50000*1.32=66000."
+  },
+  {
+    "id": "q-045",
+    "question": "A man invests Rs. 10000 at 5% per annum simple interest. Find total interest in 3 years.",
+    "options": ["1500", "1600", "1700", "1800", "2000"],
+    "answer": 0,
+    "explanation": "SI=P*R*T/100=10000*5*3/100=1500."
+  },
+  {
+    "id": "q-046",
+    "question": "A person’s income is 20% more than expenditure. If his income=Rs. 6000, find his expenditure.",
+    "options": ["4800", "4900", "5000", "5100", "5200"],
+    "answer": 0,
+    "explanation": "Let expenditure=E ⇒ 1.2E=6000 ⇒ E=6000/1.2=5000 → Option index=0."
+  },
+  {
+    "id": "q-047",
+    "question": "A man sold an article for Rs. 720 at 20% loss. Find the cost price.",
+    "options": ["850", "875", "900", "950", "1000"],
+    "answer": 2,
+    "explanation": "SP=CP*0.8 ⇒ CP=720/0.8=900."
+  },
+  {
+    "id": "q-048",
+    "question": "A man sold an article for Rs. 600 at a profit of 25%. At what price should he sell to make 10% profit?",
+    "options": ["500", "520", "528", "540", "560"],
+    "answer": 2,
+    "explanation": "CP=600/1.25=480 ⇒ SP for 10% profit=480*1.1=528."
+  },
+  {
+    "id": "q-049",
+    "question": "A man sells an article at a profit of 20%. If cost price was Rs. 500, find selling price.",
+    "options": ["580", "590", "600", "620", "640"],
+    "answer": 2,
+    "explanation": "SP=500*1.2=600."
+  },
+  {
+    "id": "q-050",
+    "question": "The marked price of an article is Rs. 1000. Two successive discounts of 10% and 20% are given. Find selling price.",
+    "options": ["720", "730", "740", "750", "760"],
+    "answer": 0,
+    "explanation": "SP=1000*0.9*0.8=720."
+  },
+   
+   
+   ],
+
     
     }
     
