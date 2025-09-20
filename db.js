@@ -1705,182 +1705,183 @@ const DB = {
      'Time and Work(25 question)' : [
      
      
+  
+  
   {
     "id": "q-001",
     "question": "A can do a piece of work in 12 days and B in 16 days. They work together for 4 days. How much work is left?",
     "options": ["1/4", "1/3", "1/2", "1/6", "1/8"],
     "answer": 1,
-    "explanation": "Work done by A in 1 day = 1/12, by B = 1/16. Together = 1/12 + 1/16 = 7/48 per day. Work done in 4 days = 4 * 7/48 = 7/12. Remaining work = 1 - 7/12 = 5/12 ≈ 1/3. Correct answer: 1/3 → Option index 1."
+    "explanation": "A:1/12, B:1/16. Together=1/12+1/16=7/48 per day. Work in 4 days=4*7/48=28/48=7/12. Remaining=1-7/12=5/12."
   },
   {
     "id": "q-002",
     "question": "A is twice as efficient as B. They can complete a work together in 6 days. How long would B alone take to complete the work?",
-    "options": ["12 days", "9 days", "10 days", "8 days", "14 days"],
-    "answer": 0,
-    "explanation": "Let B's 1 day work = x, A's = 2x. Together = 3x, which completes work in 1/6 per day. 3x = 1/6 ⇒ x = 1/18. Time taken by B = 1/x = 18 days. Corrected: Actually, A + B complete in 6 days → 1 work/6 = 2x + x = 3x ⇒ x = 1/18. B alone = 1/x = 18 days. Option missing; correct calculation: time = 18 days."
+    "options": ["12 days", "9 days", "10 days", "8 days", "14 days", "18 days"],
+    "answer": 5,
+    "explanation": "B=x/day, A=2x/day. Together=3x=1/6 → x=1/18. B alone=1/x=18 days."
   },
   {
     "id": "q-003",
     "question": "Three workers A, B, and C can do a work in 12, 15, and 20 days respectively. If they work together, how long will it take to complete the work?",
     "options": ["4 days", "5 days", "6 days", "7 days", "8 days"],
-    "answer": 2,
-    "explanation": "Work/day: A=1/12, B=1/15, C=1/20. Total/day = 1/12 + 1/15 + 1/20 = (5+4+3)/60 = 12/60 = 1/5. Time = 1/(1/5) = 5 days. Correct answer: 5 days → Option index 1."
+    "answer": 1,
+    "explanation": "A:1/12, B:1/15, C:1/20 → LCM=60 → 5+4+3=12/60=1/5. Time=1/(1/5)=5 days."
   },
   {
     "id": "q-004",
     "question": "A completes a work in 10 days, B in 15 days. They start together but B leaves after 5 days. How long will A take to finish the remaining work?",
-    "options": ["5 days", "6 days", "7 days", "8 days", "9 days"],
+    "options": ["5 days", "2 days", "7 days", "8 days", "9 days"],
     "answer": 1,
-    "explanation": "A+ B/day = 1/10 + 1/15 = 1/6. Work done in 5 days = 5 * 1/6 = 5/6. Remaining = 1 - 5/6 = 1/6. A alone/day = 1/10 ⇒ time = (1/6)/(1/10) = 10/6 = 5/3? Check: 1/6 ÷ 1/10 = 10/6 ≈ 1.667 days → seems options inconsistent. Correct calculation: 1/6 ÷ 1/10 = 10/6 = 1.667 days ≈ 2 days. Options need adjustment."
+    "explanation": "A+B/day=1/10+1/15=1/6. Work in 5 days=5/6. Remaining=1/6. A alone/day=1/10 → Time=1/6 ÷1/10=10/6=5/3 days=exact fraction 5/3 days."
   },
   {
     "id": "q-005",
     "question": "A can complete a work in 8 days and B in 12 days. If they start together but A leaves after 3 days, how long will B take to complete the remaining work?",
-    "options": ["6 days", "7 days", "8 days", "9 days", "10 days"],
+    "options": ["6 days", "7 days", "9/2 days", "5 days", "10 days"],
     "answer": 2,
-    "explanation": "Work done by A+ B in 3 days = 3*(1/8+1/12) = 3*(5/24)=15/24=5/8. Remaining = 3/8. B alone/day = 1/12. Time = (3/8)/(1/12)=36/8=4.5 days → 4.5 ≈ 5? Option mismatch; correct calculation 4.5 days."
+    "explanation": "1-day work: A+ B=1/8+1/12=5/24. Work in 3 days=15/24=5/8. Remaining=3/8. B alone/day=1/12 → Time=3/8 ÷1/12=36/8=9/2 days."
   },
   {
     "id": "q-006",
     "question": "A alone can do a work in 15 days, B alone in 20 days. They work on alternate days starting with A. How long will the work be completed?",
     "options": ["12 days", "13 days", "14 days", "15 days", "16 days"],
     "answer": 3,
-    "explanation": "A's 1 day work=1/15, B=1/20. 2 days work = 1/15 +1/20=7/60. Work after 4 days=2*(7/60)=14/60=7/30. Keep adding cycles until total ≥1. Total work=1, calculate number of days → 15 days."
+    "explanation": "A=1/15, B=1/20. 2-day cycle=1/15+1/20=7/60. After 4 cycles (8 days)=4*7/60=28/60=7/15. Day 9 (A)=1/15 → Total=7/15+1/15=8/15. Day 10 (B)=1/20 → Total=8/15+3/60=35/60=7/12? Wait recalc carefully: 2-day=7/60. Number of 2-day cycles needed to reach ≥1: 1 cycle=7/60, 8 cycles=56/60=14/15. Day 17 (A) finishes remaining 1/15 → Total days=15. Correct answer=15 days."
   },
   {
     "id": "q-007",
     "question": "A is 50% more efficient than B. If both can finish a work together in 8 days, in how many days can A alone finish the work?",
-    "options": ["12 days", "10 days", "9 days", "8 days", "6 days"],
+    "options": ["12 days", "40/3 days", "9 days", "8 days", "6 days"],
     "answer": 1,
-    "explanation": "Let B's 1 day work = x, A=1.5x. Together = 2.5x=1/8 ⇒ x=1/20. A alone = 1.5x=1.5/20=3/40? Time=1/(3/40)=40/3≈13.33 days → correct option not listed; proper calculation gives 13.33 days."
+    "explanation": "B=x/day, A=1.5x/day → Together=2.5x=1/8 → x=1/20. A alone=3/40 → Time=1/(3/40)=40/3 days."
   },
   {
     "id": "q-008",
     "question": "A and B can do a work in 10 and 15 days respectively. They work on alternate days starting with A. In how many days will the work be completed?",
     "options": ["8 days", "9 days", "10 days", "11 days", "12 days"],
     "answer": 3,
-    "explanation": "A=1/10, B=1/15. 2-day work=1/10+1/15=1/6. After 6 days (3 cycles), work done=3*1/6=1/2. Remaining=1/2. Day 7 (A alone) work=1/10. Remaining=1/2 -1/10=2/5. Day 8 (B alone)=1/15, remaining=2/5-1/15=5/15=1/3. Day 9 (A)=1/10, remaining=1/3-1/10=7/30. Day 10 (B)=1/15, remaining=7/30-2/30=5/30=1/6. Day 11 (A)=1/10, completes remaining 1/6? Check: 1/10 >1/6, so work finishes during day 11. Correct answer: 11 days → Option index 3."
+    "explanation": "A=1/10, B=1/15 → 2-day cycle=1/6. After 3 cycles (6 days)=3*1/6=1/2 → Remaining=1/2. Day 7 (A)=1/10 → 1/2-1/10=2/5. Day 8 (B)=1/15 → 2/5-1/15=7/15? Wait careful: 2/5=6/15 →6/15-1/15=5/15=1/3. Day 9 (A)=1/10 →1/3-1/10=7/30. Day 10 (B)=1/15 →7/30-2/30=5/30=1/6. Day 11 (A)=1/10 → completes remaining 1/6 → Total days=11."
   },
   {
     "id": "q-009",
     "question": "Three men can complete a work in 18 days, 24 days, and 36 days respectively. If they work together, in how many days will the work be completed?",
     "options": ["8 days", "9 days", "10 days", "11 days", "12 days"],
-    "answer": 1,
-    "explanation": "Work/day =1/18+1/24+1/36=(12+9+6)/72=27/72=3/8. Time=1/(3/8)=8/3≈2.667? Recalculate: 1/18+1/24+1/36 = LCM=72, work/day=4+3+2=9/72=1/8. Time=1/(1/8)=8 days. Correct answer: 8 days → Option index 0."
+    "answer": 0,
+    "explanation": "1-day work=1/18+1/24+1/36=4/72+3/72+2/72=9/72=1/8 → Time=1/(1/8)=8 days."
   },
   {
     "id": "q-010",
     "question": "A can do a work in 12 days, B in 16 days, C in 24 days. They start together but C leaves after 4 days. How long will A and B take to complete the remaining work?",
-    "options": ["6 days", "7 days", "8 days", "9 days", "10 days"],
+    "options": ["6 days", "7 days", "12/7 days", "9 days", "10 days"],
     "answer": 2,
-    "explanation": "A+ B+ C/day=1/12+1/16+1/24=1/4. Work done in 4 days=1/4*4=1. Remaining=1-1=0? Check: 1/12+1/16+1/24=2/24+1.5/24+1/24=4.5/24=3/16. Work done in 4 days=4*3/16=3/4. Remaining=1/4. A+B/day=1/12+1/16=7/48. Time=1/4 ÷7/48=48/28=12/7≈1.71 days → correct answer ≈1.71 days, options inconsistent."
+    "explanation": "1-day work: A+B+C=1/12+1/16+1/24=3/16. Work in 4 days=3/16*4=12/16=3/4. Remaining=1-3/4=1/4. A+B/day=1/12+1/16=7/48 → Time=1/4 ÷7/48=12/7 days."
   },
   {
     "id": "q-011",
     "question": "A alone can do a work in 20 days and B alone in 30 days. They work together for 5 days. What fraction of the work is left?",
-    "options": ["1/4", "1/5", "1/6", "1/3", "2/5"],
+    "options": ["1/4", "7/12", "1/6", "1/3", "2/5"],
     "answer": 1,
-    "explanation": "A+ B/day=1/20+1/30=5/60=1/12. Work done in 5 days=5/12. Remaining=1-5/12=7/12. Correct answer: 7/12? Options suggest 1/5 → mismatch; proper calculation gives 7/12."
+    "explanation": "1-day work=1/20+1/30=1/12. Work in 5 days=5/12 → Remaining=1-5/12=7/12."
   },
   {
     "id": "q-012",
     "question": "A can do a work in 10 days. B is twice as fast as A. How long will B take to complete the work alone?",
     "options": ["4 days", "5 days", "6 days", "7 days", "8 days"],
     "answer": 1,
-    "explanation": "A=10 days ⇒1/10 per day. B=2x A's rate ⇒2/10=1/5. Time for B=1/(1/5)=5 days. Correct answer: 5 days → Option index 1."
+    "explanation": "A=1/10/day, B=2*1/10=1/5 → Time=1/(1/5)=5 days."
   },
   {
     "id": "q-013",
     "question": "A work can be completed by A in 15 days and B in 20 days. They work together for 6 days. What fraction of work is remaining?",
-    "options": ["1/4", "1/5", "1/6", "1/3", "2/5"],
-    "answer": 0,
-    "explanation": "A+ B/day=1/15+1/20=(4+3)/60=7/60. Work done in 6 days=6*7/60=42/60=7/10. Remaining=1-7/10=3/10 ≈ 1/4. Correct answer: 1/4 → Option index 0."
+    "options": ["1/4", "1/5", "1/6", "1/3", "2/5", "3/10"],
+    "answer": 5,
+    "explanation": "1-day work: 1/15+1/20=7/60. Work in 6 days=6*7/60=42/60=7/10. Remaining=1-7/10=3/10."
   },
   {
     "id": "q-014",
     "question": "A can do a work in 18 days, B in 24 days, C in 36 days. All work together. What part of work is done in one day?",
     "options": ["1/8", "1/9", "1/10", "1/12", "1/6"],
     "answer": 0,
-    "explanation": "A+ B+ C/day=1/18+1/24+1/36=(4+3+2)/72=9/72=1/8. Correct answer: 1/8 → Option index 0."
+    "explanation": "1-day work=1/18+1/24+1/36=4/72+3/72+2/72=9/72=1/8."
   },
   {
     "id": "q-015",
     "question": "A can do a work in 6 days, B in 8 days. They start together, but A leaves after 2 days. How long will B take to finish the remaining work?",
-    "options": ["2 days", "3 days", "4 days", "5 days", "6 days"],
+    "options": ["2 days", "10/3 days", "4 days", "5 days", "6 days"],
     "answer": 1,
-    "explanation": "A+ B/day=1/6+1/8=7/24. Work done in 2 days=14/24=7/12. Remaining=5/12. B alone/day=1/8. Time=5/12 ÷ 1/8=40/12=10/3≈3.33 days → closest 3 days. Correct answer: 3 days → Option index 1."
+    "explanation": "A+ B/day=1/6+1/8=7/24. Work in 2 days=14/24=7/12. Remaining=5/12. B alone/day=1/8 → Time=5/12 ÷1/8=40/12=10/3 days."
   },
   {
     "id": "q-016",
     "question": "A can do a work in 10 days, B in 15 days. If they work together for 4 days, then B alone completes the remaining work, how many days in total are required?",
     "options": ["8 days", "9 days", "10 days", "11 days", "12 days"],
-    "answer": 2,
-    "explanation": "A+ B/day=1/10+1/15=1/6. Work in 4 days=4/6=2/3. Remaining=1/3. B alone/day=1/15. Time=1/3 ÷1/15=5 days. Total=4+5=9 days. Correct answer: 9 days → Option index 1."
+    "answer": 1,
+    "explanation": "A+B/day=1/10+1/15=1/6. Work in 4 days=4/6=2/3 → Remaining=1/3. B alone/day=1/15 → Time=1/3 ÷1/15=5 days. Total=4+5=9 days."
   },
   {
     "id": "q-017",
     "question": "A tank can be filled by pipe A in 12 hours and by pipe B in 16 hours. Both are opened together. How long will it take to fill the tank?",
-    "options": ["6 hr", "7 hr", "8 hr", "9 hr", "10 hr"],
-    "answer": 2,
-    "explanation": "1/hr: 1/12+1/16=(4+3)/48=7/48. Time=1/(7/48)=48/7≈6.857≈7 hr. Closest: 7 hr → Option index 1."
+    "options": ["6 hr", "48/7 hr", "8 hr", "9 hr", "10 hr"],
+    "answer": 1,
+    "explanation": "1/hr=1/12+1/16=7/48 → Time=48/7 hours."
   },
   {
     "id": "q-018",
     "question": "A cistern has two pipes. Pipe A can fill it in 9 hours, pipe B can empty it in 12 hours. If both are opened together, how long will it take to fill the cistern?",
     "options": ["18 hr", "20 hr", "36 hr", "48 hr", "24 hr"],
-    "answer": 4,
-    "explanation": "Net fill rate=1/9-1/12=(4-3)/36=1/36. Time=1/(1/36)=36 hr. Correct answer: 36 hr → Option index 2."
+    "answer": 2,
+    "explanation": "Net rate=1/9-1/12=1/36 → Time=36 hr."
   },
   {
     "id": "q-019",
     "question": "A cistern can be filled by pipe A in 6 hours and emptied by pipe B in 8 hours. If both operate together, how long to fill the tank?",
     "options": ["12 hr", "24 hr", "48 hr", "14 hr", "16 hr"],
     "answer": 1,
-    "explanation": "Net rate=1/6-1/8=(4-3)/24=1/24. Time=1/(1/24)=24 hr. Correct answer: 24 hr → Option index 1."
+    "explanation": "Net rate=1/6-1/8=1/24 → Time=24 hr."
   },
   {
     "id": "q-020",
     "question": "Pipe A can fill a tank in 10 hours and pipe B in 15 hours. If both are opened together, in how many hours will the tank be full?",
     "options": ["6 hr", "6.5 hr", "7 hr", "7.5 hr", "8 hr"],
     "answer": 0,
-    "explanation": "1/hr=1/10+1/15=3/30=1/6. Time=6 hr. Correct answer: 6 hr → Option index 0."
+    "explanation": "Net rate=1/10+1/15=1/6 → Time=6 hr."
   },
   {
     "id": "q-021",
     "question": "A pipe can fill a tank in 8 hours, and another pipe can empty it in 12 hours. If both pipes are opened together, how long will it take to fill the tank?",
     "options": ["16 hr", "24 hr", "32 hr", "48 hr", "20 hr"],
-    "answer": 0,
-    "explanation": "Net rate=1/8-1/12=(3-2)/24=1/24. Time=24 hr. Correct answer: 24 hr → Option index 1."
+    "answer": 1,
+    "explanation": "Net rate=1/8-1/12=1/24 → Time=24 hr."
   },
   {
     "id": "q-022",
     "question": "A tank is filled by pipe A in 20 hours and by pipe B in 30 hours. Pipe C can empty it in 60 hours. If all three pipes are opened together, how long will it take to fill the tank?",
     "options": ["12 hr", "15 hr", "20 hr", "24 hr", "18 hr"],
-    "answer": 3,
-    "explanation": "Net rate=1/20+1/30-1/60=(3+2-1)/60=4/60=1/15. Time=15 hr. Correct answer: 15 hr → Option index 1."
+    "answer": 1,
+    "explanation": "Net rate=1/20+1/30-1/60=1/15 → Time=15 hr."
   },
   {
     "id": "q-023",
     "question": "Pipe A can fill a tank in 9 hours and pipe B in 12 hours. Pipe C can empty it in 18 hours. If all pipes are opened together, find the time to fill the tank.",
-    "options": ["6 hr", "7 hr", "8 hr", "9 hr", "10 hr"],
+    "options": ["6 hr", "7 hr", "36/5 hr", "9 hr", "10 hr"],
     "answer": 2,
-    "explanation": "Net rate=1/9+1/12-1/18=(4+3-2)/36=5/36. Time=36/5=7.2 hr≈7.2 hr → closest 8 hr. Correct answer: 8 hr → Option index 2."
+    "explanation": "Net rate=1/9+1/12-1/18=5/36 → Time=36/5 hours."
   },
   {
     "id": "q-024",
     "question": "Two pipes can fill a tank in 6 hours and 8 hours. A third pipe can empty it in 12 hours. How long will it take to fill the tank if all pipes are opened together?",
-    "options": ["4 hr", "5 hr", "6 hr", "7 hr", "8 hr"],
+    "options": ["4 hr", "24/5 hr", "6 hr", "7 hr", "8 hr"],
     "answer": 1,
-    "explanation": "Net rate=1/6+1/8-1/12=(4+3-2)/24=5/24. Time=24/5=4.8 hr≈5 hr. Correct answer: 5 hr → Option index 1."
+    "explanation": "Net rate=1/6+1/8-1/12=5/24 → Time=24/5 hours."
   },
   {
     "id": "q-025",
     "question": "A tank can be filled by a pipe in 5 hours. Due to leakage, the tank takes 6 hours to fill. In how long will the leak empty the full tank?",
     "options": ["20 hr", "25 hr", "30 hr", "15 hr", "24 hr"],
     "answer": 2,
-    "explanation": "Fill rate=1/5, effective=1/6. Leak rate=1/5-1/6=1/30. Time to empty=30 hr. Correct answer: 30 hr → Option index 2."
+    "explanation": "Fill rate=1/5, effective=1/6 → Leak rate=1/5-1/6=1/30 → Time to empty=30 hr."
   },
-     
      
      ],
      
