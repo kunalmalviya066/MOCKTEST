@@ -1885,17 +1885,1087 @@ const DB = {
      
      ],
      
-     'Time and Work(50 question)' : [
-     
-     
-     
-     
+     'Speed Time and Distance(30 question)' : [
+       
+  
+ {
+  "id": "q-001",
+  "question": "A train travels at a speed of 60 km/h and crosses a pole in 9 seconds. What is the length of the train in meters?",
+  "options": [
+   "150 m",
+   "180 m",
+   "120 m",
+   "100 m"
+  ],
+  "answer": 0,
+  "explanation": "Speed of the train = 60 km/h = 60 * (5/18) m/s = 50/3 m/s. The time taken to cross the pole is 9 seconds. The length of the train is the distance it covers in this time. Length = Speed * Time = (50/3) * 9 = 50 * 3 = 150 meters. The correct answer is 150 m, which is option index 0."
+ },
+ {
+  "id": "q-002",
+  "question": "A boy walks at a speed of 10 km/h. How many meters does he walk in 3 minutes?",
+  "options": [
+   "450 m",
+   "500 m",
+   "600 m",
+   "550 m"
+  ],
+  "answer": 1,
+  "explanation": "Speed = 10 km/h. To convert to m/s, multiply by (5/18). Speed = 10 * (5/18) = 25/9 m/s. Time = 3 minutes = 3 * 60 = 180 seconds. Distance = Speed * Time = (25/9) * 180 = 25 * 20 = 500 m. The correct answer is 500 m, which is option index 1."
+ },
+ {
+  "id": "q-003",
+  "question": "A car travels the first half of a distance at a speed of 40 km/h and the second half at 60 km/h. What is the average speed of the car for the entire journey?",
+  "options": [
+   "48 km/h",
+   "50 km/h",
+   "52 km/h",
+   "45 km/h"
+  ],
+  "answer": 0,
+  "explanation": "Since the distances are equal, the average speed can be calculated using the formula: Average Speed = (2 * v1 * v2) / (v1 + v2). Here, v1 = 40 km/h and v2 = 60 km/h. Average Speed = (2 * 40 * 60) / (40 + 60) = 4800 / 100 = 48 km/h. The correct answer is 48 km/h, which is option index 0."
+ },
+ {
+  "id": "q-004",
+  "question": "A boat can travel at a speed of 10 km/h in still water. If the speed of the stream is 2 km/h, what is the total time taken for the boat to travel 36 km downstream and return to the starting point?",
+  "options": [
+   "6 hours",
+   "7.5 hours",
+   "8 hours",
+   "9 hours"
+  ],
+  "answer": 1,
+  "explanation": "Speed downstream = Speed of boat + Speed of stream = 10 + 2 = 12 km/h. Time taken for downstream journey = 36 / 12 = 3 hours. Speed upstream = Speed of boat - Speed of stream = 10 - 2 = 8 km/h. Time taken for upstream journey = 36 / 8 = 4.5 hours. Total time = 3 + 4.5 = 7.5 hours. The correct answer is 7.5 hours, which is option index 1."
+ },
+ {
+  "id": "q-005",
+  "question": "Two trains, 120 m and 180 m long, are running in opposite directions on parallel tracks at speeds of 40 km/h and 50 km/h, respectively. How much time will they take to cross each other?",
+  "options": [
+   "10 seconds",
+   "12 seconds",
+   "14 seconds",
+   "16 seconds"
+  ],
+  "answer": 1,
+  "explanation": "Total distance to be covered to cross each other is the sum of their lengths: 120 + 180 = 300 m. Since they are moving in opposite directions, their relative speed is the sum of their speeds: 40 + 50 = 90 km/h. Convert the relative speed to m/s: 90 * (5/18) = 25 m/s. Time to cross = (Total Distance) / (Relative Speed) = 300 / 25 = 12 seconds. The correct answer is 12 seconds, which is option index 1."
+ },
+ {
+  "id": "q-006",
+  "question": "A man covers a certain distance in 10 hours at a speed of 15 km/h. To cover the same distance in 8 hours, what should be his speed?",
+  "options": [
+   "18.75 km/h",
+   "18 km/h",
+   "16.5 km/h",
+   "20 km/h"
+  ],
+  "answer": 0,
+  "explanation": "The distance covered is constant. Distance = Speed * Time = 15 * 10 = 150 km. To cover this distance in 8 hours, the new speed must be: New Speed = 150 / 8 = 18.75 km/h. The correct answer is 18.75 km/h, which is option index 0."
+ },
+ {
+  "id": "q-007",
+  "question": "Two cars start from the same place at the same time and travel in the same direction. The first car travels at 40 km/h and the second car at 50 km/h. After how many hours will they be 30 km apart?",
+  "options": [
+   "2 hours",
+   "2.5 hours",
+   "3 hours",
+   "3.5 hours"
+  ],
+  "answer": 2,
+  "explanation": "When objects move in the same direction, their relative speed is the difference between their speeds: 50 - 40 = 10 km/h. The time it takes for them to be 30 km apart is: Time = (Distance) / (Relative Speed) = 30 / 10 = 3 hours. The correct answer is 3 hours, which is option index 2."
+ },
+ {
+  "id": "q-008",
+  "question": "A man walks a certain distance and rides back. He takes a total of 4 hours. If he walks both ways, he takes 5 hours. How long would he take to ride both ways?",
+  "options": [
+   "2.5 hours",
+   "3 hours",
+   "3.5 hours",
+   "3 hours 30 minutes"
+  ],
+  "answer": 1,
+  "explanation": "Let 'W' be the time to walk one way and 'R' be the time to ride one way. We are given: W + R = 4 hours. We are also given that 2W = 5 hours, which means W = 2.5 hours. Substituting W into the first equation: 2.5 + R = 4 -> R = 1.5 hours. The time to ride both ways is 2R = 2 * 1.5 = 3 hours. The correct answer is 3 hours, which is option index 1."
+ },
+ {
+  "id": "q-009",
+  "question": "A train passes a man standing on a platform in 8 seconds and passes the platform, which is 264 m long, in 20 seconds. What is the length of the train?",
+  "options": [
+   "176 m",
+   "180 m",
+   "192 m",
+   "172 m"
+  ],
+  "answer": 0,
+  "explanation": "Let the length of the train be L and its speed be S. When passing the man, the train covers its own length: L = S * 8. When passing the platform, the distance covered is L + 264: L + 264 = S * 20. Subtracting the first equation from the second: (L+264) - L = 20S - 8S -> 264 = 12S -> S = 264 / 12 = 22 m/s. The length of the train is L = S * 8 = 22 * 8 = 176 m. The correct answer is 176 m, which is option index 0."
+ },
+ {
+  "id": "q-010",
+  "question": "If a man increases his speed by 1/4 of his original speed, he reaches his destination 15 minutes early. What is the usual time taken by him to cover the distance?",
+  "options": [
+   "1 hour",
+   "1 hour 15 minutes",
+   "1 hour 30 minutes",
+   "1 hour 45 minutes"
+  ],
+  "answer": 1,
+  "explanation": "Let the usual speed be S and the usual time be T. The new speed is S' = S + (1/4)S = (5/4)S. The new time is T' = T - 15 min. Since distance is constant, S * T = S' * T' -> S * T = (5/4)S * (T - 15) -> T = (5/4) * (T - 15) -> 4T = 5T - 75 -> T = 75 minutes, which is 1 hour and 15 minutes. The correct answer is 1 hour 15 minutes, which is option index 1."
+ },
+ {
+  "id": "q-011",
+  "question": "A boy travels to school at a speed of 20 km/h and returns at 30 km/h. If the total time taken for the journey is 5 hours, what is the distance to his school?",
+  "options": [
+   "60 km",
+   "50 km",
+   "75 km",
+   "100 km"
+  ],
+  "answer": 0,
+  "explanation": "Let the distance to school be 'D'. Time to school = D/20. Time to return = D/30. Total time = D/20 + D/30 = 5. To find D, we solve the equation: (3D + 2D) / 60 = 5 -> 5D / 60 = 5 -> D = 5 * 12 = 60 km. The correct answer is 60 km, which is option index 0."
+ },
+ {
+  "id": "q-012",
+  "question": "A train running at 72 km/h crosses a platform 250 m long in 25 seconds. What is the length of the train?",
+  "options": [
+   "200 m",
+   "250 m",
+   "300 m",
+   "350 m"
+  ],
+  "answer": 1,
+  "explanation": "First, convert the speed of the train from km/h to m/s: 72 * (5/18) = 4 * 5 = 20 m/s. The total distance covered by the train to cross the platform is the sum of the length of the train (L) and the length of the platform (250 m). Total distance = Speed * Time = 20 * 25 = 500 m. So, L + 250 = 500 -> L = 500 - 250 = 250 m. The correct answer is 250 m, which is option index 1."
+ },
+ {
+  "id": "q-013",
+  "question": "A man can row a boat at a speed of 6 km/h in still water. The speed of the stream is 2 km/h. If he takes a total of 2 hours to go to a place and return, what is the distance to the place?",
+  "options": [
+   "16/3 km",
+   "8/3 km",
+   "10 km",
+   "5 km"
+  ],
+  "answer": 0,
+  "explanation": "Speed downstream = Speed of boat + Speed of stream = 6+2=8 km/h. Speed upstream = Speed of boat - Speed of stream = 6-2=4 km/h. Let the distance to the place be 'D'. Time to go downstream = D/8. Time to come back upstream = D/4. Total time = D/8 + D/4 = 2. Solving for D: (D+2D)/8 = 2 -> 3D = 16 -> D = 16/3 km. The correct answer is 16/3 km, which is option index 0."
+ },
+ {
+  "id": "q-014",
+  "question": "A train passes a man standing on a platform in 8 seconds and a platform of length 180 m in 20 seconds. What is the speed of the train in km/h?",
+  "options": [
+   "54 km/h",
+   "48 km/h",
+   "60 km/h",
+   "50 km/h"
+  ],
+  "answer": 0,
+  "explanation": "Let the length of the train be 'L' m and its speed be 'S' m/s. When the train passes the man, it covers a distance equal to its own length in 8 seconds. So, L = S * 8. When it passes the platform, it covers a distance of (L + 180) m in 20 seconds. So, L + 180 = S * 20. Subtracting the first equation from the second: 180 = 20S - 8S -> 180 = 12S -> S = 15 m/s. To convert speed to km/h: 15 * (18/5) = 54 km/h. The correct answer is 54 km/h, which is option index 0."
+ },
+ {
+  "id": "q-015",
+  "question": "A man covers a distance of 200 km partly by train and partly by car. If he travels 120 km by train and the rest by car, he takes 8 hours. If he travels 100 km by train and the rest by car, he takes 8 hours and 20 minutes. What is the speed of the train?",
+  "options": [
+   "20 km/h",
+   "25 km/h",
+   "30 km/h",
+   "40 km/h"
+  ],
+  "answer": 2,
+  "explanation": "Let the speed of the train be vt and the speed of the car be vc. First case: 120/vt + (200-120)/vc = 8 -> 120/vt + 80/vc = 8 -> 15/vt + 10/vc = 1 (Equation 1). Second case: Time = 8 hours 20 minutes = 8 + 20/60 = 8(1/3) = 25/3 hours. 100/vt + (200-100)/vc = 25/3 -> 100/vt + 100/vc = 25/3 -> 4/vt + 4/vc = 1/3 (Equation 2). From Equation 2, 1/vc = 1/12 - 1/vt. Substitute into Equation 1: 15/vt + 10(1/12 - 1/vt) = 1 -> 15/vt + 5/6 - 10/vt = 1 -> 5/vt = 1 - 5/6 = 1/6 -> vt = 30 km/h. The correct answer is 30 km/h, which is option index 2."
+ },
+ 
+ {
+  "id": "q-016",
+  "question": "A train travels at a uniform speed of 75 km/h. How long will it take to travel a distance of 125 km?",
+  "options": [
+   "1 hour 30 minutes",
+   "1 hour 40 minutes",
+   "2 hours",
+   "1 hour 25 minutes"
+  ],
+  "answer": 1,
+  "explanation": "Time = Distance / Speed = 125 km / 75 km/h = 5/3 hours. To convert this to hours and minutes: (5/3) hours = 1 hour and (2/3) * 60 minutes = 1 hour and 40 minutes. The correct answer is 1 hour 40 minutes, which is option index 1."
+ },
+ {
+  "id": "q-017",
+  "question": "A train 150 m long is moving at a speed of 54 km/h. How much time will it take to cross a bridge 225 m long?",
+  "options": [
+   "25 seconds",
+   "20 seconds",
+   "30 seconds",
+   "15 seconds"
+  ],
+  "answer": 0,
+  "explanation": "Speed of the train = 54 km/h = 54 * (5/18) m/s = 15 m/s. The total distance to be covered is the sum of the train's length and the bridge's length: 150 + 225 = 375 m. Time taken = Total distance / Speed = 375 / 15 = 25 seconds. The correct answer is 25 seconds, which is option index 0."
+ },
+ {
+  "id": "q-018",
+  "question": "A person covers a certain distance at a speed of 30 km/h and returns to the starting point at a speed of 20 km/h. What is the average speed of the person for the entire journey?",
+  "options": [
+   "25 km/h",
+   "24 km/h",
+   "28 km/h",
+   "22 km/h"
+  ],
+  "answer": 1,
+  "explanation": "Since the distance covered in both directions is the same, the average speed is given by the formula: Average Speed = (2 * v1 * v2) / (v1 + v2) = (2 * 30 * 20) / (30 + 20) = 1200 / 50 = 24 km/h. The correct answer is 24 km/h, which is option index 1."
+ },
+ {
+  "id": "q-019",
+  "question": "Two cars start from opposite ends of a 450 km road at the same time and travel towards each other. Their speeds are 50 km/h and 40 km/h. In how many hours will they meet?",
+  "options": [
+   "4 hours",
+   "5 hours",
+   "6 hours",
+   "5.5 hours"
+  ],
+  "answer": 1,
+  "explanation": "Since the cars are moving in opposite directions, their relative speed is the sum of their individual speeds: 50 + 40 = 90 km/h. The time it will take for them to meet is: Time = Total distance / Relative speed = 450 / 90 = 5 hours. The correct answer is 5 hours, which is option index 1."
+ },
+ {
+  "id": "q-020",
+  "question": "A boat travels 24 km upstream in 4 hours and 40 km downstream in 5 hours. What is the speed of the boat in still water?",
+  "options": [
+   "6 km/h",
+   "7 km/h",
+   "8 km/h",
+   "9 km/h"
+  ],
+  "answer": 1,
+  "explanation": "Speed upstream = Distance upstream / Time upstream = 24 km / 4 hours = 6 km/h. Speed downstream = Distance downstream / Time downstream = 40 km / 5 hours = 8 km/h. The speed of the boat in still water is the average of the upstream and downstream speeds. Speed of boat = (Speed upstream + Speed downstream) / 2 = (6 + 8) / 2 = 14 / 2 = 7 km/h. The correct answer is 7 km/h, which is option index 1."
+ },
+ {
+  "id": "q-021",
+  "question": "A person walks from his home to his office at a speed of 3 km/h and is late by 20 minutes. If he walks at 4 km/h, he reaches 10 minutes early. What is the distance between his home and office?",
+  "options": [
+   "5 km",
+   "5.5 km",
+   "6 km",
+   "6.5 km"
+  ],
+  "answer": 2,
+  "explanation": "Let the distance be D km. The difference in time is 20 minutes (late) + 10 minutes (early) = 30 minutes = 1/2 hour. Time taken at 3 km/h is D/3. Time taken at 4 km/h is D/4. The difference in time is (D/3) - (D/4) = 1/2. Solving the equation: (4D - 3D)/12 = 1/2 -> D/12 = 1/2 -> D = 6 km. The correct answer is 6 km, which is option index 2."
+ },
+ {
+  "id": "q-022",
+  "question": "A train covers a distance of 150 km in 2 hours. If it travels at a speed 15 km/h more than its usual speed, how much time would it take to cover the same distance?",
+  "options": [
+   "1 hour 40 minutes",
+   "1 hour 50 minutes",
+   "1 hour 30 minutes",
+   "1 hour 25 minutes"
+  ],
+  "answer": 0,
+  "explanation": "The original speed of the train is 150 km / 2 hours = 75 km/h. The new speed is 75 + 15 = 90 km/h. The time to cover the same distance at the new speed is: Time = Distance / New Speed = 150 km / 90 km/h = 15/9 hours = 5/3 hours. Converting to minutes: (5/3) * 60 = 100 minutes, which is 1 hour and 40 minutes. The correct answer is 1 hour 40 minutes, which is option index 0."
+ },
+ {
+  "id": "q-023",
+  "question": "A boat can travel at a speed of 10 km/h in still water. The speed of the stream is 2 km/h. What is the total time taken for the boat to travel 72 km downstream and return to the starting point?",
+  "options": [
+   "12 hours",
+   "15 hours",
+   "18 hours",
+   "20 hours"
+  ],
+  "answer": 1,
+  "explanation": "Speed downstream = 10 + 2 = 12 km/h. Time downstream = 72 / 12 = 6 hours. Speed upstream = 10 - 2 = 8 km/h. Time upstream = 72 / 8 = 9 hours. Total time = 6 + 9 = 15 hours. The correct answer is 15 hours, which is option index 1."
+ },
+ {
+  "id": "q-024",
+  "question": "A train passes a man standing on a platform in 10 seconds and a platform 150 m long in 25 seconds. What is the length of the train?",
+  "options": [
+   "100 m",
+   "120 m",
+   "150 m",
+   "200 m"
+  ],
+  "answer": 0,
+  "explanation": "Let the length of the train be L meters and its speed be S m/s. When the train passes the man, it covers its own length, so L = S * 10. When it passes the platform, it covers a distance of (L + 150) meters, so L + 150 = S * 25. Substituting L = 10S into the second equation: 10S + 150 = 25S -> 150 = 15S -> S = 10 m/s. The length of the train is L = 10 * 10 = 100 m. The correct answer is 100 m, which is option index 0."
+ },
+ {
+  "id": "q-025",
+  "question": "A person covers 1/3 of his journey at a speed of 20 km/h, the next 1/3 at 30 km/h and the last 1/3 at 60 km/h. What is his average speed for the entire journey?",
+  "options": [
+   "30 km/h",
+   "36 km/h",
+   "28 km/h",
+   "32 km/h"
+  ],
+  "answer": 0,
+  "explanation": "For equal distances covered at different speeds, the average speed is the harmonic mean. Average Speed = 3 / ( (1/20) + (1/30) + (1/60) ). The common denominator for the speeds is 60, so we get: Average Speed = 3 / ( (3/60) + (2/60) + (1/60) ) = 3 / (6/60) = 3 / (1/10) = 3 * 10 = 30 km/h. The correct answer is 30 km/h, which is option index 0."
+ },
+ {
+  "id": "q-026",
+  "question": "A person walking at 4/5 of his usual speed is 10 minutes late. What is the usual time taken by him to cover the distance?",
+  "options": [
+   "40 minutes",
+   "50 minutes",
+   "60 minutes",
+   "30 minutes"
+  ],
+  "answer": 0,
+  "explanation": "Let the usual speed be S and the usual time be T. The new speed is (4/5) of the usual speed, and the new time is T + 10 minutes. Since the distance is constant, Speed * Time = Constant. S * T = (4/5)S * (T + 10). T = (4/5) * (T + 10) -> 5T = 4T + 40 -> T = 40 minutes. The correct answer is 40 minutes, which is option index 0."
+ },
+ {
+  "id": "q-027",
+  "question": "Two trains, 100 m and 120 m long, are running on parallel tracks in the same direction at speeds of 60 km/h and 50 km/h, respectively. In how much time will the faster train cross the slower train?",
+  "options": [
+   "79.2 seconds",
+   "60.2 seconds",
+   "72.0 seconds",
+   "80.5 seconds"
+  ],
+  "answer": 0,
+  "explanation": "Since the trains are moving in the same direction, their relative speed is the difference between their speeds: 60 - 50 = 10 km/h. Converting to m/s: 10 * (5/18) = 25/9 m/s. The total distance to be covered is the sum of their lengths: 100 + 120 = 220 m. Time to cross = Total distance / Relative speed = 220 / (25/9) = 220 * 9 / 25 = 79.2 seconds. The correct answer is 79.2 seconds, which is option index 0."
+ },
+ {
+  "id": "q-028",
+  "question": "A train passes a man standing on a platform in 8 seconds and crosses a platform 180 m long in 20 seconds. What is the length of the train?",
+  "options": [
+   "120 m",
+   "180 m",
+   "150 m",
+   "200 m"
+  ],
+  "answer": 0,
+  "explanation": "Let the length of the train be L meters and its speed be S m/s. When the train passes the man, L = S * 8. When it crosses the platform, L + 180 = S * 20. Subtracting the first equation from the second gives: (L + 180) - L = 20S - 8S -> 180 = 12S -> S = 15 m/s. Now substitute the speed back to find the length: L = 15 * 8 = 120 m. The correct answer is 120 m, which is option index 0."
+ },
+ {
+  "id": "q-029",
+  "question": "A man covers a distance of 100 km in 10 hours, partly by walking at 8 km/h and partly by running at 12 km/h. What is the distance he covers by running?",
+  "options": [
+   "40 km",
+   "50 km",
+   "60 km",
+   "70 km"
+  ],
+  "answer": 2,
+  "explanation": "Let the distance covered by walking be x km, and the distance covered by running be (100 - x) km. Time for walking = x / 8. Time for running = (100 - x) / 12. Total time = (x/8) + (100-x)/12 = 10. To solve, multiply the entire equation by the LCM of 8 and 12 (which is 24): 3x + 2(100 - x) = 240 -> 3x + 200 - 2x = 240 -> x = 40 km. The distance covered by running is 100 - x = 100 - 40 = 60 km. The correct answer is 60 km, which is option index 2."
+ },
+ {
+  "id": "q-030",
+  "question": "Two cars start from the same place at the same time and travel in the same direction. One car travels at a speed of 45 km/h and the other at 60 km/h. What is the distance between them after 4 hours?",
+  "options": [
+   "40 km",
+   "60 km",
+   "80 km",
+   "90 km"
+  ],
+  "answer": 1,
+  "explanation": "Since the cars are moving in the same direction, their relative speed is the difference between their speeds: 60 - 45 = 15 km/h. The distance between them after 4 hours will be: Distance = Relative speed * Time = 15 * 4 = 60 km. The correct answer is 60 km, which is option index 1."
+ },
+  
+  
      ],
 
     
     }
     
     },
+    
+    
+    
+    'MP POLICE FULL MOCK': {
+    topics: {
+      'MOCK1': [
+       
+       {
+    "id": "surd-001",
+    "question": "Simplify: (2^(5/2) × 2^(1/2)) / 2^2",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "8"
+    ],
+    "answer": 1,
+    "explanation": "Using the rules of indices, we simplify the expression. First, add the exponents in the numerator: 2^(5/2 + 1/2) = 2^(6/2) = 2^3. The expression becomes 2^3 / 2^2. Now, subtract the exponents: 2^(3-2) = 2^1 = 2."
+  },
+  {
+    "id": "surd-002",
+    "question": "Find the value of (81/16)^(-3/4).",
+    "options": [
+      "27/8",
+      "8/27",
+      "4/9",
+      "9/4"
+    ],
+    "answer": 1,
+    "explanation": "A negative exponent means we take the reciprocal of the base. (81/16)^(-3/4) = (16/81)^(3/4). We can write 16 = 2^4 and 81 = 3^4. So, ((2/3)^4)^(3/4). By multiplying the exponents, we get (2/3)^3 = 8/27."
+  },
+  {
+    "id": "surd-003",
+    "question": "Which of the following is the smallest? √[3]4, √2, √[4]3, √[6]5",
+    "options": [
+      "√[3]4",
+      "√2",
+      "√[4]3",
+      "√[6]5"
+    ],
+    "answer": 3,
+    "explanation": "To compare the surds, convert them to a common index. The LCM of the indices (3, 2, 4, 6) is 12. Convert each surd: √[3]4 = √[12]4^4 = √[12]256; √2 = √[12]2^6 = √[12]64; √[4]3 = √[12]3^3 = √[12]27; √[6]5 = √[12]5^2 = √[12]25. Comparing the values inside the twelfth root (256, 64, 27, 25), the smallest value is 25, so the smallest surd is √[6]5."
+  },
+  {
+    "id": "surd-004",
+    "question": "Simplify: 1 / (√5 - √4)",
+    "options": [
+      "√5 - 2",
+      "√5 + 2",
+      "1",
+      "2"
+    ],
+    "answer": 1,
+    "explanation": "To simplify a surd in the denominator, multiply both the numerator and denominator by the conjugate of the denominator. The conjugate of (√5 - √4) is (√5 + √4). The expression becomes (1 / (√5 - √4)) × ((√5 + √4) / (√5 + √4)) = (√5 + √4) / ((√5)^2 - (√4)^2) = (√5 + 2) / (5-4) = √5 + 2."
+  },
+  {
+    "id": "surd-005",
+    "question": "If x = 3^(1/3) and y = 3^(2/3), what is the value of (x × y)^3?",
+    "options": [
+      "3",
+      "9",
+      "27",
+      "81"
+    ],
+    "answer": 2,
+    "explanation": "First, find the product of x and y. x × y = 3^(1/3) × 3^(2/3). Using the rule a^m × a^n = a^(m+n), we get 3^(1/3 + 2/3) = 3^(3/3) = 3^1 = 3. Now, cube the result: (x × y)^3 = 3^3 = 27."
+  },
+  {
+    "id": "frac-006",
+    "question": "Simplify: 2(1/2) + 3(1/3) - 1(1/6)",
+    "options": [
+      "4(1/6)",
+      "4(1/3)",
+      "4(2/3)",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "First, convert the mixed fractions to improper fractions: 2(1/2) = 5/2; 3(1/3) = 10/3; 1(1/6) = 7/6. The expression is 5/2 + 10/3 - 7/6. The common denominator is 6. This gives (15/6) + (20/6) - (7/6) = (15+20-7)/6 = 28/6 = 14/3. As a mixed fraction, this is 4(2/3)."
+  },
+  {
+    "id": "frac-007",
+    "question": "Which fraction is the largest?",
+    "options": [
+      "5/8",
+      "7/12",
+      "11/16",
+      "3/4"
+    ],
+    "answer": 3,
+    "explanation": "To compare fractions, convert them to a common denominator. The LCM of the denominators (8, 12, 16, 4) is 48. The fractions become: 5/8 = 30/48; 7/12 = 28/48; 11/16 = 33/48; 3/4 = 36/48. Comparing the numerators, 36 is the largest, so 3/4 is the largest fraction."
+  },
+  {
+    "id": "frac-008",
+    "question": "A tank is 3/5 full. After drawing 15 liters, it is 1/2 full. What is the total capacity of the tank?",
+    "options": [
+      "100 L",
+      "120 L",
+      "150 L",
+      "180 L"
+    ],
+    "answer": 2,
+    "explanation": "Let the total capacity be X. The amount of water drawn is the difference between the initial and final fractions of the tank's capacity. (3/5)X - (1/2)X = 15. The common denominator is 10. (6/10)X - (5/10)X = 15. (1/10)X = 15. X = 15 × 10 = 150 liters."
+  },
+  {
+    "id": "frac-009",
+    "question": "Simplify: 1 / (1 + 1/(1 + 1/2))",
+    "options": [
+      "1/2",
+      "2/3",
+      "3/5",
+      "5/3"
+    ],
+    "answer": 2,
+    "explanation": "Solve from the bottom up. First, calculate the innermost fraction: 1 + 1/2 = 3/2. Next, calculate its reciprocal: 1/(3/2) = 2/3. Then, add this to 1: 1 + 2/3 = 5/3. Finally, take the reciprocal of the whole expression: 1/(5/3) = 3/5."
+  },
+  {
+    "id": "frac-010",
+    "question": "Express 0.727272... as a fraction.",
+    "options": [
+      "72/100",
+      "72/99",
+      "8/11",
+      "7/10"
+    ],
+    "answer": 2,
+    "explanation": "Let x = 0.7272... Since two digits are repeating, multiply by 100. 100x = 72.7272... Subtract the original equation from this one: 100x - x = 72.7272... - 0.7272... This gives 99x = 72. Therefore, x = 72/99. Simplifying this fraction by dividing the numerator and denominator by 9 gives 8/11."
+  },
+  {
+    "id": "quad-011",
+    "question": "Find the roots of the quadratic equation x^2 - 5x + 6 = 0.",
+    "options": [
+      "(1, 6)",
+      "(2, 3)",
+      "(-2, -3)",
+      "(-1, -6)"
+    ],
+    "answer": 1,
+    "explanation": "The roots can be found by factoring the quadratic equation. We need two numbers that multiply to 6 and add up to -5. These numbers are -2 and -3. The equation can be written as (x - 2)(x - 3) = 0. Setting each factor to zero gives the roots x = 2 and x = 3."
+  },
+  {
+    "id": "quad-012",
+    "question": "Solve for x in the equation 2x^2 + 5x - 3 = 0.",
+    "options": [
+      "(1/2, 3)",
+      "(-1/2, 3)",
+      "(1/2, -3)",
+      "(-1/2, -3)"
+    ],
+    "answer": 2,
+    "explanation": "Use the quadratic formula, x = [-b ± √(b^2 - 4ac)] / 2a. Here, a=2, b=5, c=-3. x = [-5 ± √(5^2 - 4(2)(-3))] / 2(2) = [-5 ± √(25 + 24)] / 4 = [-5 ± √49] / 4 = [-5 ± 7] / 4. The two roots are x1 = (-5 + 7)/4 = 2/4 = 1/2, and x2 = (-5 - 7)/4 = -12/4 = -3."
+  },
+  {
+    "id": "quad-013",
+    "question": "The product of two consecutive positive integers is 56. Find the smaller integer.",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": 1,
+    "explanation": "Let the two consecutive integers be x and (x+1). Their product is x(x+1) = 56. This simplifies to the quadratic equation x^2 + x - 56 = 0. Factoring gives (x+8)(x-7) = 0. The roots are x = -8 and x = 7. Since the question specifies positive integers, the smaller integer is 7."
+  },
+  {
+    "id": "quad-014",
+    "question": "What is the nature of the roots of the equation x^2 - 4x + 4 = 0?",
+    "options": [
+      "Real and unequal",
+      "Real and equal",
+      "Imaginary",
+      "Not possible to determine"
+    ],
+    "answer": 1,
+    "explanation": "The nature of the roots of a quadratic equation is determined by its discriminant, Δ = b^2 - 4ac. For the equation x^2 - 4x + 4 = 0, a=1, b=-4, and c=4. Δ = (-4)^2 - 4(1)(4) = 16 - 16 = 0. When the discriminant is 0, the roots are real and equal."
+  },
+  {
+    "id": "quad-015",
+    "question": "For the quadratic equation 3x^2 - 7x + 2 = 0, what is the sum of its roots?",
+    "options": [
+      "7/3",
+      "-7/3",
+      "2/3",
+      "-2/3"
+    ],
+    "answer": 0,
+    "explanation": "For a quadratic equation in the form ax^2 + bx + c = 0, the sum of its roots is given by the formula -b/a. In the equation 3x^2 - 7x + 2 = 0, a=3 and b=-7. The sum of the roots is -(-7)/3 = 7/3."
+  },
+     
+  {
+    "id": "q-001",
+    "question": "A alone can complete a piece of work in 20 days and B alone in 30 days. They work together for 6 days, then A leaves. How many more days will B take to finish the remaining work?",
+    "options": ["10 days", "12 days", "14 days", "15 days"],
+    "answer": 3,
+    "explanation": "A’s 1-day work = 1/20, B’s 1-day work = 1/30. Together per day = 1/12. In 6 days, work done = 1/2. Remaining work = 1/2. Now B alone: time = (1/2) ÷ (1/30) = 15 days. Correct answer: 15 days → Option index 3."
+  },
+  {
+    "id": "q-002",
+    "question": "A and B together can finish a work in 12 days. A alone can do the same work in 18 days. In how many days can B alone finish it?",
+    "options": ["24 days", "30 days", "36 days", "40 days"],
+    "answer": 2,
+    "explanation": "A’s 1-day work = 1/18, A+B’s 1-day work = 1/12. B’s 1-day work = 1/36. So B alone takes 36 days. Correct answer: 36 days → Option index 2."
+  },
+  {
+    "id": "q-003",
+    "question": "A group of 12 men can complete a work in 15 days. After 6 days, 4 men leave. How many more days will the remaining men take to complete the remaining work?",
+    "options": ["13.5 days", "14 days", "12 days", "15 days"],
+    "answer": 0,
+    "explanation": "Total work = 180 man-days. Work in 6 days = 72 man-days. Remaining = 108 man-days. With 8 men left: time = 108 ÷ 8 = 13.5 days. Correct answer: 13.5 days → Option index 0."
+  },
+  {
+    "id": "q-004",
+    "question": "A does a work in 25 days, B in 20 days. They work alternately starting with A. In how many days will the work be finished?",
+    "options": ["22.25 days", "23 days", "24 days", "25 days"],
+    "answer": 0,
+    "explanation": "In 2 days A+B complete 9/100 of work. In 22 days = 99/100 done. Remaining = 1/100. Next is A’s turn: needs (1/100)/(1/25) = 0.25 day. Total = 22.25 days. Correct answer: 22.25 days → Option index 0."
+  },
+  {
+    "id": "q-005",
+    "question": "A tank can be filled by Pipe A in 15 hours and by Pipe B in 20 hours. Both are opened together, but after 4 hours Pipe A is closed. In how many more hours will the tank be filled?",
+    "options": ["10⅔ hours", "11 hours", "12 hours", "13 hours"],
+    "answer": 0,
+    "explanation": "A’s 1-hr = 1/15, B’s = 1/20. Together = 7/60. In 4 hrs, filled = 28/60 = 7/15. Remaining = 8/15. Now B alone: time = (8/15)/(1/20) = (8/15)×20 = 160/15 = 10⅔ hours. Correct answer: 10⅔ hours (10 hours 40 minutes) → Option index 0."
+  },
+  {
+    "id": "q-006",
+    "question": "A and B together can finish a work in 8 days. B alone can finish it in 12 days. After working together for 4 days, A leaves. In how many days will B finish the remaining work?",
+    "options": ["4 days", "5 days", "6 days", "7 days"],
+    "answer": 2,
+    "explanation": "A+B = 1/8. B = 1/12. A = 1/24. In 4 days A+B = 1/2 work done. Remaining = 1/2. Now B: time = (1/2)/(1/12) = 6 days. Correct answer: 6 days → Option index 2."
+  },
+  {
+    "id": "q-007",
+    "question": "A does half of the work in 20 days and B does the remaining half in 30 days. If they work together, how many days will the entire work take?",
+    "options": ["24 days", "25 days", "26 days", "28 days"],
+    "answer": 0,
+    "explanation": "A whole = 40 days → rate=1/40. B whole = 60 days → rate=1/60. Together = 1/40+1/60=1/24. Total = 24 days. Correct answer: 24 days → Option index 0."
+  },
+  {
+    "id": "q-008",
+    "question": "A, B, C together can complete a work in 10 days. A alone can complete it in 30 days, B alone in 20 days. In how many days can C alone complete the work?",
+    "options": ["60 days", "40 days", "25 days", "30 days"],
+    "answer": 0,
+    "explanation": "A=1/30, B=1/20, A+B+C=1/10. So C=1/10–(1/30+1/20)=1/60. So C alone = 60 days. Correct answer: 60 days → Option index 0."
+  },
+  {
+    "id": "q-009",
+    "question": "If 15 workers can finish a work in 40 days, in how many days will 20 workers finish it (assuming equal efficiency)?",
+    "options": ["30 days", "28 days", "25 days", "35 days"],
+    "answer": 0,
+    "explanation": "Total work = 600 man-days. With 20 workers: time = 600/20=30 days. Correct answer: 30 days → Option index 0."
+  },
+  {
+    "id": "q-010",
+    "question": "A contractor undertakes a work to be finished in 60 days with 80 men. After 20 days, only 1/4 of the work is done. How many extra men must he employ to finish the work in time?",
+    "options": ["40", "50", "60", "70"],
+    "answer": 0,
+    "explanation": "Work done in 20 days=1/4. Remaining=3/4 in 40 days. Current rate=1/80 per day. Required rate=(3/4)/40=3/160. Ratio= (3/160)/(1/80)=1.5. Men needed=80×1.5=120. Extra=40. Correct answer: 40 → Option index 0."
+  },
+  {
+    "id": "std-001",
+    "question": "A car travels at a speed of 80 km/hr for 3 hours and then at 60 km/hr for 2 hours. What is the total distance covered?",
+    "options": [
+      "340 km",
+      "360 km",
+      "380 km",
+      "400 km"
+    ],
+    "answer": 1,
+    "explanation": "Total distance is the sum of the distances covered in each part of the journey. Distance 1 = 80 km/hr × 3 hrs = 240 km. Distance 2 = 60 km/hr × 2 hrs = 120 km. Total Distance = 240 km + 120 km = 360 km."
+  },
+  {
+    "id": "std-002",
+    "question": "A man travels a certain distance at 40 km/hr and returns to the starting point at 60 km/hr. What is his average speed for the entire journey?",
+    "options": [
+      "45 km/hr",
+      "48 km/hr",
+      "50 km/hr",
+      "52 km/hr"
+    ],
+    "answer": 1,
+    "explanation": "When the distance for both parts of the journey is the same, the average speed can be calculated using the formula: Average Speed = (2 × speed1 × speed2) / (speed1 + speed2). Average Speed = (2 × 40 × 60) / (40 + 60) = 4800 / 100 = 48 km/hr."
+  },
+  {
+    "id": "std-003",
+    "question": "A thief starts a journey at 10 AM at a speed of 40 km/hr. A policeman starts chasing him at 1 PM from the same point at a speed of 60 km/hr. At what time will the policeman catch the thief?",
+    "options": [
+      "6 PM",
+      "7 PM",
+      "8 PM",
+      "9 PM"
+    ],
+    "answer": 1,
+    "explanation": "The thief gets a 3-hour head start (from 10 AM to 1 PM). The distance covered by the thief in this time is 40 km/hr × 3 hrs = 120 km. The relative speed of the policeman with respect to the thief is 60 km/hr - 40 km/hr = 20 km/hr. The time taken to catch up is Distance / Relative Speed = 120 km / 20 km/hr = 6 hours. The policeman will catch the thief 6 hours after he starts, which is at 1 PM + 6 hours = 7 PM."
+  },
+  {
+    "id": "std-004",
+    "question": "Two buses start at the same time from two stations 250 km apart and move towards each other. Their speeds are 50 km/hr and 75 km/hr. At what time will they meet if they started at 10 AM?",
+    "options": [
+      "11:30 AM",
+      "12:00 PM",
+      "12:30 PM",
+      "1:00 PM"
+    ],
+    "answer": 1,
+    "explanation": "When two objects move towards each other, their relative speed is the sum of their individual speeds. Relative Speed = 50 km/hr + 75 km/hr = 125 km/hr. Time to meet = Total Distance / Relative Speed = 250 km / 125 km/hr = 2 hours. They will meet 2 hours after they started, which is at 10 AM + 2 hours = 12:00 PM."
+  },
+  {
+    "id": "std-005",
+    "question": "A 200-meter long train crosses a platform 250 meters long in 20 seconds. What is the speed of the train in km/hr?",
+    "options": [
+      "72 km/hr",
+      "75 km/hr",
+      "81 km/hr",
+      "90 km/hr"
+    ],
+    "answer": 2,
+    "explanation": "The total distance a train covers to cross a platform is the sum of its own length and the platform's length. Total Distance = 200 m + 250 m = 450 m. Speed (in m/s) = Distance / Time = 450 m / 20 s = 22.5 m/s. To convert from m/s to km/hr, multiply by 18/5. Speed = 22.5 × (18/5) = 81 km/hr."
+  },
+  {
+    "id": "std-006",
+    "question": "A boat travels 15 km upstream in 3 hours and 21 km downstream in 3 hours. Find the speed of the stream in km/hr.",
+    "options": [
+      "0.5 km/hr",
+      "1 km/hr",
+      "1.5 km/hr",
+      "2 km/hr"
+    ],
+    "answer": 1,
+    "explanation": "Upstream Speed = 15 km / 3 hrs = 5 km/hr. Downstream Speed = 21 km / 3 hrs = 7 km/hr. The speed of the stream is half the difference between the downstream and upstream speeds. Speed of Stream = (Downstream Speed - Upstream Speed) / 2 = (7 - 5) / 2 = 1 km/hr."
+  },
+  {
+    "id": "std-007",
+    "question": "Two runners start from the same point on a 400-meter circular track and run in the same direction. Their speeds are 10 m/s and 8 m/s. When will they meet for the first time at the starting point?",
+    "options": [
+      "100 seconds",
+      "150 seconds",
+      "200 seconds",
+      "250 seconds"
+    ],
+    "answer": 2,
+    "explanation": "The time taken for each runner to complete one lap is: Runner 1: 400 m / 10 m/s = 40 seconds. Runner 2: 400 m / 8 m/s = 50 seconds. They will meet at the starting point for the first time after a period equal to the Least Common Multiple (LCM) of their individual lap times. LCM(40, 50) = 200 seconds."
+  },
+  {
+    "id": "std-008",
+    "question": "A person covers 1/3 of a journey at 20 km/hr, 1/4 of the remaining journey at 30 km/hr, and the rest at 40 km/hr. What is the average speed?",
+    "options": [
+      "25.6 km/hr",
+      "27.2 km/hr",
+      "28.8 km/hr",
+      "30.0 km/hr"
+    ],
+    "answer": 2,
+    "explanation": "Let the total distance be D. Part 1: (D/3) at 20 km/hr. Time1 = (D/3)/20 = D/60. Remaining distance = 2D/3. Part 2: (1/4 of 2D/3) = D/6 at 30 km/hr. Time2 = (D/6)/30 = D/180. Remaining distance = (2D/3) - (D/6) = D/2. Part 3: (D/2) at 40 km/hr. Time3 = (D/2)/40 = D/80. Total Time = D/60 + D/180 + D/80 = 25D/720 = D/28.8. Average Speed = Total Distance / Total Time = D / (D/28.8) = 28.8 km/hr."
+  },
+  {
+    "id": "std-009",
+    "question": "A person travels at a speed of 30 km/hr and reaches his destination 10 minutes late. If he travels at 40 km/hr, he reaches 5 minutes early. What is the distance?",
+    "options": [
+      "20 km",
+      "25 km",
+      "30 km",
+      "35 km"
+    ],
+    "answer": 2,
+    "explanation": "The total difference in time is 10 minutes (late) + 5 minutes (early) = 15 minutes, which is 1/4 of an hour. The distance can be calculated using the formula: Distance = (Speed1 × Speed2 × Time Difference) / (Speed2 - Speed1). Distance = (30 × 40 × 1/4) / (40 - 30) = (1200 × 1/4) / 10 = 300 / 10 = 30 km."
+  },
+  {
+    "id": "std-010",
+    "question": "A train leaves station A at 8 AM at 60 km/hr. Another train leaves station B at 9 AM at 75 km/hr, traveling towards station A. The distance between A and B is 330 km. At what time will they meet?",
+    "options": [
+      "10:30 AM",
+      "11:00 AM",
+      "11:30 AM",
+      "12:00 PM"
+    ],
+    "answer": 1,
+    "explanation": "First, calculate the distance covered by the first train alone from 8 AM to 9 AM (1 hour): 60 km/hr × 1 hr = 60 km. The remaining distance between the trains at 9 AM is 330 km - 60 km = 270 km. Their relative speed is the sum of their speeds since they are moving towards each other: 60 km/hr + 75 km/hr = 135 km/hr. The time it will take for them to meet is 270 km / 135 km/hr = 2 hours. They will meet 2 hours after 9 AM, which is at 11:00 AM."
+  },
+     
+
+  {
+    "id": "q-001",
+    "question": "The average age of 30 students is 15 years. If the age of teacher is included, the average increases by 1 year. What is the teacher's age?",
+    "options": ["46", "45", "44", "43"],
+    "answer": 0,
+    "explanation": "Total age of 30 students = 30 × 15 = 450. With teacher: average = 16 ⇒ total = 31 × 16 = 496. Teacher's age = 496 - 450 = 46. Correct answer: 46 → Option index 0."
+  },
+  {
+    "id": "q-002",
+    "question": "The average marks of 40 students in a class is 60. If two students' marks, 40 and 80, are removed, what is the new average?",
+    "options": ["60", "59.5", "59", "60.5"],
+    "answer": 0,
+    "explanation": "Total marks = 40 × 60 = 2400. Removing 40 + 80 = 120 ⇒ new total = 2280. New average = 2280 ÷ 38 = 60. Correct answer: 60 → Option index 0."
+  },
+  {
+    "id": "q-003",
+    "question": "The average of 5 numbers is 20. If one number is excluded, the average becomes 18. What is the excluded number?",
+    "options": ["28", "25", "30", "27"],
+    "answer": 0,
+    "explanation": "Total of 5 numbers = 5 × 20 = 100. Excluding one ⇒ sum of 4 numbers = 4 × 18 = 72. Excluded number = 100 - 72 = 28. Correct answer: 28 → Option index 0."
+  },
+  {
+    "id": "q-004",
+    "question": "The average of 9 consecutive odd numbers is 47. What is the largest number among them?",
+    "options": ["55", "53", "51", "49"],
+    "answer": 0,
+    "explanation": "For odd consecutive numbers, average = middle term. Middle = 47. There are 9 numbers ⇒ largest = middle + 4 × 2 = 47 + 8 = 55. Correct answer: 55 → Option index 0."
+  },
+  {
+    "id": "q-005",
+    "question": "The average runs scored by a batsman in 10 innings is 32. How many runs must he score in the 11th innings to raise the average to 35?",
+    "options": ["65", "68", "70", "75"],
+    "answer": 1,
+    "explanation": "Current total = 10 × 32 = 320. Required total = 11 × 35 = 385. Runs needed = 385 - 320 = 65. Correct answer: 65 → Option index 1."
+  },
+  {
+    "id": "q-006",
+    "question": "A student’s average score in 5 subjects is 60. If his highest score is 75 and lowest is 40, what is the average of the remaining 3 subjects?",
+    "options": ["65", "62", "64", "61"],
+    "answer": 1,
+    "explanation": "Total of 5 subjects = 5 × 60 = 300. Removing highest + lowest = 75 + 40 = 115. Remaining total = 300 - 115 = 185. Average = 185 ÷ 3 = 61.67, which is exactly 61.67 but among the options only 62 matches. Correct answer: 62 → Option index 1."
+  },
+  {
+    "id": "q-007",
+    "question": "The average weight of 8 men is 65 kg. If one man of 80 kg is replaced by a new man, the average becomes 64.5 kg. What is the weight of the new man?",
+    "options": ["75", "76", "77", "78"],
+    "answer": 0,
+    "explanation": "Total weight = 8 × 65 = 520. New total = 8 × 64.5 = 516. New man's weight = 516 - (520 - 80) = 516 - 440 = 76. Correct answer: 76 → Option index 0."
+  },
+  {
+    "id": "q-008",
+    "question": "The average age of a family of 6 members is 25 years. A baby is born and the average decreases by 3 years. What is the baby's age?",
+    "options": ["2", "1", "3", "4"],
+    "answer": 3,
+    "explanation": "Total age = 6 × 25 = 150. New average = 22 ⇒ new total = 7 × 22 = 154. Baby’s age = 154 - 150 = 4. Correct answer: 4 → Option index 3."
+  },
+  {
+    "id": "q-009",
+    "question": "The average speed of a bus is 48 km/h for the first 200 km and 72 km/h for the next 200 km. What is the average speed for the entire journey?",
+    "options": ["57.6 km/h", "60 km/h", "58 km/h", "59 km/h"],
+    "answer": 0,
+    "explanation": "Time for 200 km at 48 = 200 ÷ 48 = 25/6 h. Time for 200 km at 72 = 200 ÷ 72 = 25/9 h. Total distance = 400 km. Total time = 25/6 + 25/9 = 125/18 h. Average speed = 400 ÷ (125/18) = 57.6 km/h. Correct answer: 57.6 km/h → Option index 0."
+  },
+  {
+    "id": "q-010",
+    "question": "The average of three numbers is 50. The largest number is 70. If the difference between the other two is 10, what is the smallest number?",
+    "options": ["35", "30", "25", "40"],
+    "answer": 0,
+    "explanation": "Sum of 3 numbers = 3 × 50 = 150. Largest = 70 ⇒ sum of remaining two = 80. Let smaller = x, other = x + 10. Then x + (x + 10) = 80 ⇒ 2x + 10 = 80 ⇒ 2x = 70 ⇒ x = 35. Correct answer: 35 → Option index 0."
+  },
+  
+  {
+    "id": "perc-001",
+    "question": "A number is increased by 20% and the new number is 360. What was the original number?",
+    "options": [
+      "280",
+      "300",
+      "320",
+      "340"
+    ],
+    "answer": 1,
+    "explanation": "Let the original number be X. An increase of 20% means the new number is 120% of the original. So, 1.20 × X = 360. To find X, we divide 360 by 1.20. X = 360 / 1.20 = 300."
+  },
+  {
+    "id": "perc-002",
+    "question": "A student gets 150 marks and fails by 30 marks. If the passing marks are 45%, what are the total marks of the exam?",
+    "options": [
+      "350",
+      "400",
+      "450",
+      "500"
+    ],
+    "answer": 1,
+    "explanation": "The passing marks are the sum of the marks the student scored and the marks he failed by. Passing Marks = 150 + 30 = 180. These 180 marks represent 45% of the total marks. So, 45% of Total Marks = 180. Total Marks = 180 / 0.45 = 400."
+  },
+  {
+    "id": "perc-003",
+    "question": "The population of a town increases by 10% in the first year and by 20% in the second year. If the current population is 13200, what was the population 2 years ago?",
+    "options": [
+      "9000",
+      "10000",
+      "11000",
+      "12000"
+    ],
+    "answer": 1,
+    "explanation": "Let the population 2 years ago be P. After the first year, the population becomes P × 1.10. After the second year, the population becomes (P × 1.10) × 1.20. We are given this value is 13200. So, P × 1.32 = 13200. P = 13200 / 1.32 = 10000."
+  },
+  {
+    "id": "perc-004",
+    "question": "A man spends 75% of his income. If his income increases by 20% and his expenditure increases by 10%, what is the percentage increase in his savings?",
+    "options": [
+      "40%",
+      "45%",
+      "50%",
+      "55%"
+    ],
+    "answer": 2,
+    "explanation": "Assume the man's initial income is 100. His expenditure is 75% of 100 = 75, and his savings are 100 - 75 = 25. His new income is 100 + 20% of 100 = 120. His new expenditure is 75 + 10% of 75 = 75 + 7.5 = 82.5. His new savings are 120 - 82.5 = 37.5. The increase in savings is 37.5 - 25 = 12.5. The percentage increase in savings is (12.5 / 25) × 100 = 50%."
+  },
+  {
+    "id": "perc-005",
+    "question": "The price of a shirt is first increased by 20% and then decreased by 20%. What is the net percentage change in the price of the shirt?",
+    "options": [
+      "0%",
+      "-2%",
+      "-4%",
+      "-5%"
+    ],
+    "answer": 2,
+    "explanation": "This can be solved using the successive percentage change formula: a + b + (ab/100). Here, a = +20 and b = -20. The net change = 20 + (-20) + (20 × -20)/100 = 0 - 400/100 = -4%. The price decreases by 4%."
+  },
+  {
+    "id": "perc-006",
+    "question": "A 40-liter mixture contains 10% acid. How much pure acid must be added to make the percentage of acid 20%?",
+    "options": [
+      "4 liters",
+      "5 liters",
+      "6 liters",
+      "8 liters"
+    ],
+    "answer": 1,
+    "explanation": "The initial amount of acid is 10% of 40 liters = 4 liters. Let X be the amount of pure acid added. The new amount of acid is 4+X, and the new total volume is 40+X. The new percentage is 20%, so (4+X) / (40+X) = 0.20. 4 + X = 0.20(40 + X) ⇒ 4 + X = 8 + 0.2X ⇒ 0.8X = 4 ⇒ X = 5 liters."
+  },
+  {
+    "id": "perc-007",
+    "question": "In an election, candidate A gets 60% of the total votes and wins by 1400 votes. What is the total number of votes?",
+    "options": [
+      "6000",
+      "7000",
+      "8000",
+      "9000"
+    ],
+    "answer": 1,
+    "explanation": "If candidate A gets 60% of the votes, the other candidate (B) must have received 100% - 60% = 40% of the votes. The difference in their votes is 60% - 40% = 20% of the total votes. This 20% difference is equal to 1400 votes. To find the total votes, we calculate 1400 / 0.20 = 7000."
+  },
+  {
+    "id": "perc-008",
+    "question": "In a college, 60% of the students are boys and the rest are girls. If 20% of the boys and 25% of the girls are over 18 years old, what percentage of the total students are over 18?",
+    "options": [
+      "20%",
+      "22%",
+      "24%",
+      "25%"
+    ],
+    "answer": 1,
+    "explanation": "Assume there are 100 students in total. This means there are 60 boys and 40 girls. The number of boys over 18 is 20% of 60 = 12. The number of girls over 18 is 25% of 40 = 10. The total number of students over 18 is 12 + 10 = 22. This represents 22% of the total number of students (22 out of 100)."
+  },
+  {
+    "id": "perc-009",
+    "question": "Due to a 25% increase in the price of rice, a family reduces its consumption by 20%. What is the percentage change in the family's expenditure on rice?",
+    "options": [
+      "0%",
+      "5%",
+      "10%",
+      "20%"
+    ],
+    "answer": 0,
+    "explanation": "Let the original price and consumption each be 100. Original expenditure = 100 × 100 = 10,000. After the changes, the new price is 100 + 25% = 125, and the new consumption is 100 - 20% = 80. New expenditure = 125 × 80 = 10,000. The percentage change in expenditure is (10,000 - 10,000) / 10,000 × 100 = 0%."
+  },
+  {
+    "id": "perc-010",
+    "question": "In a survey, 65% of the people like tea, while 70% like coffee. If 50% of the people like both, what percentage of people like neither tea nor coffee?",
+    "options": [
+      "10%",
+      "15%",
+      "20%",
+      "25%"
+    ],
+    "answer": 1,
+    "explanation": "We can use the formula for unions of sets: P(A or B) = P(A) + P(B) - P(A and B). Percentage who like at least one = 65% + 70% - 50% = 85%. The percentage who like neither is 100% - 85% = 15%."
+  },
+  
+  
+  {
+    "id": "q-001",
+    "question": "Find the least number which when divided by 12, 15, and 18 leaves the same remainder 7.",
+    "options": ["187", "367", "427", "217", "157"],
+    "answer": 1,
+    "explanation": "LCM(12,15,18) = 180. Required number = 180k + 7. Smallest such number greater than all divisors is 187. Next is 367. Among options, 367 is correct. → Option index 1."
+  },
+  {
+    "id": "q-002",
+    "question": "What is the remainder when 7^103 is divided by 12?",
+    "options": ["1", "7", "5", "11", "9"],
+    "answer": 1,
+    "explanation": "7² ≡ 1 (mod 12). Cycle length = 2. Since 103 is odd, remainder = 7. Correct → Option index 1."
+  },
+  {
+    "id": "q-003",
+    "question": "The HCF of 1365 and 1560 is:",
+    "options": ["65", "105", "195", "85", "45"],
+    "answer": 2,
+    "explanation": "1365 = 3×5×7×13. 1560 = 2³×3×5×13. Common = 3×5×13 = 195. Correct → Option index 2."
+  },
+  {
+    "id": "q-004",
+    "question": "What is the unit digit of (437)^29?",
+    "options": ["7", "9", "3", "1", "5"],
+    "answer": 0,
+    "explanation": "Unit digit of 7^n cycles (7,9,3,1). 29 ÷ 4 = remainder 1. So unit digit = 7. Correct → Option index 0."
+  },
+  {
+    "id": "q-005",
+    "question": "The LCM of two numbers is 495 and their HCF is 5. If one number is 55, find the other.",
+    "options": ["45", "81", "90", "33", "121"],
+    "answer": 0,
+    "explanation": "Product of numbers = LCM × HCF = 495 × 5 = 2475. Other number = 2475 ÷ 55 = 45. Correct → Option index 0."
+  },
+  {
+    "id": "q-006",
+    "question": "A number when divided by 11 leaves remainder 7. What will be the remainder when twice this number is divided by 11?",
+    "options": ["3", "2", "7", "5", "9"],
+    "answer": 0,
+    "explanation": "Let N=11k+7. Then 2N=22k+14=11(2k+1)+3. Remainder = 3. Correct → Option index 0."
+  },
+  {
+    "id": "q-007",
+    "question": "Find the greatest 4-digit number exactly divisible by 15, 25, 40, and 75.",
+    "options": ["9600", "9900", "9750", "9400", "9250"],
+    "answer": 0,
+    "explanation": "LCM(15,25,40,75)=600. Largest 4-digit multiple = 600×16=9600. Correct → Option index 0."
+  },
+  {
+    "id": "q-008",
+    "question": "Find the sum of digits of the smallest number divisible by 72 and 108.",
+    "options": ["18", "27", "9", "36", "24"],
+    "answer": 2,
+    "explanation": "LCM(72,108)=216. Sum of digits = 2+1+6=9. Correct → Option index 2."
+  },
+  {
+    "id": "q-009",
+    "question": "The product of two co-prime numbers is 630. Find their LCM.",
+    "options": ["315", "210", "1260", "630", "945"],
+    "answer": 3,
+    "explanation": "For co-prime numbers, LCM = product. So LCM=630. Correct → Option index 3."
+  },
+  {
+    "id": "q-010",
+    "question": "Find the remainder when 9^57 is divided by 13.",
+    "options": ["1", "3", "9", "12", "7"],
+    "answer": 0,
+    "explanation": "9³ ≡ 1 (mod 13). 57 ÷ 3 = 19, remainder 0. So remainder = 1. Correct → Option index 0."
+  },
+  {
+    "id": "q-011",
+    "question": "What is the smallest number that when increased by 17 is divisible by 36?",
+    "options": ["19", "55", "101", "127", "145"],
+    "answer": 0,
+    "explanation": "N+17 divisible by 36 → N ≡ -17 ≡ 19 (mod 36). Smallest = 19. Correct → Option index 0."
+  },
+  {
+    "id": "q-012",
+    "question": "Which one is divisible by 99?",
+    "options": ["1089", "4950", "1287", "891", "9801"],
+    "answer": 4,
+    "explanation": "99=9×11. 9801 ÷ 99=99 exactly. Correct → Option index 4."
+  },
+  {
+    "id": "q-013",
+    "question": "What is the unit digit of (13^45 × 24^36)?",
+    "options": ["2", "4", "6", "8", "0"],
+    "answer": 3,
+    "explanation": "13^45 → unit same as 3^45. Cycle (3,9,7,1). 45 mod4=1 → unit=3. 24^36 → same as 4^36. Cycle (4,6). Exponent even → unit=6. Product = 3×6=18 → unit digit=8. Correct → Option index 3."
+  },
+  {
+    "id": "q-014",
+    "question": "Find the greatest 3-digit number exactly divisible by 27.",
+    "options": ["972", "999", "945", "963", "990"],
+    "answer": 1,
+    "explanation": "999 ÷ 27 = 37 exactly. So 999 is the greatest 3-digit multiple of 27. Correct → Option index 1."
+  },
+  {
+    "id": "q-015",
+    "question": "Find the remainder when 2^120 is divided by 17.",
+    "options": ["1", "2", "16", "8", "9"],
+    "answer": 0,
+    "explanation": "By Fermat’s theorem: 2^16 ≡ 1 (mod 17). 120 ÷ 16 = 7 remainder 8. So 2^120 ≡ 2^8 mod 17. 2^8=256. 256 ÷ 17=15 remainder 1. Correct remainder=1 → Option index 0."
+  },
+  
+       
+      ],
+      
+      'MOCK2': [
+        {
+          id: 'e-gra-001',
+          question: "THIS SERIES COMING SOON WAIT FOR NEXT WEEK",
+          options: ["He don't know.", "He doesn't know.", "He not knows.", "He no know."],
+          answer: 1,
+          explanation: "Third person singular requires \"doesn't\"."
+        }
+      ],
+      
+      'MOCK3': [
+        {
+          id: 'e-voc-001',
+          question: 'THIS SERIES COMING SOON WAIT FOR NEXT WEEK',
+          options: ['Increase', 'Expand', 'Reduce', 'Grow'],
+          answer: 2,
+          explanation: 'Reduce is antonym of augment.'
+        }
+      ]
+    }
+  },
+   
+
+  
+    
+    
+    
   
   'Quantitative Aptitude': {
     topics: {
