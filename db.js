@@ -2509,12 +2509,12 @@ const DB = {
     "explanation": "Total work = 600 man-days. With 20 workers: time = 600/20=30 days. Correct answer: 30 days → Option index 0."
   },
   {
-    "id": "q-010",
-    "question": "A contractor undertakes a work to be finished in 60 days with 80 men. After 20 days, only 1/4 of the work is done. How many extra men must he employ to finish the work in time?",
-    "options": ["40", "50", "60", "70"],
-    "answer": 0,
-    "explanation": "Work done in 20 days=1/4. Remaining=3/4 in 40 days. Current rate=1/80 per day. Required rate=(3/4)/40=3/160. Ratio= (3/160)/(1/80)=1.5. Men needed=80×1.5=120. Extra=40. Correct answer: 40 → Option index 0."
-  },
+  "id": "q-010",
+  "question": "A contractor undertakes a work to be finished in 60 days with 80 men. After 20 days, only 1/4 of the work is done. How many extra men must he employ to finish the work in time?",
+  "options": ["5", "10", "15", "20"],
+  "answer": 1,
+  "explanation": "Total work = 1 unit. Work done in 20 days = 1/4 → Remaining work = 3/4. Remaining days = 40. Work per day needed = (3/4)/40 = 3/160. Current rate of 80 men = 1/60 per day. Ratio = (3/160)/(1/60) = 1.125 → Men needed = 80×1.125 = 90. Already 80 men working, so extra men = 90-80 = 10."
+},
   {
     "id": "std-001",
     "question": "A car travels at a speed of 80 km/hr for 3 hours and then at 60 km/hr for 2 hours. What is the total distance covered?",
@@ -2940,13 +2940,1164 @@ const DB = {
       ],
       
       'MOCK2': [
-        {
-          id: 'e-gra-001',
-          question: "THIS SERIES COMING SOON WAIT FOR NEXT WEEK",
-          options: ["He don't know.", "He doesn't know.", "He not knows.", "He no know."],
-          answer: 1,
-          explanation: "Third person singular requires \"doesn't\"."
-        }
+        
+        // TOPIC WISE - 20 NUMBER SYSTEM
+      
+    {
+      "id": "q-001",
+      "question": "The sum of two numbers is 36 and their HCF is 4. How many pairs of such numbers are possible?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "answer": 1,
+      "explanation": "Let the two numbers be 4a and 4b, where a and b are coprime. Their sum is 4a + 4b = 36, which simplifies to a + b = 9. The pairs of coprime numbers that sum to 9 are (1, 8), (2, 7), and (4, 5). The pair (3, 6) is not coprime as their HCF is 3. So there are **3** possible pairs. The correct answer is 3 → Option index 1."
+    },
+    {
+      "id": "q-002",
+      "question": "What is the unit digit of 3^65 × 6^59 × 7^71?",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "6"
+      ],
+      "answer": 2,
+      "explanation": "To find the unit digit, we analyze the cyclicity of each base. The unit digit of 3^n has a cycle of 4 (3, 9, 7, 1). For 3^65, the remainder of 65/4 is 1, so the unit digit is the same as 3^1, which is **3**. The unit digit of 6^n is always **6**. The unit digit of 7^n has a cycle of 4 (7, 9, 3, 1). For 7^71, the remainder of 71/4 is 3, so the unit digit is the same as 7^3, which is **3**. The unit digit of the product is the unit digit of 3 × 6 × 3 = 54, which is **4**. The correct answer is 4 → Option index 2."
+    },
+    {
+      "id": "q-003",
+      "question": "Find the largest number that divides 39, 87, and 123 leaving the same remainder in each case.",
+      "options": [
+        "6",
+        "12",
+        "16",
+        "8"
+      ],
+      "answer": 1,
+      "explanation": "The largest number that leaves the same remainder is the HCF of the differences between the numbers. The differences are 87 - 39 = 48, 123 - 87 = 36, and 123 - 39 = 84. The HCF of 48, 36, and 84 is **12**. The correct answer is 12 → Option index 1."
+    },
+    {
+      "id": "q-004",
+      "question": "The HCF and LCM of two numbers are 13 and 455 respectively. If one of the numbers is 65, what is the other number?",
+      "options": [
+        "91",
+        "78",
+        "65",
+        "85"
+      ],
+      "answer": 0,
+      "explanation": "The product of two numbers is equal to the product of their HCF and LCM. Let the other number be N. 65 × N = 13 × 455. N = (13 × 455) / 65 = 455 / 5 = **91**. The correct answer is 91 → Option index 0."
+    },
+    {
+      "id": "q-005",
+      "question": "A number when divided by 899 gives a remainder of 63. What will be the remainder when the same number is divided by 29?",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": 0,
+      "explanation": "Let the number be N. N = 899q + 63. We know that 899 is divisible by 29 (899 = 29 × 31). So, the remainder will be the same as the remainder of 63 divided by 29. 63 = 29 × 2 + 5. The remainder is **5**. The correct answer is 5 → Option index 0."
+    },
+    {
+      "id": "q-006",
+      "question": "Find the least number which when divided by 12, 15, 20, and 54 leaves a remainder of 4 in each case.",
+      "options": [
+        "544",
+        "540",
+        "536",
+        "548"
+      ],
+      "answer": 0,
+      "explanation": "First, find the LCM of 12, 15, 20, and 54. The prime factorizations are: 12 = 2^2 × 3, 15 = 3 × 5, 20 = 2^2 × 5, 54 = 2 × 3^3. The LCM is the product of the highest powers of all prime factors: 2^2 × 3^3 × 5 = 4 × 27 × 5 = **540**. The required number is LCM + remainder, so 540 + 4 = **544**. The correct answer is 544 → Option index 0."
+    },
+    {
+      "id": "q-007",
+      "question": "Simplify: 25 - [12 + {15 - (6+4)}].",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "answer": 2,
+      "explanation": "We follow the BODMAS rule. First, solve the innermost parentheses: (6+4) = 10. Next, solve the curly braces: {15-10} = 5. Then, solve the square brackets: [12+5] = 17. Finally, perform the subtraction: 25-17 = **8**. The correct answer is 8 → Option index 2."
+    },
+    {
+      "id": "q-008",
+      "question": "The LCM of two numbers is 2079 and their HCF is 27. If one of the numbers is 189, what is the other number?",
+      "options": [
+        "287",
+        "297",
+        "307",
+        "317"
+      ],
+      "answer": 1,
+      "explanation": "Using the formula: First Number × Second Number = HCF × LCM. 189 × N = 27 × 2079. N = (27 × 2079) / 189 = 2079 / 7 = **297**. The correct answer is 297 → Option index 1."
+    },
+    {
+      "id": "q-009",
+      "question": "What is the unit digit of 7^95 - 3^58?",
+      "options": [
+        "4",
+        "6",
+        "0",
+        "2"
+      ],
+      "answer": 0,
+      "explanation": "For 7^95: The cyclicity of 7 is 4. The remainder of 95/4 is 3. The unit digit is the same as 7^3, which is 343, so the unit digit is **3**. For 3^58: The cyclicity of 3 is 4. The remainder of 58/4 is 2. The unit digit is the same as 3^2, which is **9**. The unit digit of the difference is the unit digit of 3-9. Since 3 is smaller than 9, we consider it as 13. The unit digit of 13-9 is **4**. The correct answer is 4 → Option index 0."
+    },
+    {
+      "id": "q-010",
+      "question": "Find the least number which when divided by 12, 16, and 24 leaves a remainder of 3 in each case, but is completely divisible by 7.",
+      "options": [
+        "147",
+        "150",
+        "153",
+        "156"
+      ],
+      "answer": 0,
+      "explanation": "First, we find the LCM of 12, 16, and 24. $12=2^2 \times 3$, $16=2^4$, $24=2^3 \times 3$. The LCM is $2^4 \times 3 = **48**$. The number is of the form 48k+3. We need to find the smallest integer k for which 48k+3 is divisible by 7. We test values for k: for k=3, 48(3)+3 = 144+3 = **147**. $147/7 = 21$. So the number is 147. The correct answer is 147 → Option index 0."
+    },
+    {
+      "id": "q-011",
+      "question": "What is the remainder when 17^200 is divided by 18?",
+      "options": [
+        "1",
+        "17",
+        "16",
+        "2"
+      ],
+      "answer": 0,
+      "explanation": "Using the concept of modular arithmetic, we know that 17 is congruent to -1 modulo 18. So, 17 ≡ -1 (mod 18). Then, 17^200 ≡ (-1)^200 (mod 18). Since 200 is an even number, (-1)^200 = 1. Therefore, the remainder is **1**. The correct answer is 1 → Option index 0."
+    },
+    {
+      "id": "q-012",
+      "question": "The HCF and LCM of two numbers are 25 and 150 respectively. The sum of the numbers is 125. Find the difference between the numbers.",
+      "options": [
+        "25",
+        "50",
+        "75",
+        "100"
+      ],
+      "answer": 0,
+      "explanation": "Let the numbers be x and y. We are given x+y = 125 and HCF × LCM = xy. So, xy = 25 × 150 = 3750. We need to find the difference, x-y. We use the identity: $(x-y)^2 = (x+y)^2 - 4xy$. $(x-y)^2 = (125)^2 - 4(3750) = 15625 - 15000 = 625$. $x-y = sqrt(625) = **25**. The correct answer is 25 → Option index 0."
+    },
+    {
+      "id": "q-013",
+      "question": "What is the greatest 4-digit number which is exactly divisible by 12, 18, and 24?",
+      "options": [
+        "9936",
+        "9996",
+        "9960",
+        "9984"
+      ],
+      "answer": 0,
+      "explanation": "First, find the LCM of 12, 18, and 24. $12=2^2 \times 3$, $18=2 \times 3^2$, $24=2^3 \times 3$. The LCM is $2^3 \times 3^2 = 8 \times 9 = **72**. The greatest 4-digit number is 9999. To find the largest number divisible by 72, we divide 9999 by 72. $9999 = 72 \times 138 + 63$. The required number is 9999 - 63 = **9936**. The correct answer is 9936 → Option index 0."
+    },
+    {
+      "id": "q-014",
+      "question": "A number when divided by 5, 6, and 7 leaves remainders 3, 4, and 5 respectively. What is the smallest such number?",
+      "options": [
+        "208",
+        "210",
+        "212",
+        "206"
+      ],
+      "answer": 0,
+      "explanation": "Let the number be N. The remainders are 3, 4, 5 when divided by 5, 6, 7. The difference between the divisor and the remainder is constant: 5-3=2, 6-4=2, 7-5=2. The number is of the form LCM(5, 6, 7) - 2. The LCM of 5, 6, and 7 is 5 × 6 × 7 = **210**. The smallest such number is 210 - 2 = **208**. The correct answer is 208 → Option index 0."
+    },
+    {
+      "id": "q-015",
+      "question": "What is the greatest number that will divide 1657 and 2037 leaving remainders 6 and 5 respectively?",
+      "options": [
+        "121",
+        "119",
+        "127",
+        "131"
+      ],
+      "answer": 2,
+      "explanation": "The greatest number that will divide 1657 and 2037 leaving remainders 6 and 5 respectively is the HCF of (1657-6) and (2037-5). We need to find the HCF of 1651 and 2032. Using the Euclidean algorithm: $2032 = 1651 \times 1 + 381$, $1651 = 381 \times 4 + 127$, $381 = 127 \times 3 + 0$. The last non-zero remainder is **127**, which is the HCF. The correct answer is 127 → Option index 2."
+    },
+    {
+      "id": "q-016",
+      "question": "The LCM of two numbers is 480 and their HCF is 16. If one of the numbers is 64, what is the other number?",
+      "options": [
+        "120",
+        "100",
+        "140",
+        "160"
+      ],
+      "answer": 0,
+      "explanation": "Using the formula: First Number × Second Number = HCF × LCM. 64 × N = 16 × 480. N = (16 × 480) / 64 = 480 / 4 = **120**. The correct answer is 120 → Option index 0."
+    },
+    {
+      "id": "q-017",
+      "question": "What is the unit digit of (2137)^754?",
+      "options": [
+        "1",
+        "3",
+        "7",
+        "9"
+      ],
+      "answer": 3,
+      "explanation": "The unit digit is determined by the unit digit of the base, which is 7. The cyclicity of the unit digit of powers of 7 is 4 (7, 9, 3, 1). We need to find the remainder of 754 when divided by 4. The last two digits, 54, divided by 4 gives a remainder of 2. So, the unit digit is the same as 7^2 = 49, which is **9**. The correct answer is 9 → Option index 3."
+    },
+    {
+      "id": "q-018",
+      "question": "A number when divided by 3, 4, 5, and 6 leaves a remainder of 2 in each case. The number lies between 500 and 600. What is the sum of the digits of the number?",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "answer": 1,
+      "explanation": "First, find the LCM of the divisors 3, 4, 5, and 6. LCM(3, 4, 5, 6) = **60**. The number can be represented as 60k+2. We need to find k such that 500 < 60k+2 < 600. This simplifies to 498 < 60k < 598, or 8.3 < k < 9.96. The only integer value for k is 9. The number is 60 × 9 + 2 = 540 + 2 = **542**. The sum of the digits of 542 is 5+4+2 = **11**. The correct answer is 11 → Option index 1."
+    },
+    {
+      "id": "q-019",
+      "question": "What is the remainder when 13^11 is divided by 12?",
+      "options": [
+        "1",
+        "11",
+        "13",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "We can write 13 as (12+1). So, 13^11 = (12+1)^11. When (12+1)^11 is divided by 12, the remainder is the same as the remainder of 1^11, which is **1**. The correct answer is 1 → Option index 0."
+    },
+    {
+      "id": "q-020",
+      "question": "The sum of two numbers is 24 and their product is 128. What is the sum of their reciprocals?",
+      "options": [
+        "3/16",
+        "1/2",
+        "2/3",
+        "5/32"
+      ],
+      "answer": 0,
+      "explanation": "Let the numbers be x and y. We are given x+y = 24 and xy = 128. The sum of their reciprocals is (1/x) + (1/y) = (x+y)/xy. Substituting the given values, we get 24/128. Simplifying the fraction: 24/128 = 12/64 = 6/32 = **3/16**. The correct answer is 3/16 → Option index 0."
+    },
+       
+       
+       // ORDER OF MAGNITUDE AND QUADRATIC EQN  
+        
+      
+    {
+      "id": "q-001",
+      "question": "If x = 7 + 4√3, find the value of x + 1/x.",
+      "options": [
+        "14",
+        "8",
+        "12",
+        "16"
+      ],
+      "answer": 0,
+      "explanation": "Given x = 7 + 4√3. To find 1/x, we rationalize the denominator by multiplying the numerator and denominator by the conjugate of the denominator: 1/x = 1 / (7 + 4√3) = (7 - 4√3) / ((7 + 4√3)(7 - 4√3)) = (7 - 4√3) / (49 - 48) = 7 - 4√3. Now, x + 1/x = (7 + 4√3) + (7 - 4√3) = **14**. The correct answer is 14 → Option index 0."
+    },
+    {
+      "id": "q-002",
+      "question": "Simplify: (4√3 + 2√2)^2.",
+      "options": [
+        "48 + 8√6",
+        "56 + 16√6",
+        "56 + 8√6",
+        "48 + 16√6"
+      ],
+      "answer": 1,
+      "explanation": "This expression is in the form of (a+b)^2 = a^2 + 2ab + b^2. Here, a = 4√3 and b = 2√2. So, a^2 = (4√3)^2 = 16 × 3 = 48. b^2 = (2√2)^2 = 4 × 2 = 8. And, 2ab = 2 × (4√3) × (2√2) = 16√6. Therefore, (4√3 + 2√2)^2 = 48 + 8 + 16√6 = **56 + 16√6**. The correct answer is 56 + 16√6 → Option index 1."
+    },
+    {
+      "id": "q-003",
+      "question": "If 8^(2x+1) = (32)^(x-1), find the value of x.",
+      "options": [
+        "8",
+        "-8",
+        "7",
+        "-7"
+      ],
+      "answer": 1,
+      "explanation": "To solve this, we express both sides with the same base, which is 2. We know that 8 = 2^3 and 32 = 2^5. So, the equation becomes (2^3)^(2x+1) = (2^5)^(x-1), which simplifies to 2^(6x+3) = 2^(5x-5). Equating the exponents, we get 6x + 3 = 5x - 5. Solving for x, we get 6x - 5x = -5 - 3, which gives x = **-8**. The correct answer is -8 → Option index 1."
+    },
+    {
+      "id": "q-004",
+      "question": "If (a/b)^(x-1) = (b/a)^(x-3), find the value of x.",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "We can write (b/a) as (a/b)^-1. So, (b/a)^(x-3) can be rewritten as (a/b)^-(x-3) = (a/b)^(3-x). The equation becomes (a/b)^(x-1) = (a/b)^(3-x). Equating the exponents, we get x - 1 = 3 - x. Solving for x, we get 2x = 4, so x = **2**. The correct answer is 2 → Option index 1."
+    },
+    {
+      "id": "q-005",
+      "question": "Solve the quadratic equation: x^2 - 11x + 30 = 0.",
+      "options": [
+        "x = 5, 6",
+        "x = -5, -6",
+        "x = 5, -6",
+        "x = -5, 6"
+      ],
+      "answer": 0,
+      "explanation": "To solve the quadratic equation, we can use factorization. We need to find two numbers that multiply to give 30 and add up to -11. These numbers are -5 and -6. So, the equation can be factored as (x-5)(x-6) = 0. This gives us two possible solutions: x-5 = 0 or x-6 = 0. Therefore, the roots are x = **5** and x = **6**. The correct answer is x = 5, 6 → Option index 0."
+    },
+    {
+      "id": "q-006",
+      "question": "What is the value of (√2 + √3 - √5) × (√2 + √3 + √5)?",
+      "options": [
+        "2√6",
+        "2√5",
+        "3√2",
+        "4√3"
+      ],
+      "answer": 0,
+      "explanation": "This expression is in the form (A - B)(A + B) = A^2 - B^2, where A = (√2 + √3) and B = √5. The expression becomes (√2 + √3)^2 - (√5)^2. We expand the first term: (√2 + √3)^2 = (√2)^2 + (√3)^2 + 2(√2)(√3) = 2 + 3 + 2√6 = 5 + 2√6. The second term is (√5)^2 = 5. So, the expression is (5 + 2√6) - 5 = **2√6**. The correct answer is 2√6 → Option index 0."
+    },
+    {
+      "id": "q-007",
+      "question": "The sum of the roots of a quadratic equation is 8 and their product is 12. Find the equation.",
+      "options": [
+        "x^2 + 8x + 12 = 0",
+        "x^2 - 8x + 12 = 0",
+        "x^2 - 8x - 12 = 0",
+        "x^2 + 8x - 12 = 0"
+      ],
+      "answer": 1,
+      "explanation": "A quadratic equation with roots α and β is given by the formula x^2 - (α+β)x + αβ = 0. Given that the sum of the roots (α+β) = 8 and the product of the roots (αβ) = 12, we can substitute these values into the formula. The equation is **x^2 - 8x + 12 = 0**. The correct answer is x^2 - 8x + 12 = 0 → Option index 1."
+    },
+    {
+      "id": "q-008",
+      "question": "If 3^(x+2) = 243, what is the value of x?",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "To solve this, we express 243 as a power of 3. $3 \times 3 \times 3 \times 3 \times 3 = 243$, so $243 = 3^5$. The equation becomes 3^(x+2) = 3^5. Equating the exponents, we get x+2 = 5. Solving for x, we get x = 5-2 = **3**. The correct answer is 3 → Option index 1."
+    },
+    {
+      "id": "q-009",
+      "question": "Find the value of sqrt(12 + sqrt(12 + sqrt(12 + ...))).",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": 1,
+      "explanation": "Let the value of the expression be x. So, x = sqrt(12 + sqrt(12 + sqrt(12 + ...))). Squaring both sides, we get x^2 = 12 + sqrt(12 + sqrt(12 + ...)). We can substitute x back into the equation: x^2 = 12 + x. Rearranging gives a quadratic equation: x^2 - x - 12 = 0. We can factor this equation as (x-4)(x+3) = 0. The possible solutions are x=4 or x=-3. Since the expression involves a positive square root, the value must be positive. Therefore, x = **4**. The correct answer is 4 → Option index 1."
+    },
+    {
+      "id": "q-010",
+      "question": "Find the value of (243)^(2/5) × 3^3 / 9^(1/2).",
+      "options": [
+        "9",
+        "27",
+        "3",
+        "81"
+      ],
+      "answer": 3,
+      "explanation": "We can express all the numbers as powers of 3. We know that 243 = 3^5 and 9 = 3^2. The expression becomes (3^5)^(2/5) × 3^3 / (3^2)^(1/2). Using the rules of indices, we multiply the exponents: 3^(5 × 2/5) × 3^3 / 3^(2 × 1/2) = 3^2 × 3^3 / 3^1. Now, we add the exponents in the numerator and subtract the exponent of the denominator: 3^(2+3-1) = 3^4 = **81**. The correct answer is 81 → Option index 3."
+    },
+    {
+      "id": "q-011",
+      "question": "If x = (sqrt(3) + sqrt(2)) / (sqrt(3) - sqrt(2)), find the value of x + 1/x.",
+      "options": [
+        "2√6",
+        "5",
+        "10",
+        "2"
+      ],
+      "answer": 2,
+      "explanation": "First, we rationalize x by multiplying the numerator and denominator by the conjugate of the denominator, which is (sqrt(3) + sqrt(2)). x = (sqrt(3) + sqrt(2)) / (sqrt(3) - sqrt(2)) × (sqrt(3) + sqrt(2)) / (sqrt(3) + sqrt(2)) = (sqrt(3)+sqrt(2))^2 / ((sqrt(3))^2 - (sqrt(2))^2) = (3 + 2 + 2√6) / (3 - 2) = 5 + 2√6. The reciprocal of x is 1/x = 1/(5+2√6) = (5-2√6)/(25-24) = 5-2√6. Then, x + 1/x = (5 + 2√6) + (5 - 2√6) = **10**. The correct answer is 10 → Option index 2."
+    },
+    {
+      "id": "q-012",
+      "question": "Find the value of sqrt(18) + sqrt(32) - sqrt(50).",
+      "options": [
+        "3√2",
+        "4√2",
+        "2√2",
+        "√2"
+      ],
+      "answer": 2,
+      "explanation": "To simplify, we express each number under the square root in the form of a^2 * b. sqrt(18) = sqrt(9 × 2) = 3√2. sqrt(32) = sqrt(16 × 2) = 4√2. sqrt(50) = sqrt(25 × 2) = 5√2. Now, we substitute these simplified terms back into the expression: 3√2 + 4√2 - 5√2. Combining the like terms, we get (3 + 4 - 5)√2 = **2√2**. The correct answer is 2√2 → Option index 2."
+    },
+    {
+      "id": "q-013",
+      "question": "Find the discriminant of the quadratic equation 2x^2 - 5x + 3 = 0.",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "The discriminant of a quadratic equation in the form ax^2 + bx + c = 0 is given by the formula Δ = b^2 - 4ac. For the given equation 2x^2 - 5x + 3 = 0, we have a=2, b=-5, and c=3. Substituting these values, Δ = (-5)^2 - 4(2)(3) = 25 - 24 = **1**. The correct answer is 1 → Option index 0."
+    },
+    {
+      "id": "q-014",
+      "question": "If 5^(x-2) = 1, what is the value of x?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "answer": 1,
+      "explanation": "We know that any non-zero number raised to the power of 0 is 1. So, we can write the equation as 5^(x-2) = 5^0. By equating the exponents, we get x-2 = 0. Solving for x, we get x = **2**. The correct answer is 2 → Option index 1."
+    },
+    {
+      "id": "q-015",
+      "question": "If a^2 + 1/a^2 = 14, find the value of a + 1/a.",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": 1,
+      "explanation": "We know that the algebraic identity is (a + 1/a)^2 = a^2 + 1/a^2 + 2(a)(1/a) = a^2 + 1/a^2 + 2. Substituting the given value of a^2 + 1/a^2 = 14, we get (a + 1/a)^2 = 14 + 2 = 16. Taking the square root of both sides, we find a + 1/a = sqrt(16) = **4**. The correct answer is 4 → Option index 1."
+    },
+    {
+      "id": "q-016",
+      "question": "Find the roots of the equation x^2 - 7x - 18 = 0.",
+      "options": [
+        "9, 2",
+        "-9, 2",
+        "9, -2",
+        "-9, -2"
+      ],
+      "answer": 2,
+      "explanation": "To find the roots, we factor the quadratic equation. We need two numbers that multiply to -18 and add up to -7. These numbers are -9 and 2. So, we can factor the equation as (x-9)(x+2) = 0. This gives us x-9 = 0 or x+2 = 0. The roots are x = **9** and x = **-2**. The correct answer is 9, -2 → Option index 2."
+    },
+    {
+      "id": "q-017",
+      "question": "What is the value of (27)^(-1/3)?",
+      "options": [
+        "1/3",
+        "3",
+        "1/9",
+        "9"
+      ],
+      "answer": 0,
+      "explanation": "The negative exponent indicates a reciprocal, and the fractional exponent (1/3) indicates a cube root. So, (27)^(-1/3) = 1 / (27)^(1/3). The cube root of 27 is 3. Therefore, the expression simplifies to 1/3. The correct answer is 1/3 → Option index 0."
+    },
+    {
+      "id": "q-018",
+      "question": "If 4^x = 1/256, find the value of x.",
+      "options": [
+        "4",
+        "-4",
+        "1/4",
+        "-1/4"
+      ],
+      "answer": 1,
+      "explanation": "We can express 1/256 as a power of 4. We know that 256 = 4^4. So, 1/256 = 1/4^4 = 4^(-4). The equation becomes 4^x = 4^(-4). By equating the exponents, we find x = **-4**. The correct answer is -4 → Option index 1."
+    },
+    {
+      "id": "q-019",
+      "question": "Simplify the fraction: ((1/2)+(1/3))/((1/2)-(1/3)).",
+      "options": [
+        "5",
+        "1",
+        "3",
+        "2"
+      ],
+      "answer": 0,
+      "explanation": "First, we simplify the numerator by finding a common denominator for 1/2 and 1/3, which is 6. 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Next, we simplify the denominator: 1/2 - 1/3 = 3/6 - 2/6 = 1/6. Finally, we divide the numerator by the denominator: (5/6) / (1/6) = (5/6) × (6/1) = **5**. The correct answer is 5 → Option index 0."
+    },
+    {
+      "id": "q-020",
+      "question": "Find the value of 1/(2-√3) - 1/(2+√3).",
+      "options": [
+        "4",
+        "2√3",
+        "0",
+        "4√3"
+      ],
+      "answer": 1,
+      "explanation": "To simplify, we first rationalize each term. For the first term: 1/(2-√3) = (2+√3)/((2-√3)(2+√3)) = (2+√3)/(4-3) = 2+√3. For the second term: 1/(2+√3) = (2-√3)/((2+√3)(2-√3)) = (2-√3)/(4-3) = 2-√3. Now, we subtract the second term from the first: (2+√3) - (2-√3) = 2 + √3 - 2 + √3 = **2√3**. The correct answer is 2√3 → Option index 1."
+    },
+    
+    
+    // Percentage 
+    
+    
+  {
+    "id": "q-001",
+    "question": "In an election, a candidate received 40% of the total valid votes. If 20% of the total votes were declared invalid, and the total number of votes cast was 15,000, what is the number of valid votes received by the candidate?",
+    "options": [
+      "4800",
+      "5200",
+      "4500",
+      "6000"
+    ],
+    "answer": 0,
+    "explanation": "Total votes cast = 15,000.\nInvalid votes = 20% of 15,000 = (20/100) * 15,000 = 3,000.\nValid votes = Total votes - Invalid votes = 15,000 - 3,000 = 12,000.\nValid votes received by the candidate = 40% of total valid votes = 40% of 12,000 = (40/100) * 12,000 = 4,800."
+  },
+  {
+    "id": "q-002",
+    "question": "A student needs to score 36% marks to pass an exam. If he gets 150 marks and fails by 30 marks, what is the maximum marks of the exam?",
+    "options": [
+      "450",
+      "500",
+      "550",
+      "600"
+    ],
+    "answer": 1,
+    "explanation": "To find the passing marks, we add the marks obtained to the marks failed by: 150 + 30 = 180.\nAccording to the question, 36% of the total marks is equal to the passing marks. Let the maximum marks be 'x'.\nSo, 36% of x = 180\n(36/100) * x = 180\nx = (180 * 100) / 36\nx = 5 * 100\nx = 500.\nMaximum marks of the exam is 500."
+  },
+  {
+    "id": "q-003",
+    "question": "If the price of a commodity increases by 20%, by what percentage must a family reduce its consumption to keep the expenditure same?",
+    "options": [
+      "20%",
+      "16.67%",
+      "25%",
+      "15%"
+    ],
+    "answer": 1,
+    "explanation": "Let the original price be 'P' and original consumption be 'C'. Original expenditure = P * C.\nNew price = P + 20% of P = P + 0.2P = 1.2P.\nTo keep the expenditure same, the new expenditure must equal the original. Let the new consumption be C_new.\n1.2P * C_new = P * C\nC_new = (P * C) / 1.2P = C / 1.2.\nReduction in consumption = Original consumption - New consumption = C - C/1.2 = C * (1 - 1/1.2) = C * (0.2/1.2) = C * (1/6).\nPercentage reduction = (Reduction / Original consumption) * 100 = ((C/6) / C) * 100 = (1/6) * 100 = 16.67%."
+  },
+  {
+    "id": "q-004",
+    "question": "In a town, 60% of the population are males and 40% are females. If 20% of the males and 25% of the females are educated, what percentage of the total population is educated?",
+    "options": [
+      "21%",
+      "22%",
+      "23%",
+      "24%"
+    ],
+    "answer": 1,
+    "explanation": "Let the total population be 100.\nNumber of males = 60% of 100 = 60.\nNumber of females = 40% of 100 = 40.\nEducated males = 20% of males = 20% of 60 = (20/100) * 60 = 12.\nEducated females = 25% of females = 25% of 40 = (25/100) * 40 = 10.\nTotal educated population = 12 + 10 = 22.\nPercentage of educated population = (Total educated / Total population) * 100 = (22 / 100) * 100 = 22%."
+  },
+  {
+    "id": "q-005",
+    "question": "A number is increased by 20% and then decreased by 20%. The net change in the number is:",
+    "options": [
+      "4% increase",
+      "4% decrease",
+      "No change",
+      "2% decrease"
+    ],
+    "answer": 1,
+    "explanation": "Let the original number be 'x'.\nAfter increasing by 20%, the new number is: x + 0.20x = 1.20x.\nAfter decreasing the new number by 20%, the final number is: 1.20x - (20/100) * 1.20x = 1.20x - 0.24x = 0.96x.\nThe net change is the original number minus the final number: x - 0.96x = 0.04x.\nPercentage change = (Net change / Original number) * 100 = (0.04x / x) * 100 = 4%.\nSince the final number (0.96x) is less than the original number (x), it is a 4% decrease."
+  },
+  {
+    "id": "q-006",
+    "question": "If A's income is 25% more than B's income, then B's income is what percentage less than A's income?",
+    "options": [
+      "20%",
+      "25%",
+      "33.33%",
+      "16.67%"
+    ],
+    "answer": 0,
+    "explanation": "Let B's income be ₹100.\nThen A's income = ₹100 + 25% of ₹100 = ₹100 + ₹25 = ₹125.\nDifference between A's and B's income = ₹125 - ₹100 = ₹25.\nTo find the percentage B's income is less than A's, we use A's income as the base.\nPercentage less = (Difference / A's income) * 100 = (25 / 125) * 100 = (1/5) * 100 = 20%."
+  },
+  {
+    "id": "q-007",
+    "question": "The population of a city increases by 10% annually. If the present population is 1,21,000, what was the population two years ago?",
+    "options": [
+      "1,00,000",
+      "1,10,000",
+      "99,000",
+      "1,20,000"
+    ],
+    "answer": 0,
+    "explanation": "Let the population two years ago be 'P'.\nAfter the first year, the population is P + 10% of P = P(1 + 0.10) = 1.1P.\nAfter the second year, the population is 1.1P + 10% of 1.1P = 1.1P(1 + 0.10) = 1.1P * 1.1 = 1.21P.\nThe present population is 1,21,000. So, 1.21P = 1,21,000.\nP = 1,21,000 / 1.21\nP = 1,21,000 / (121/100) = 1,21,000 * (100/121) = 1000 * 100 = 1,00,000.\nPopulation two years ago was 1,00,000."
+  },
+  {
+    "id": "q-008",
+    "question": "In an exam, 80% of the students passed in Mathematics and 70% passed in English. If 10% of the students failed in both subjects, what percentage of students passed in both subjects?",
+    "options": [
+      "60%",
+      "50%",
+      "40%",
+      "65%"
+    ],
+    "answer": 0,
+    "explanation": "Total students are 100%. If 10% failed in both, then 100% - 10% = 90% passed in at least one subject.\nUsing the principle of inclusion-exclusion: P(M or E) = P(M) + P(E) - P(M and E)\nHere, P(M or E) = 90%, P(M) = 80%, P(E) = 70%.\n90% = 80% + 70% - P(M and E)\n90% = 150% - P(M and E)\nP(M and E) = 150% - 90% = 60%.\nPercentage of students who passed in both subjects is 60%."
+  },
+  {
+    "id": "q-009",
+    "question": "A fruit seller had some oranges. He sells 40% of the oranges and still has 420 oranges. How many oranges did he have originally?",
+    "options": [
+      "700",
+      "600",
+      "800",
+      "500"
+    ],
+    "answer": 0,
+    "explanation": "Percentage of oranges sold = 40%.\nPercentage of oranges remaining = 100% - 40% = 60%.\nThis 60% of the original number of oranges is equal to 420.\nLet the total number of oranges be 'x'.\n60% of x = 420\n(60/100) * x = 420\nx = (420 * 100) / 60\nx = 7 * 100\nx = 700.\nHe originally had 700 oranges."
+  },
+  {
+    "id": "q-010",
+    "question": "The length of a rectangle is increased by 10% and its breadth is increased by 20%. What is the percentage increase in its area?",
+    "options": [
+      "30%",
+      "32%",
+      "33%",
+      "35%"
+    ],
+    "answer": 1,
+    "explanation": "Let the original length be 'L' and original breadth be 'B'. The original Area = L * B.\nNew length = L + 10% of L = 1.1L.\nNew breadth = B + 20% of B = 1.2B.\nNew Area = (New length) * (New breadth) = (1.1L) * (1.2B) = 1.32LB.\nPercentage increase in area = ((New Area - Original Area) / Original Area) * 100\n= ((1.32LB - LB) / LB) * 100 = (0.32LB / LB) * 100 = 0.32 * 100 = 32%."
+  },
+  {
+    "id": "q-011",
+    "question": "A number is mistakenly divided by 8 instead of being multiplied by 8. What is the percentage error in the calculation?",
+    "options": [
+      "87.5%",
+      "99.6%",
+      "98.4375%",
+      "93.75%"
+    ],
+    "answer": 2,
+    "explanation": "Let the number be 'x'.\nCorrect calculation: x * 8 = 8x.\nIncorrect calculation: x / 8 = x/8.\nError = Correct value - Incorrect value = 8x - x/8 = (64x - x) / 8 = 63x / 8.\nPercentage error = (Error / Correct value) * 100\n= ((63x/8) / 8x) * 100 = (63x / 8) * (1 / 8x) * 100 = (63 / 64) * 100 = 0.984375 * 100 = 98.4375%."
+  },
+  {
+    "id": "q-012",
+    "question": "The value of a machine depreciates by 10% every year. If its present value is ₹1,62,000, what was its value two years ago?",
+    "options": [
+      "₹1,80,000",
+      "₹2,00,000",
+      "₹1,95,000",
+      "₹2,10,000"
+    ],
+    "answer": 1,
+    "explanation": "Let the value of the machine two years ago be 'V'.\nAfter the first year, the value depreciates to V - 10% of V = V(1 - 0.10) = 0.9V.\nAfter the second year, the value depreciates again to 0.9V - 10% of 0.9V = 0.9V(1 - 0.10) = 0.9V * 0.9 = 0.81V.\nPresent value = ₹1,62,000.\nSo, 0.81V = 1,62,000\nV = 1,62,000 / 0.81\nV = 1,62,000 / (81/100) = 1,62,000 * (100/81) = 2000 * 100 = ₹2,00,000.\nIts value two years ago was ₹2,00,000."
+  },
+  {
+    "id": "q-013",
+    "question": "Due to a 25% price increase in sugar, a family reduces its consumption by 25%. What is the net percentage change in their expenditure?",
+    "options": [
+      "6.25% decrease",
+      "6.25% increase",
+      "No change",
+      "5% decrease"
+    ],
+    "answer": 0,
+    "explanation": "Let original price be 'P' and original consumption be 'C'. Original expenditure = P * C.\nNew price = P + 25% of P = 1.25P.\nNew consumption = C - 25% of C = 0.75C.\nNew expenditure = (New price) * (New consumption) = 1.25P * 0.75C = 0.9375PC.\nChange in expenditure = New expenditure - Original expenditure = 0.9375PC - PC = -0.0625PC.\nPercentage change = (Change / Original Expenditure) * 100 = (-0.0625PC / PC) * 100 = -0.0625 * 100 = -6.25%.\nThis is a 6.25% decrease."
+  },
+  {
+    "id": "q-014",
+    "question": "A candidate scores 20% marks and fails by 30 marks, while another candidate scores 32% marks and gets 42 marks more than the passing marks. What is the passing percentage?",
+    "options": [
+      "25%",
+      "28%",
+      "30%",
+      "33%"
+    ],
+    "answer": 0,
+    "explanation": "Let the maximum marks be 'x' and passing marks be 'p'.\nFrom the first candidate, the passing marks can be expressed as: p = 20% of x + 30 or p = 0.20x + 30. (Equation 1)\nFrom the second candidate, the passing marks can be expressed as: p = 32% of x - 42 or p = 0.32x - 42. (Equation 2)\nEquating both equations:\n0.20x + 30 = 0.32x - 42\n30 + 42 = 0.32x - 0.20x\n72 = 0.12x\nx = 72 / 0.12 = 600.\nMaximum marks = 600.\nNow, find the passing marks 'p' using Equation 1: p = 0.20 * 600 + 30 = 120 + 30 = 150.\nPassing percentage = (Passing marks / Maximum marks) * 100 = (150 / 600) * 100 = (1/4) * 100 = 25%."
+  },
+  {
+    "id": "q-015",
+    "question": "A vessel has 60 liters of a solution containing 75% acid. How much water should be added to make the solution contain 60% acid?",
+    "options": [
+      "10 liters",
+      "15 liters",
+      "20 liters",
+      "25 liters"
+    ],
+    "answer": 1,
+    "explanation": "Initial quantity of solution = 60 liters.\nInitial quantity of acid = 75% of 60 liters = (75/100) * 60 = 45 liters.\nLet 'x' liters of water be added to the solution. The new total quantity of the solution will be 60 + x.\nThe quantity of acid remains the same, at 45 liters.\nThe new solution should contain 60% acid.\n(Quantity of acid / New total quantity) * 100 = 60\n(45 / (60 + x)) * 100 = 60\n4500 = 60 * (60 + x)\n4500 / 60 = 60 + x\n75 = 60 + x\nx = 75 - 60 = 15.\nAmount of water to be added is 15 liters."
+  },
+    
+    
+    
+    // average
+    
+  {
+    "id": "q-001",
+    "question": "The average weight of 40 students in a class is 50 kg. If the weight of the teacher is included, the average weight increases by 1 kg. What is the weight of the teacher?",
+    "options": ["81 kg", "91 kg", "90 kg", "92 kg"],
+    "answer": 1,
+    "explanation": "Total weight of 40 students = 40 × 50 = 2000 kg. After including the teacher, total people = 41, new average = 51 kg. New total weight = 41 × 51 = 2091 kg. Teacher's weight = 2091 - 2000 = 91 kg."
+  },
+  {
+    "id": "q-002",
+    "question": "The average of 5 consecutive even numbers is 66. What is the product of the first and the fifth number?",
+    "options": ["4320", "4340", "4360", "4380"],
+    "answer": 1,
+    "explanation": "Average = middle number = 66. Numbers: 62, 64, 66, 68, 70. First × fifth = 62 × 70 = 4340."
+  },
+  {
+    "id": "q-003",
+    "question": "The average of 5 numbers is 18. If one number is excluded, the average becomes 16. What is the excluded number?",
+    "options": ["22", "24", "26", "28"],
+    "answer": 2,
+    "explanation": "Total sum = 5 × 18 = 90. Sum of remaining 4 numbers = 4 × 16 = 64. Excluded number = 90 - 64 = 26."
+  },
+  {
+    "id": "q-004",
+    "question": "The average monthly income of a person is 1500. For the first 4 months, the average income is 1200 and for the next 7 months, it is 1600. What is the income in the last month?",
+    "options": ["2000", "2100", "2200", "2300"],
+    "answer": 0,
+    "explanation": "Total annual income = 12 × 1500 = 18000. Income for first 4 months = 4 × 1200 = 4800. Income for next 7 months = 7 × 1600 = 11200. Total first 11 months = 4800 + 11200 = 16000. Income in last month = 18000 - 16000 = 2000."
+  },
+  {
+    "id": "q-005",
+    "question": "The average of 5 consecutive odd numbers is 25. What is the sum of the second and fourth numbers?",
+    "options": ["48", "50", "52", "54"],
+    "answer": 1,
+    "explanation": "Numbers: 21, 23, 25, 27, 29. Second + fourth = 23 + 27 = 50."
+  },
+  {
+    "id": "q-006",
+    "question": "A student's average marks in 5 subjects is 75. If the marks in one more subject are included, the new average becomes 78. What are the marks in the new subject?",
+    "options": ["93", "91", "90", "95"],
+    "answer": 0,
+    "explanation": "Total marks in 5 subjects = 5 × 75 = 375. Total marks for 6 subjects = 6 × 78 = 468. Marks in new subject = 468 - 375 = 93."
+  },
+  {
+    "id": "q-007",
+    "question": "The average age of 15 boys in a class is 11 years. If a boy of age 17 is replaced by a new boy, the average age becomes 10 years. What is the age of the new boy?",
+    "options": ["2 years", "4 years", "5 years", "6 years"],
+    "answer": 0,
+    "explanation": "Total age = 15 × 11 = 165. New total = 15 × 10 = 150. New boy's age = 150 - (165 - 17) = 2 years."
+  },
+  {
+    "id": "q-008",
+    "question": "The average of 5 numbers is 30. If one number is added, the average becomes 32. What is the new number?",
+    "options": ["40", "42", "44", "46"],
+    "answer": 1,
+    "explanation": "Sum of 5 numbers = 5 × 30 = 150. Total after adding one number = 6 × 32 = 192. New number = 192 - 150 = 42."
+  },
+  {
+    "id": "q-009",
+    "question": "The average of 7 numbers is 35. If one number is excluded, the average becomes 32. What is the excluded number?",
+    "options": ["47", "49", "51", "53"],
+    "answer": 3,
+    "explanation": "Sum of 7 numbers = 7 × 35 = 245. Sum of remaining 6 numbers = 6 × 32 = 192. Excluded number = 245 - 192 = 53."
+  },
+  {
+    "id": "q-010",
+    "question": "A batsman has an average score of 50 runs in 10 innings. What score must he make in the 11th innings to increase his average to 52?",
+    "options": ["70", "72", "74", "76"],
+    "answer": 1,
+    "explanation": "Total runs in 10 innings = 10 × 50 = 500. Total needed for 11 innings = 11 × 52 = 572. Score in 11th innings = 572 - 500 = 72."
+  },
+  
+  {
+    "id": "q-011",
+    "question": "The average age of 20 men is 30 years. If a man of age 40 is replaced by a new man, the average age becomes 29 years. What is the age of the new man?",
+    "options": ["10 years", "15 years", "20 years", "25 years"],
+    "answer": 2,
+    "explanation": "Step 1: Total age of 20 men = 20 × 30 = 600 years.\nStep 2: Let the age of the new man be x. New total age = 600 - 40 + x.\nStep 3: New average = 29, so total age = 20 × 29 = 580.\nStep 4: 600 - 40 + x = 580 ⇒ 560 + x = 580 ⇒ x = 20 years."
+  },
+  {
+    "id": "q-012",
+    "question": "The average of 7 numbers is 35. If one number is excluded, the average becomes 32. What is the excluded number?",
+    "options": ["47", "49", "51", "53"],
+    "answer": 3,
+    "explanation": "Step 1: Total sum of 7 numbers = 7 × 35 = 245.\nStep 2: Sum of remaining 6 numbers = 6 × 32 = 192.\nStep 3: Excluded number = 245 - 192 = 53."
+  },
+  {
+    "id": "q-013",
+    "question": "The average of 5 consecutive numbers is 10. What is the average of the first two numbers?",
+    "options": ["8", "8.5", "9", "9.5"],
+    "answer": 1,
+    "explanation": "Step 1: Average of 5 consecutive numbers = middle number = 10.\nStep 2: Numbers: 8, 9, 10, 11, 12.\nStep 3: Average of first two numbers = (8 + 9) / 2 = 17 / 2 = 8.5."
+  },
+  {
+    "id": "q-014",
+    "question": "The average weight of 10 boys is 45 kg. If the average weight of the first 4 boys is 42 kg, what is the average weight of the remaining 6 boys?",
+    "options": ["46 kg", "47 kg", "48 kg", "49 kg"],
+    "answer": 1,
+    "explanation": "Step 1: Total weight of 10 boys = 10 × 45 = 450 kg.\nStep 2: Total weight of first 4 boys = 4 × 42 = 168 kg.\nStep 3: Total weight of remaining 6 boys = 450 - 168 = 282 kg.\nStep 4: Average weight of remaining 6 boys = 282 / 6 = 47 kg."
+  },
+  {
+    "id": "q-015",
+    "question": "The average age of 25 students is 18 years. If the age of the teacher is included, the average age increases by 1 year. What is the age of the teacher?",
+    "options": ["43 years", "44 years", "45 years", "46 years"],
+    "answer": 1,
+    "explanation": "Step 1: Total age of 25 students = 25 × 18 = 450 years.\nStep 2: Total number of people including teacher = 25 + 1 = 26.\nStep 3: New average = 18 + 1 = 19.\nStep 4: Total age including teacher = 26 × 19 = 494.\nStep 5: Age of teacher = 494 - 450 = 44 years."
+  },
+    
+    
+    
+    // TIme and works
+    
+  {
+    "id": "q-001",
+    "question": "A can do a piece of work in 15 days and B can do it in 20 days. With the help of C, they complete the work in 6 days. If they earn ₹1800 for the entire work, what is the share of C?",
+    "options": [
+      "₹360",
+      "₹420",
+      "₹450",
+      "₹540"
+    ],
+    "answer": 3,
+    "explanation": "Let the total work be the LCM of 15, 20, and 6, which is 60 units. A's 1-day work = 60/15 = 4 units. B's 1-day work = 60/20 = 3 units. (A+B+C)'s 1-day work = 60/6 = 10 units. C's 1-day work = (A+B+C)'s work - (A's work + B's work) = 10 - (4 + 3) = 3 units. The wages are distributed in the ratio of their work efficiency, which is the ratio of their 1-day work. The ratio of their 1-day work is A:B:C = 4:3:3. Total units of work for wage distribution = 4 + 3 + 3 = 10. C's share = (C's work units / Total work units) * Total earnings = (3/10) * ₹1800 = ₹540."
+  },
+  {
+    "id": "q-002",
+    "question": "Pipes A and B can fill a tank in 12 and 18 minutes, respectively. Pipe C is an outlet pipe that can empty the tank in 36 minutes. If all three pipes are opened together, how long will it take to fill the tank?",
+    "options": [
+      "8 minutes",
+      "9 minutes",
+      "10 minutes",
+      "11 minutes"
+    ],
+    "answer": 1,
+    "explanation": "Let the total capacity of the tank be the LCM of 12, 18, and 36, which is 36 units. The rate of pipe A is 36/12 = 3 units/min (filling). The rate of pipe B is 36/18 = 2 units/min (filling). The rate of pipe C is 36/36 = 1 unit/min (emptying). When all three pipes are opened together, the net filling rate is the sum of the filling rates minus the emptying rate: 3 + 2 - 1 = 4 units/min. Time taken to fill the tank = Total capacity / Net rate = 36 / 4 = 9 minutes."
+  },
+  {
+    "id": "q-003",
+    "question": "A group of 30 men can complete a piece of work in 20 days. After 5 days, 15 more men join them. In how many more days will the remaining work be completed?",
+    "options": [
+      "8 days",
+      "10 days",
+      "12 days",
+      "15 days"
+    ],
+    "answer": 1,
+    "explanation": "Total work = 30 men * 20 days = 600 man-days. Work done in the first 5 days = 30 men * 5 days = 150 man-days. Remaining work = 600 - 150 = 450 man-days. After 5 days, 15 more men join, so the new total number of men is 30 + 15 = 45 men. Time taken to complete the remaining work = Remaining work / New number of men = 450 / 45 = 10 days."
+  },
+  {
+    "id": "q-004",
+    "question": "A is 50% more efficient than B. If A and B together can complete a work in 10 days, in how many days can B alone complete the same work?",
+    "options": [
+      "20 days",
+      "25 days",
+      "30 days",
+      "35 days"
+    ],
+    "answer": 1,
+    "explanation": "Let B's efficiency be 2 units/day. Since A is 50% more efficient than B, A's efficiency = 2 + (50% of 2) = 3 units/day. The ratio of their efficiencies is A:B = 3:2. Combined efficiency = 3 + 2 = 5 units/day. Total work = Combined efficiency * Time = 5 units/day * 10 days = 50 units. Time taken for B alone to complete the work = Total work / B's efficiency = 50 / 2 = 25 days."
+  },
+  {
+    "id": "q-005",
+    "question": "Pipes A and B can fill a tank in 10 and 12 minutes, respectively. Pipe C can empty it in 15 minutes. If A and B are opened for 4 minutes and then A is closed and C is opened, in how many more minutes will the tank be filled?",
+    "options": [
+      "14 minutes",
+      "16 minutes",
+      "18 minutes",
+      "20 minutes"
+    ],
+    "answer": 1,
+    "explanation": "Let the tank capacity be the LCM of 10, 12, and 15, which is 60 units. A's rate = 60/10 = 6 units/min (filling). B's rate = 60/12 = 5 units/min (filling). C's rate = 60/15 = 4 units/min (emptying). For the first 4 minutes, A and B work together. Their combined rate = 6 + 5 = 11 units/min. Work done in 4 minutes = 11 units/min * 4 min = 44 units. Remaining work = 60 - 44 = 16 units. After 4 minutes, A is closed and C is opened. The new team is B and C. Their combined rate = 5 - 4 = 1 unit/min. Time taken to fill the remaining work = Remaining work / New rate = 16 units / 1 unit/min = 16 minutes."
+  },
+  {
+    "id": "q-006",
+    "question": "A and B working together can complete a work in 18 days. B and C together can do it in 24 days, and C and A together can do it in 36 days. In how many days can A, B, and C together complete the work?",
+    "options": [
+      "12 days",
+      "16 days",
+      "18 days",
+      "24 days"
+    ],
+    "answer": 1,
+    "explanation": "Let the total work be the LCM of 18, 24, and 36, which is 72 units. (A+B)'s 1-day work = 72/18 = 4 units. (B+C)'s 1-day work = 72/24 = 3 units. (C+A)'s 1-day work = 72/36 = 2 units. Adding all these efficiencies: 2(A+B+C)'s 1-day work = 4 + 3 + 2 = 9 units. (A+B+C)'s 1-day work = 9/2 = 4.5 units. Time taken for A, B, and C together to complete the work = Total work / Combined rate = 72 / 4.5 = 16 days."
+  },
+  {
+    "id": "q-007",
+    "question": "8 men and 12 women can complete a work in 10 days. 6 men and 8 women can complete the same work in 14 days. In how many days can 10 men and 15 women complete the same work?",
+    "options": [
+      "6 days",
+      "7 days",
+      "8 days",
+      "9 days"
+    ],
+    "answer": 2,
+    "explanation": "Let 1 man-day = m and 1 woman-day = w. From the first statement, the total work is 10 * (8m + 12w) = 80m + 120w. From the second statement, the total work is 14 * (6m + 8w) = 84m + 112w. Equating the total work: 80m + 120w = 84m + 112w. 8w = 4m, which simplifies to 2w = m. So, 1 man's efficiency is equal to 2 women's efficiency. Let's find the total work in terms of women. Total work = 10 * (8m + 12w) = 10 * (8(2w) + 12w) = 10 * (16w + 12w) = 10 * 28w = 280 woman-days. We need to find the time for 10 men and 15 women. Let's convert this to women: 10 men = 10 * (2w) = 20w. The new group is equivalent to 20w + 15w = 35w. Time taken = Total work / combined efficiency = 280 woman-days / 35 women = 8 days."
+  },
+  {
+    "id": "q-008",
+    "question": "A can complete a work in 10 days and B in 20 days. They work on alternate days, starting with A. In how many days will the work be completed?",
+    "options": [
+      "12 days",
+      "13 days",
+      "14 days",
+      "15 days"
+    ],
+    "answer": 1,
+    "explanation": "Let the total work be the LCM of 10 and 20, which is 20 units. A's 1-day work = 20/10 = 2 units. B's 1-day work = 20/20 = 1 unit. In a cycle of 2 days (Day 1 by A, Day 2 by B), the total work done is 2 + 1 = 3 units. Number of such cycles = 20 / 3 = 6 cycles with a remainder of 2 units. Work done in 6 cycles (12 days) = 3 units/cycle * 6 cycles = 18 units. On the 13th day, A will work. The remaining work is 20 - 18 = 2 units. Since A's 1-day work is exactly 2 units, the remaining work is completed on the 13th day. Total time = 12 + 1 = 13 days."
+  },
+  {
+    "id": "q-009",
+    "question": "A contractor employed 50 men to complete a project in 50 days. After 25 days, he found that only 2/5 of the work was completed. How many more men should he employ to complete the remaining work on time?",
+    "options": [
+      "15 men",
+      "20 men",
+      "25 men",
+      "30 men"
+    ],
+    "answer": 2,
+    "explanation": "Initial men (M1) = 50, initial days (D1) = 25, work done (W1) = 2/5. Total project duration = 50 days. Remaining days (D2) = 50 - 25 = 25 days. Remaining work (W2) = 1 - 2/5 = 3/5. Using the formula M1*D1/W1 = M2*D2/W2, we have: (50 * 25) / (2/5) = (M2 * 25) / (3/5). To solve for M2, we can simplify: (50) / (2/5) = M2 / (3/5) => 50 * (5/2) = M2 * (5/3) => 25 * 5 = M2 * 5/3 => 125 = M2 * 5/3. M2 = (125 * 3) / 5 = 25 * 3 = 75. The total number of men required is 75. The number of more men to be employed = 75 - 50 = 25 men."
+  },
+  {
+    "id": "q-010",
+    "question": "A can do a work in 24 days. B is 50% more efficient than A. In how many days can B alone complete the same work?",
+    "options": [
+      "12 days",
+      "15 days",
+      "16 days",
+      "18 days"
+    ],
+    "answer": 2,
+    "explanation": "Let A's efficiency be 1 unit/day. Time taken by A is 24 days. Total work = 1 unit/day * 24 days = 24 units. B is 50% more efficient than A, so B's efficiency = 1 + (50% of 1) = 1.5 units/day. Time taken by B alone to complete the work = Total work / B's efficiency = 24 / 1.5 = 16 days."
+  },
+  {
+    "id": "q-011",
+    "question": "A, B, and C can complete a work in 10, 12, and 15 days respectively. They started the work together, but after 2 days, A left. After another 2 days, B also left. In how many days will C finish the remaining work?",
+    "options": [
+      "3 days",
+      "4 days",
+      "5 days",
+      "6 days"
+    ],
+    "answer": 0,
+    "explanation": "Let the total work be the LCM of 10, 12, and 15, which is 60 units. A's 1-day work = 60/10 = 6 units. B's 1-day work = 60/12 = 5 units. C's 1-day work = 60/15 = 4 units. For the first 2 days, A, B, and C work together. Their combined rate = 6 + 5 + 4 = 15 units/day. Work done in 2 days = 15 * 2 = 30 units. Remaining work = 60 - 30 = 30 units. After 2 days, A leaves. B and C work for the next 2 days. Their combined rate = 5 + 4 = 9 units/day. Work done in the next 2 days = 9 * 2 = 18 units. Remaining work = 30 - 18 = 12 units. After another 2 days, B leaves, and C works alone. C's rate = 4 units/day. Time taken for C to finish the remaining work = Remaining work / C's rate = 12 / 4 = 3 days."
+  },
+  {
+    "id": "q-012",
+    "question": "A can complete 1/3 of a work in 5 days and B can complete 2/5 of the work in 10 days. In how many days can both A and B together complete the work?",
+    "options": [
+      "8.5 days",
+      "9 days",
+      "9.375 days",
+      "10 days"
+    ],
+    "answer": 2,
+    "explanation": "A completes 1/3 of the work in 5 days, so A can complete the full work in 5 / (1/3) = 15 days. B completes 2/5 of the work in 10 days, so B can complete the full work in 10 / (2/5) = 10 * 5/2 = 25 days. Let the total work be the LCM of 15 and 25, which is 75 units. A's 1-day work = 75/15 = 5 units. B's 1-day work = 75/25 = 3 units. Combined 1-day work of A and B = 5 + 3 = 8 units. Time taken for A and B together = Total work / Combined rate = 75 / 8 = 9.375 days."
+  },
+  {
+    "id": "q-013",
+    "question": "A, B, and C can complete a work in 20, 30, and 60 days, respectively. They work together for some time, and then A leaves. If B and C finish the remaining work in 6 days, for how many days did A work with them?",
+    "options": [
+      "5 days",
+      "6 days",
+      "7 days",
+      "8 days"
+    ],
+    "answer": 2,
+    "explanation": "Let the total work be the LCM of 20, 30, and 60, which is 60 units. A's rate = 60/20 = 3 units/day. B's rate = 60/30 = 2 units/day. C's rate = 60/60 = 1 unit/day. B and C finished the remaining work in 6 days. Work done by B and C = (B's rate + C's rate) * 6 = (2 + 1) * 6 = 3 * 6 = 18 units. The remaining work, which was done by A, B, and C together, is 60 - 18 = 42 units. The combined rate of A, B, and C = 3 + 2 + 1 = 6 units/day. The number of days they worked together = Work done together / Combined rate = 42 / 6 = 7 days."
+  },
+  {
+    "id": "q-014",
+    "question": "A group of 12 men can complete a work in 10 days. The same work can be completed by 10 women in 18 days. In how many days can 4 men and 6 women together complete the same work?",
+    "options": [
+      "10 days",
+      "12 days",
+      "15 days",
+      "20 days"
+    ],
+    "answer": 2,
+    "explanation": "Let 1 man's 1-day work be 'm' and 1 woman's 1-day work be 'w'. From the first statement, the total work is 12 men * 10 days = 120 man-days. From the second statement, the total work is 10 women * 18 days = 180 woman-days. Equating the work: 120m = 180w. This simplifies to 2m = 3w, or m = (3/2)w. We need to find the time for 4 men and 6 women. To simplify, let's convert the men to their equivalent number of women using the ratio: 4 men = 4 * (3/2)w = 6w. So, the new group is equivalent to 6w (from the men) + 6w (from the women) = 12w. We know that 10 women can do the work in 18 days. The total work is 10 * 18 = 180 woman-days. Time taken for 12 women to complete the work = Total work / number of women = 180 / 12 = 15 days."
+  },
+  {
+    "id": "q-015",
+    "question": "Two pipes A and B can fill a tank in 20 minutes and 30 minutes, respectively. If both pipes are opened together, how long will it take to fill the tank?",
+    "options": [
+      "10 minutes",
+      "12 minutes",
+      "15 minutes",
+      "20 minutes"
+    ],
+    "answer": 1,
+    "explanation": "Let the total capacity of the tank be the LCM of 20 and 30, which is 60 units. A's rate = 60/20 = 3 units/min. B's rate = 60/30 = 2 units/min. When both pipes are opened together, their combined rate is 3 + 2 = 5 units/min. Time taken to fill the tank = Total capacity / Combined rate = 60 / 5 = 12 minutes."
+  },
+    
+    
+    
+    // Speed Time And distance
+    
+    
+  {
+    "id": "q-001",
+    "question": "A car travels at 60 km/h for the first 2 hours and at 80 km/h for the next 3 hours. What is the average speed of the car for the entire journey?",
+    "options": [
+      "70 km/h",
+      "72 km/h",
+      "75 km/h",
+      "74 km/h"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Calculate the distance covered in the first part of the journey. Distance = Speed × Time = $60 \\text{ km/h} \\times 2 \\text{ h} = 120$ km. Step 2: Calculate the distance covered in the second part of the journey. Distance = Speed × Time = $80 \\text{ km/h} \\times 3 \\text{ h} = 240$ km. Step 3: Calculate the total distance. Total Distance = $120 + 240 = 360$ km. Step 4: Calculate the total time. Total Time = $2 \\text{ h} + 3 \\text{ h} = 5$ h. Step 5: Calculate the average speed. Average Speed = Total Distance / Total Time = $360 \\text{ km} / 5 \\text{ h} = 72$ km/h."
+  },
+  {
+    "id": "q-002",
+    "question": "Two trains, 150 m and 120 m long, are running on parallel tracks in the same direction. The speeds are 45 km/h and 36 km/h, respectively. How long will the faster train take to cross the slower train?",
+    "options": [
+      "108 seconds",
+      "100 seconds",
+      "120 seconds",
+      "90 seconds"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Convert speeds from km/h to m/s. Speed of faster train = $45 \\times \\frac{5}{18} = 12.5$ m/s. Speed of slower train = $36 \\times \\frac{5}{18} = 10$ m/s. Step 2: Calculate the relative speed of the faster train with respect to the slower train (since they are moving in the same direction). Relative Speed = $12.5 - 10 = 2.5$ m/s. Step 3: Calculate the total distance to be covered to cross each other, which is the sum of their lengths. Total Distance = $150 + 120 = 270$ m. Step 4: Calculate the time taken. Time = Total Distance / Relative Speed = $270 / 2.5 = 108$ seconds."
+  },
+  {
+    "id": "q-003",
+    "question": "A boat can travel at 15 km/h in still water. If the speed of the stream is 5 km/h, how much time will the boat take to go 60 km upstream and return to the starting point?",
+    "options": [
+      "8 hours",
+      "9 hours",
+      "10 hours",
+      "12 hours"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Calculate the upstream speed. Upstream Speed = Speed in still water - Speed of stream = $15 - 5 = 10$ km/h. Step 2: Calculate the time taken for the upstream journey. Time Upstream = Distance / Speed = $60 / 10 = 6$ hours. Step 3: Calculate the downstream speed. Downstream Speed = Speed in still water + Speed of stream = $15 + 5 = 20$ km/h. Step 4: Calculate the time taken for the downstream journey. Time Downstream = Distance / Speed = $60 / 20 = 3$ hours. Step 5: Calculate the total time. Total Time = Time Upstream + Time Downstream = $6 + 3 = 9$ hours."
+  },
+  {
+    "id": "q-004",
+    "question": "A train passes a pole in 20 seconds and a platform 200 m long in 30 seconds. What is the length of the train?",
+    "options": [
+      "300 m",
+      "400 m",
+      "500 m",
+      "250 m"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Let the length of the train be 'L' meters and its speed be 'S' m/s. When the train passes a pole, the distance covered is its own length, so $L = S \\times 20$, which gives $S = L/20$. Step 2: When the train passes a platform, the distance covered is the sum of the train's length and the platform's length. So, $L + 200 = S \\times 30$. Step 3: Substitute the value of S from the first equation into the second. $L + 200 = (L/20) \\times 30$. Step 4: Simplify and solve for L. $L + 200 = 1.5L$. $200 = 1.5L - L$. $200 = 0.5L$. $L = 200 / 0.5 = 400$ m."
+  },
+  {
+    "id": "q-005",
+    "question": "A man walks at a speed of 5 km/h. He rests for 5 minutes after every kilometer. How much time will he take to cover a distance of 10 km?",
+    "options": [
+      "2 hours 35 minutes",
+      "2 hours 20 minutes",
+      "2 hours 45 minutes",
+      "2 hours 15 minutes"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Calculate the total walking time without rest. Time = Distance / Speed = $10 \\text{ km} / 5 \\text{ km/h} = 2$ hours. Step 2: Determine the number of rests. He rests after every kilometer, so for a 10 km journey, he will have 9 rests (at the 1st, 2nd, ..., 9th km). He does not rest after reaching the destination. Step 3: Calculate the total rest time. Total Rest Time = $9 \\times 5 \\text{ minutes} = 45$ minutes. Step 4: Calculate the total time for the journey. Total Time = Walking Time + Rest Time = 2 hours + 45 minutes = 2 hours 45 minutes."
+  },
+  {
+    "id": "q-006",
+    "question": "Two people, A and B, are 200 km apart. They start walking towards each other at the same time. The speed of A is 10 km/h and the speed of B is 15 km/h. After how many hours will they meet?",
+    "options": [
+      "6 hours",
+      "8 hours",
+      "10 hours",
+      "12 hours"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Calculate the relative speed of the two people as they are moving towards each other. Relative Speed = Speed of A + Speed of B = $10 + 15 = 25$ km/h. Step 2: The total distance to be covered is 200 km. Step 3: Calculate the time taken to meet. Time = Total Distance / Relative Speed = $200 / 25 = 8$ hours."
+  },
+  {
+    "id": "q-007",
+    "question": "A man covers 3/5 of a journey at a speed of 30 km/h and the remaining distance at 20 km/h. If the total distance is 150 km, what is his average speed for the whole journey?",
+    "options": [
+      "26.5 km/h",
+      "25 km/h",
+      "27.5 km/h",
+      "24 km/h"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Calculate the distance of the first part of the journey. Distance 1 = $(\\frac{3}{5}) \\times 150 \\text{ km} = 90$ km. Step 2: Calculate the time taken for the first part. Time 1 = $90 \\text{ km} / 30 \\text{ km/h} = 3$ hours. Step 3: Calculate the remaining distance. Remaining Distance = $150 \\text{ km} - 90 \\text{ km} = 60$ km. Step 4: Calculate the time taken for the remaining distance. Time 2 = $60 \\text{ km} / 20 \\text{ km/h} = 3$ hours. Step 5: Calculate the total distance and total time. Total Distance = 150 km. Total Time = $3 \\text{ hours} + 3 \\text{ hours} = 6$ hours. Step 6: Calculate the average speed. Average Speed = Total Distance / Total Time = $150 \\text{ km} / 6 \\text{ hours} = 25$ km/h."
+  },
+  {
+    "id": "q-008",
+    "question": "A boy leaves his home at 8:00 AM and walks at a speed of 4 km/h. A cyclist leaves the same home at 9:00 AM and cycles at a speed of 12 km/h in the same direction. At what time will the cyclist overtake the boy?",
+    "options": [
+      "9:30 AM",
+      "9:45 AM",
+      "10:00 AM",
+      "10:15 AM"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: The boy has a 1-hour head start. In that hour, the boy covers a distance of $4 \\text{ km/h} \\times 1 \\text{ h} = 4$ km. Step 2: The cyclist now starts. The relative speed of the cyclist with respect to the boy is $12 - 4 = 8$ km/h. Step 3: The cyclist needs to cover the 4 km distance the boy is ahead of him. Time to overtake = Distance to cover / Relative Speed = $4 \\text{ km} / 8 \\text{ km/h} = 0.5$ hours. Step 4: Convert 0.5 hours to minutes. $0.5 \\times 60 = 30$ minutes. Step 5: The cyclist started at 9:00 AM, so he will overtake the boy after 30 minutes. Time of overtaking = 9:00 AM + 30 minutes = 9:30 AM."
+  },
+  {
+    "id": "q-009",
+    "question": "A train travels a certain distance at a speed of 80 km/h and returns to the starting point at a speed of 60 km/h. What is the average speed of the train for the entire journey?",
+    "options": [
+      "68.57 km/h",
+      "70 km/h",
+      "65.25 km/h",
+      "64.5 km/h"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: The average speed for a journey where the same distance is covered at two different speeds can be calculated using the formula: Average Speed = $\\frac{2 \\times S_1 \\times S_2}{S_1 + S_2}$, where $S_1$ and $S_2$ are the two speeds. Step 2: Substitute the given values into the formula. Average Speed = $\\frac{2 \\times 80 \\times 60}{80 + 60} = \\frac{9600}{140}$. Step 3: Simplify the calculation. Average Speed = $960 / 14 = 480 / 7 \\approx 68.57$ km/h."
+  },
+  {
+    "id": "q-010",
+    "question": "If a man increases his speed by 25%, he reaches his destination 20 minutes earlier. What is the original time taken to cover the distance?",
+    "options": [
+      "1 hour",
+      "1 hour 20 minutes",
+      "1 hour 40 minutes",
+      "2 hours"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: The relationship between speed and time is inversely proportional when distance is constant. Let original speed be S and original time be T. The new speed is $1.25S$. The ratio of speeds is $S : 1.25S = 1 : 1.25 = 4 : 5$. Step 2: Since speed and time are inversely proportional, the ratio of times is the inverse of the ratio of speeds, which is $5 : 4$. Step 3: The difference in the time ratio is $5 - 4 = 1$ part. This 1 part corresponds to the 20-minute difference in time. Step 4: The original time corresponds to 5 parts. So, Original Time = $5 \\times 20 \\text{ minutes} = 100$ minutes. Step 5: Convert 100 minutes to hours and minutes. 100 minutes = 1 hour and 40 minutes."
+  },
+  {
+    "id": "q-011",
+    "question": "Two places, A and B, are 265 km apart. A car starts from A at 8:00 AM at a speed of 40 km/h. Another car starts from B at 9:00 AM at a speed of 50 km/h and travels towards A. At what time will they cross each other?",
+    "options": [
+      "11:00 AM",
+      "11:30 AM",
+      "12:00 PM",
+      "12:30 PM"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: The car from A travels for one hour (from 8:00 AM to 9:00 AM) before the car from B starts. Distance covered by car A in 1 hour = $40 \\text{ km/h} \\times 1 \\text{ h} = 40$ km. Step 2: At 9:00 AM, the remaining distance between the two cars is $265 - 40 = 225$ km. Step 3: The cars are moving towards each other, so their relative speed is the sum of their speeds. Relative Speed = $40 + 50 = 90$ km/h. Step 4: The time taken for them to meet from 9:00 AM is Time = Distance / Relative Speed = $225 / 90 = 2.5$ hours. Step 5: The meeting time is 2.5 hours after 9:00 AM, which is 11:30 AM."
+  },
+  {
+    "id": "q-012",
+    "question": "A person covers a distance of 180 km in 3 hours. For the first 2 hours, he travels at a speed of 50 km/h. What speed must he maintain for the remaining part of the journey to complete it in the given time?",
+    "options": [
+      "80 km/h",
+      "70 km/h",
+      "60 km/h",
+      "55 km/h"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Calculate the distance covered in the first 2 hours. Distance = Speed × Time = $50 \\text{ km/h} \\times 2 \\text{ h} = 100$ km. Step 2: Calculate the remaining distance. Remaining Distance = Total Distance - Distance covered = $180 - 100 = 80$ km. Step 3: Calculate the remaining time. Remaining Time = Total Time - Time elapsed = $3 - 2 = 1$ hour. Step 4: Calculate the required speed for the remaining journey. Required Speed = Remaining Distance / Remaining Time = $80 \\text{ km} / 1 \\text{ h} = 80$ km/h."
+  },
+  {
+    "id": "q-013",
+    "question": "A train 200 m long is running at a speed of 72 km/h. How long will it take to cross a signal post?",
+    "options": [
+      "10 seconds",
+      "8 seconds",
+      "9 seconds",
+      "12 seconds"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Convert the speed from km/h to m/s. Speed = $72 \\times \\frac{5}{18} = 4 \\times 5 = 20$ m/s. Step 2: When a train crosses a signal post (or a pole, or a man), the distance covered is equal to the length of the train. Distance = 200 m. Step 3: Calculate the time taken. Time = Distance / Speed = $200 / 20 = 10$ seconds."
+  },
+  {
+    "id": "q-014",
+    "question": "A thief is spotted by a policeman from a distance of 100 m. The thief's speed is 8 km/h and the policeman's speed is 10 km/h. How far will the thief have run before he is caught?",
+    "options": [
+      "400 m",
+      "500 m",
+      "600 m",
+      "800 m"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Calculate the relative speed of the policeman with respect to the thief. Since they are moving in the same direction, Relative Speed = $10 - 8 = 2$ km/h. Step 2: Convert the relative speed to m/s. Relative Speed = $2 \\times \\frac{5}{18} = \\frac{10}{18} = \\frac{5}{9}$ m/s. Step 3: The distance to be covered by the policeman to catch the thief is the initial distance between them, which is 100 m. Step 4: Calculate the time it takes to catch the thief. Time = Distance / Relative Speed = $100 / (5/9) = 100 \\times \\frac{9}{5} = 20 \\times 9 = 180$ seconds. Step 5: Calculate the distance the thief has run in this time. Distance = Thief's Speed × Time. First, convert the thief's speed to m/s. Thief's Speed = $8 \\times \\frac{5}{18} = \\frac{40}{18} = \\frac{20}{9}$ m/s. Step 6: Distance covered by thief = $\\frac{20}{9} \\times 180 = 20 \\times 20 = 400$ m."
+  },
+  {
+    "id": "q-015",
+    "question": "A man covers 1/3 of his journey at a speed of 20 km/h, another 1/3 of the journey at 30 km/h, and the rest at 40 km/h. What is his average speed for the whole journey?",
+    "options": [
+      "27.69 km/h",
+      "25 km/h",
+      "28.57 km/h",
+      "29.15 km/h"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Assume the total distance is D. The total time T is the sum of the times for each part. Time 1 = $(\\frac{D}{3}) / 20 = \\frac{D}{60}$. Time 2 = $(\\frac{D}{3}) / 30 = \\frac{D}{90}$. The remaining distance is also $\\frac{D}{3}$, so Time 3 = $(\\frac{D}{3}) / 40 = \\frac{D}{120}$. Step 2: Calculate the total time. Total Time = $\\frac{D}{60} + \\frac{D}{90} + \\frac{D}{120}$. Find the common denominator, which is 360. Total Time = $\\frac{6D+4D+3D}{360} = \\frac{13D}{360}$. Step 3: Average Speed = Total Distance / Total Time = $D / (\\frac{13D}{360}) = \\frac{360D}{13D} = \\frac{360}{13}$. Step 4: Calculate the final value. $360 \\div 13 \\approx 27.69$ km/h."
+  },
+    
+        
+        
       ],
       
       'MOCK3': [
