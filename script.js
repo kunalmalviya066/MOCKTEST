@@ -134,29 +134,68 @@ function startTest(full=false){
   }
 
   // ---------- render question ----------
-  function renderTest(){
-    $('test-title').textContent = `${state.subject} Test`;
-    $('test-subtitle').textContent = state.selectedTopics.length? state.selectedTopics.join(', '): 'Full subject';
-    const wrap = $('questions-wrap'); wrap.innerHTML='';
-    const q = state.questions[state.currentQ];
-    const qcount = state.questions.length;
-    $('q-progress').textContent = `Question ${state.currentQ+1} / ${qcount}`;
+  // ---------- render question (CORRECTED) ----------
+function renderTest(){
+  $('test-title').textContent = `${state.subject} Test`;
+  $('test-subtitle').textContent = state.selectedTopics.length? state.selectedTopics.join(', '): 'Full subject';
+  const wrap = $('questions-wrap'); 
+  wrap.innerHTML = ''; // Clear previous content
 
-    const container = document.createElement('div'); container.className='question';
-    container.innerHTML = `<div style="font-weight:700">${q.question}</div><div class='muted' style='margin-top:6px'>Topic: ${q.topic}</div>`;
-    const opts = document.createElement('div'); opts.className='options';
-    q.options.forEach((opt,idx)=>{
-      const o = document.createElement('div'); o.className='option'; o.textContent = opt;
-      if(state.answers[q.id]!==undefined && state.answers[q.id]===idx) o.classList.add('selected');
-      o.onclick = ()=>{ state.answers[q.id]=idx; Array.from(opts.children).forEach((c,i)=> c.classList.toggle('selected', state.answers[q.id]===i)); };
-      opts.appendChild(o);
-    });
-    container.appendChild(opts);
-    wrap.appendChild(container);
+  const q = state.questions[state.currentQ];
+  const qcount = state.questions.length;
+  $('q-progress').textContent = `Question ${state.currentQ + 1} / ${qcount}`;
 
-    $('prev-q').disabled = state.currentQ===0;
-    $('next-q').disabled = state.currentQ===qcount-1;
+  const container = document.createElement('div'); 
+  container.className = 'question';
+
+  // Create the question text element
+ const questionText = document.createElement('div');
+questionText.style.fontWeight = '700';
+questionText.innerHTML = q.question; // <-- Change to innerHTML
+container.appendChild(questionText);
+  
+  // *** NEW CODE TO HANDLE IMAGES ***
+  if (q['image-url']) {
+      const img = document.createElement('img');
+      img.src = q['image-url'];
+      img.alt = "Question related image"; // Good practice for accessibility
+      img.style.maxWidth = '100%'; // Ensure the image fits within the container
+      img.style.marginTop = '10px';
+      container.appendChild(img);
   }
+  
+  // Create and append the topic text
+  const topicText = document.createElement('div');
+  topicText.className = 'muted';
+  topicText.style.marginTop = '6px';
+  topicText.textContent = `Topic: ${q.topic}`;
+  container.appendChild(topicText);
+  
+  const opts = document.createElement('div'); 
+  opts.className = 'options';
+  
+  q.options.forEach((opt, idx) => {
+    const o = document.createElement('div'); 
+    o.className = 'option'; 
+    o.textContent = opt;
+    if (state.answers[q.id] !== undefined && state.answers[q.id] === idx) {
+        o.classList.add('selected');
+    }
+    o.onclick = () => {
+        state.answers[q.id] = idx;
+        Array.from(opts.children).forEach((c, i) => 
+            c.classList.toggle('selected', state.answers[q.id] === i)
+        );
+    };
+    opts.appendChild(o);
+  });
+
+  container.appendChild(opts);
+  wrap.appendChild(container);
+
+  $('prev-q').disabled = state.currentQ === 0;
+  $('next-q').disabled = state.currentQ === qcount - 1;
+}
 
   // ---------- navigation ----------
   function showView(v){
@@ -372,3 +411,7 @@ toggleBtn.addEventListener("click", () => {
     toggleBtn.textContent = "🌙";
   }
 });
+
+
+
+
