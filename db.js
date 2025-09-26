@@ -7299,17 +7299,17 @@ const DB = {
     "explanation": "A number is divisible by 9 if the sum of its digits is divisible by 9. Sum of digits of 87654 = 8+7+6+5+4 = 30. The next multiple of 9 after 30 is 36. To make the sum 36, we need to add $36 - 30 = 6$. Correct answer: 6 \u2192 Option index 2."
   },
   {
-    "id": "q-007",
-    "question": "Which of the following numbers is divisible by 11?",
-    "options": [
-      "13579",
-      "12345",
-      "98765",
-      "87654"
-    ],
-    "answer": 0,
-    "explanation": "Divisibility Rule for 11: The difference between the sum of the digits at odd places and the sum of the digits at even places must be 0 or a multiple of 11. For 13579: odd sum (from right) = 9+5+1 = 15; even sum = 7+3=10. Difference = 15-10=5. Not divisible. For 12345: odd sum=5+3+1=9; even sum=4+2=6. Difference=9-6=3. Not divisible. For 98765: odd sum=5+7+9=21; even sum=6+8=14. Difference=21-14=7. Not divisible. For 87654: odd sum=4+6+8=18; even sum=5+7=12. Difference=18-12=6. Not divisible. Oh, there seems to be an error in all options. Let me create a new valid question and options."
-  },
+  "id": "q-007",
+  "question": "Which of the following numbers is divisible by 11?",
+  "options": [
+    "565565",
+    "123452",
+    "987653",
+    "876545"
+  ],
+  "answer": 0,
+  "explanation": "Simpler check using triplets: Group the digits from right in sets of three (565, 565). Take the difference between the sum of alternate triplets: 565 - 565 = 0. Since 0 is divisible by 11, 565565 is divisible by 11. The other numbers do not satisfy this rule."
+},
   {
     "id": "q-008",
     "question": "The product of two consecutive odd numbers is 255. What is the larger of the two numbers?",
