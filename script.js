@@ -11,7 +11,9 @@
     answers: {},
     startTS: null,
     durationSec: 0,
-    timerInterval: null
+    timerInterval: null,
+    pausedRemaining: null,   // ✅ store remaining time on pause
+    isPaused: false          // ✅ pause flag
   };
 
   // DOM refs
@@ -116,22 +118,67 @@ function startTest(full=false){
 }
 
 
-  // ---------- timer ----------
   function startTimer(){
     if(state.timerInterval) clearInterval(state.timerInterval);
     state.timerInterval = setInterval(()=>{
+      if (state.isPaused) return; // ✅ do nothing when paused
       const elapsed = Math.floor((Date.now()-state.startTS)/1000);
       const remaining = Math.max(0, state.durationSec - elapsed);
+      state.pausedRemaining = remaining; // ✅ track remaining
       updateTimerDisplay(remaining);
       if(remaining<=0){ clearInterval(state.timerInterval); autoSubmit(); }
     },250);
   }
+
   function updateTimerDisplay(remaining){
-    const m = String(Math.floor(remaining/60)).padStart(2,'0'); const s = String(remaining%60).padStart(2,'0');
+    const m = String(Math.floor(remaining/60)).padStart(2,'0'); 
+    const s = String(remaining%60).padStart(2,'0');
     $('timer').textContent = `${m}:${s}`;
     const pct = state.durationSec>0 ? (remaining/state.durationSec*100) : 0;
     $('timer-bar').style.width = pct + '%';
   }
+
+  // ---------- NEW: Pause/Resume ----------
+  function pauseQuiz(){
+    if(state.isPaused) return;
+    state.isPaused = true;
+    clearInterval(state.timerInterval);
+    $("pauseBtn").style.display = "none";
+    $("resumeBtn").style.display = "inline-block";
+  }
+
+  function resumeQuiz(){
+    if(!state.isPaused) return;
+    state.isPaused = false;
+    // Adjust startTS so elapsed = (duration - pausedRemaining)
+    state.startTS = Date.now() - (state.durationSec - state.pausedRemaining) * 1000;
+    startTimer();
+    $("pauseBtn").style.display = "inline-block";
+    $("resumeBtn").style.display = "none";
+  }
+
+  // Auto-pause if tab hidden
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden && !state.isPaused && state.view === "test") {
+      pauseQuiz();
+      $("pauseModal").style.display = "flex";
+    }
+  });
+
+  // Popup resume
+  const popupResumeBtn = $("popupResume");
+  if(popupResumeBtn){
+    popupResumeBtn.addEventListener("click", () => {
+      $("pauseModal").style.display = "none";
+      resumeQuiz();
+    });
+  }
+
+  // Buttons
+  const pauseBtn = $("pauseBtn");
+  const resumeBtn = $("resumeBtn");
+  if(pauseBtn) pauseBtn.addEventListener("click", pauseQuiz);
+  if(resumeBtn) resumeBtn.addEventListener("click", resumeQuiz);
 
   // ---------- render question ----------
   // ---------- render question (CORRECTED) ----------
@@ -411,7 +458,6 @@ toggleBtn.addEventListener("click", () => {
     toggleBtn.textContent = "🌙";
   }
 });
-
 
 
 
