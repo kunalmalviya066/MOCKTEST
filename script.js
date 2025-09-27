@@ -25,7 +25,8 @@
   const viewTest = document.getElementById('view-test');
   const viewResult = document.getElementById('view-result');
   const historyHome = document.getElementById('history-home');
-
+   
+   const clearResponseBtn = document.getElementById('clear-response'); 
   // storage
   const STORAGE_KEY = 'banking_mock_results_v1';
 
@@ -423,7 +424,26 @@ if(c.t === 'Wrong Answers') d.classList.add('wrong');
   document.getElementById('next-q').onclick = ()=> { if(state.currentQ < state.questions.length-1){ state.currentQ++; renderTest(); } };
   document.getElementById('prev-q').onclick = ()=> { if(state.currentQ>0){ state.currentQ--; renderTest(); } };
   document.getElementById('submit-test').onclick = ()=> { if(confirm('Finish test and submit?')) submitTest(false); };
+// ... (rest of your existing event bindings)
 
+  // Clear Response Button Logic
+  if (clearResponseBtn) {
+    clearResponseBtn.onclick = () => {
+      // Get the ID of the current question
+      const currentQuestionId = state.questions[state.currentQ].id;
+
+      // Remove the answer from the state object
+      delete state.answers[currentQuestionId];
+
+      // Update the UI by removing the 'selected' class from all options
+      const options = document.querySelectorAll('.options .option');
+      options.forEach(option => {
+        option.classList.remove('selected');
+      });
+    };
+  }
+
+  // ... (rest of the script)
   // keyboard navigation
   document.addEventListener('keydown', (e)=> {
     if(state.view!=='test') return;
@@ -458,6 +478,5 @@ toggleBtn.addEventListener("click", () => {
     toggleBtn.textContent = "🌙";
   }
 });
-
 
 
