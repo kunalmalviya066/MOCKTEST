@@ -25,7 +25,14 @@
   const viewTest = document.getElementById('view-test');
   const viewResult = document.getElementById('view-result');
   const historyHome = document.getElementById('history-home');
-   
+
+const dailyQuizBtn = document.getElementById("daily-quiz-btn");
+
+dailyQuizBtn.addEventListener("click", () => {
+  window.open("https://dailymock.netlify.app/", "_blank"); // Replace URL with actual DMK homepage if needed
+});
+
+
    const clearResponseBtn = document.getElementById('clear-response'); 
   // storage
   const STORAGE_KEY = 'banking_mock_results_v1';
@@ -478,5 +485,4 @@ toggleBtn.addEventListener("click", () => {
     toggleBtn.textContent = "🌙";
   }
 });
-
 
