@@ -190,6 +190,91 @@ transition: transform var(--transition), box-shadow var(--transition); font-size
 .modal-content button { margin-top:16px; }
 .modal-content p { font-size:14px; margin-top:10px; color:var(--danger); }
 
+/* 
+activation model 
+*/
+/* -------------------------------------------------------
+   Activation Modal Styling
+------------------------------------------------------- */
+#activationModal {
+  display: flex; /* default flex */
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 2000; /* higher than other modals */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#activationModal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#activationModal .modal-content {
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  animation: fadeInUp 0.4s var(--ease);
+}
+
+#activationModal .modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 1.25rem;
+  color: var(--accent-2);
+}
+
+#activationModal .modal-content label {
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+}
+
+#activationModal .modal-content input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+#activationModal .modal-content button {
+  margin-top: 16px;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent-3));
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.25s var(--ease);
+}
+
+#activationModal .modal-content button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+#activationModal #errorMsg {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--danger);
+  display: none;
+}
+
+
 /* -------------------------------------------------------
    9. Result Page - Grid & Cards
 ------------------------------------------------------- */
