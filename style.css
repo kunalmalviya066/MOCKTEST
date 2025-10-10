@@ -743,12 +743,13 @@ label { font-weight: 600; font-size: 13px; color: var(--muted); }
 }
 
 /* -------------------------------------------------------
-  9. Modal - Activation / Pause (improved backdrop & focus)
+   9. Modal - Activation Window
+       Updated for modern, robust design & compatibility
 ------------------------------------------------------- */
 .modal {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0, 0, 0, 0.55);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -756,6 +757,8 @@ label { font-weight: 600; font-size: 13px; color: var(--muted); }
   padding: 20px;
   overflow-y: auto;
   backdrop-filter: blur(6px);
+  /* Ensure a smooth fade-in */
+  transition: opacity 0.4s var(--ease);
 }
 
 .modal-content {
@@ -765,30 +768,96 @@ label { font-weight: 600; font-size: 13px; color: var(--muted); }
   max-width: 520px;
   width: 100%;
   box-shadow: var(--shadow-lg);
-  animation: fadeInUp 0.4s var(--ease);
+  animation: fadeInUp 0.4s var(--ease) forwards;
   text-align: center;
   border: 1px solid color-mix(in srgb, var(--border), transparent 60%);
 }
 
-.modal-content h2 { margin-top: 0; margin-bottom: 12px; color: var(--accent-2); }
-.modal-content label { font-weight: 600; display: block; font-size: 14px; margin-top: 10px; text-align: left; }
-.modal-content input { width: 100%; padding: 10px 12px; border-radius: var(--radius-sm); border: 1px solid var(--border); margin-top: 6px; font-size: 14px; }
-.modal-content button { margin-top: 16px; width: 100%; }
-
-/* Activation Modal Styling (add subtle entrance & focus trap styles) */
-#activationModal {
-  display: flex; align-items: center; justify-content: center;
-  position: fixed; inset: 0; background: rgba(0,0,0,0.6);
-  z-index: 2000; opacity: 0; pointer-events: none; transition: opacity 260ms var(--ease);
-  padding: 16px; backdrop-filter: blur(4px);
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: var(--accent-2);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 800;
 }
-#activationModal.active { opacity: 1; pointer-events: auto; }
-#activationModal .modal-content { padding: 28px 24px; max-width: 420px; box-shadow: var(--shadow-lg); }
-#activationModal .modal-content button { background: linear-gradient(90deg, var(--accent-2), var(--accent-3)); color: #fff; border: none; padding: 10px 20px; font-weight: 600; font-size: 14px; border-radius: var(--radius-sm); cursor: pointer; transition: transform var(--transition), box-shadow var(--transition); }
-#activationModal .modal-content button:hover { transform: translateY(-3px); filter: brightness(1.05); box-shadow: var(--shadow-lg); }
-#activationModal #errorMsg { margin-top: 10px; font-size: 13px; color: var(--danger); display: none; }
 
-/* close button in top-right for modals */
+.modal-content p {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.modal-content label {
+  font-weight: 600;
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--text);
+  background: var(--panel-2);
+  transition: all 0.2s var(--ease);
+}
+
+.modal-content input:focus {
+  border-color: var(--accent-2);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.modal-content button {
+  margin-top: 24px;
+  width: 100%;
+}
+
+/* Activation Modal Styling (final, robust version) */
+#activationModal {
+  /* This is the initial hidden state */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2000;
+  padding: 16px;
+  backdrop-filter: blur(4px);
+  /* Ensures smooth fade in/out if JS uses opacity toggle */
+  transition: opacity 260ms var(--ease);
+}
+
+/* If your JS uses classList.add('active'), this will apply */
+#activationModal.active {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#activationModal .modal-content {
+  padding: 32px 28px;
+  max-width: 420px;
+  box-shadow: var(--shadow-lg);
+  text-align: left; /* Align text to the left for better readability */
+}
+
+/* Red error message for clarity */
+#errorMsg {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--danger);
+  display: none; /* Initially hidden */
+  text-align: center;
+}
+
+/* Close button on modal content */
 .modal .close {
   position: absolute;
   top: 10px;
@@ -798,6 +867,38 @@ label { font-weight: 600; font-size: 13px; color: var(--muted); }
   font-size: 18px;
   color: var(--muted);
   cursor: pointer;
+  transition: transform 0.2s;
+}
+.modal .close:hover {
+  transform: scale(1.2);
+  color: var(--text);
+}
+
+/* Specific styling for the Activation Form */
+#activationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Button style from your existing stylesheet */
+#activationModal .btn {
+  background: linear-gradient(90deg, var(--accent-2), var(--accent-3));
+  color: #fff;
+  border: none;
+  padding: 12px 24px; /* Increased padding for a larger button */
+  font-weight: 700; /* Bolder font weight */
+  font-size: 16px; /* Slightly larger font size */
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); /* Apply a subtle glow shadow */
+}
+
+#activationModal .btn:hover {
+  transform: translateY(-3px); /* Lifts the button on hover */
+  filter: brightness(1.05);
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.18); /* Stronger shadow on hover */
 }
 
 /* -------------------------------------------------------
